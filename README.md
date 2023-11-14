@@ -1,8 +1,45 @@
 # Wikidata-KB-Overview
-Overview of how Wikidata is used by/in/for the KB, national library of the Netherlands
+
+*An overview of how Wikidata is used by/in/for the KB, national library of the Netherlands* 
+
+This page is a textual summary of the lecture *title* for employeees of KB, national library of the Netherlands on 14 November 2023, 15:00-16:15 hrs. This (rather long) slidedeck (in Dutch) is available on [Wikimedia Commons] and [Zenodo].
+
+**Reuse and licensing**
+
+This overview can be reused freely and openly, it is available under the [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) license, so attribution is required. Use something like 
+
+*Wikibase resources, Olaf Janssen & KB national library of the Netherlands, https://github.com/KBNLwikimedia/Wikidata-KB-Overview* 
+
+<kbd><img src="cc-by.png" width="100"/></kbd>
+
+**Latest updates**
+
+Latest update: 15 November 2023
+<hr>
+
+### Contents
+- [Recap Wikidata](#recap-wikidata)
+  * [Institutional use cases incompatible with Wikidata](#institutional-use-cases-incompatible-with-Wikidata)
+- [What is Wikibase?](#what-is-wikibase-)
+- [Wikibase courses and tutorials](#wikibase-courses-and-tutorials)
+- [Examples of institutions/projects using Wikibase](#examples-of-institutions-projects-using-wikibase)
+  * [Wikibase projects in libraries](#wikibase-projects-in-libraries)
+- [Wikibase components & architecture](#wikibase-components---architecture)
+- [Wikibase data model](#wikibase-data-model)
+  * [Using alternative vocabularies in Wikibase](#using-alternative-vocabularies-in-wikibase)
+- [Wikibase hosting](#wikibase-hosting)
+- [Requesting data from a Wikibase](#requesting-data-from-a-wikibase)
+  * [Cool Wikibase SPARQL queries](#cool-wikibase-sparql-queries)
+- [Adding data to a Wikibase](#adding-data-to-a-wikibase)
+- [Wikibase community](#wikibase-community)
+- [Staying updated](#staying-updated)
+- [Finding help](#finding-help)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+<hr>
 
 
-Tekstuele samenvatting van een Wikidata-verdiepingssessie voor KB-medewerkers, KB, dinsdag 14 november 2023, 15:00-16:15 
 
 ========================================
 Interne communicatie over deze sessie
