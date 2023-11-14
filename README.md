@@ -1,16 +1,19 @@
 Logo Wikidata + Logo KB
 
-# Wikidata & KB, national library of the Netherlands, an overview
+# Wikidata & KB national library of the Netherlands, an overview
 
 *An overview of how Wikidata is used by/in/for the KB, national library of the Netherlands* 
 
 This page is a textual summary of the lecture *title* for employeees of KB, national library of the Netherlands on 14 November 2023, 15:00-16:15. The (rather long) slidedeck (in Dutch) for this lecture is available on [Wikimedia Commons] and [Zenodo] as PDFs. The [full text transcript] is avialabe at [page in this repo]
 
+**Contact**
+Questions or remarks can be send to Olaf Janssen, Wikimedia coordinator of the KB - olaf.janssen@kb.nl - @ookgezellig
+
 **Reuse and licensing**
 
 This overview can be reused freely and openly, it is available under the [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) license, so attribution is required. Use something like 
 
-*Wikibase resources, Olaf Janssen & KB national library of the Netherlands, https://github.com/KBNLwikimedia/Wikidata-KB-Overview* 
+*Wikidata & KB national library of the Netherlands, an overview, Olaf Janssen & KB national library of the Netherlands, https://github.com/KBNLwikimedia/Wikidata-KB-Overview* 
 
 <kbd><img src="cc-by.png" width="100"/></kbd>
 
@@ -66,19 +69,12 @@ BLOCK 4) Wikidata & KB heritage collections
 
 
 ## BLOCK 1) What does Wikidata add for the KB?
+Captain Obvious mode: Be findable in Google - Be present on Facebook - Be present on Instagram - Be present on YouTube - Be present on Twitter. Summary (open door): Be present on the large (web-scale) platforms
 
-(Captain Obvious)
-- Be findable in Google
-- Be present on Facebook
-- Be present on Instagram
-- Be present on YouTube
-- Be present on Twitter
-Summary open door: Be present on the large (web-scale) platforms
-
-So also open door:
-- Add your collection knowledge to Wikipedia
-- Add your collection images to Wikimedia Commons
-- Add your collection data to Wikidata
+So also open doors:
+* Add your collection knowledge to Wikipedia
+* Add your collection images to Wikimedia Commons
+* Add your collection data to Wikidata
 
 Wikidata is one of the largest and most popular LOD platforms in the world
 Characteristics:
@@ -227,9 +223,8 @@ DBNLa in Wikidata
 
 Gebruik van KB-identifiers in Wikidata, en v.v., zowel voor de NTa als de DBNLa: https://nl.wikipedia.org/wiki/Wikipedia:GLAM/Koninklijke_Bibliotheek_en_Nationaal_Archief/Resultaten/KPIs/KPI10 
 
-==================================================================
-BLOK 3) Intermezzo: Koppeling van Wikimedia Commons met Wikidata
-=================================================================
+##BLOK 3) Intermezzo: Koppeling van Wikimedia Commons met Wikidata
+
 De Sint Pancraskerk in Leiden heet nu de Hooglandse Kerk: https://commons.wikimedia.org/wiki/File:Atlas_de_Wit_1698-pl017-Leiden-St_Pancraskerk.jpg
 
 Reguliere metadata
@@ -321,10 +316,9 @@ Wil je zelf Depicts-tags aan KB-beelden toevoegen?
 -- 19.764 beelden waarop iets getagd is (te zien is) - https://hay.toolforge.org/sdsearch/#q=incategory:%22Media%20contributed%20by%20Koninklijke%20Bibliotheek%22%20haswbstatement:P180
 -- KB-tagkampioene: Madeleine van den Berg ? 34K+ dingen toegevoegd - https://commons.wikimedia.org/w/index.php?title=Special%3AContributions&target=Madeleine+van+den+Berg&namespace=all&tagfilter=&start=&end=&limit=500  
 
-==================================================================
-BLOK 4) Wikidata & KB-erfgoedcollecties
-=================================================================
-Voorbelden KB-erfgoedcollecties:Manuscripten - Atlassen - Wapenboeken - Vriendenboeken - Centsprenten - Kinderprentenboeken - Flora- en faunaboeken
+# BLOK 4) Wikidata & KB-erfgoedcollecties
+
+Voorbeelden KB-erfgoedcollecties:Manuscripten - Atlassen - Wapenboeken - Vriendenboeken - Centsprenten - Kinderprentenboeken - Flora- en faunaboeken
 
 Criteria geschiktheid KB-erfgoed voor Wikidata
 - 1) Topstukken, canonieke objecten
@@ -396,10 +390,5 @@ Een paar voorbeelden:
 ================================================
 De slotconclusie van dit verhaal? Wikidata voegt heel veel waarde toe aan onze KB-thesauri & -erfgoedcollecties!
 
-================================================
-Vragen?	Olaf Janssen - olaf.janssen@kb.nl - @ookgezellig
-
-============================================
-Licentie: de inhoud van deze pagina is beschikbaar onder de CC-BY-SA 4.0 licentie: https://creativecommons.org/licenses/by-sa/4.0/deed.nl
 
 
