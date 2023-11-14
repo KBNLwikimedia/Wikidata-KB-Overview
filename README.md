@@ -7,6 +7,7 @@ Logo Wikidata + Logo KB
 This page is a textual summary of the lecture *title* for employeees of KB, national library of the Netherlands on 14 November 2023, 15:00-16:15. The (rather long) slidedeck (in Dutch) for this lecture is available on [Wikimedia Commons] and [Zenodo] as PDFs. The [full text transcript] is avialabe at [page in this repo]
 
 **Contact**
+
 Questions or remarks can be send to Olaf Janssen, Wikimedia coordinator of the KB - olaf.janssen@kb.nl - @ookgezellig
 
 **Reuse and licensing**
