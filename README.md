@@ -8,7 +8,7 @@ This page is a textual summary of the lecture *title* for employeees of KB, nati
 
 **Contact**
 
-Questions or remarks can be send to Olaf Janssen, Wikimedia coordinator of the KB - olaf.janssen@kb.nl - @ookgezellig
+Questions or remarks can be sent to Olaf Janssen, Wikimedia coordinator of the KB - olaf.janssen@kb.nl - @ookgezellig
 
 **Reuse and licensing**
 
