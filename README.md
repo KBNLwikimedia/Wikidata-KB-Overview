@@ -1,8 +1,10 @@
+Logo Wikidata + Logo KB
+
 # Wikidata-KB-Overview
 
 *An overview of how Wikidata is used by/in/for the KB, national library of the Netherlands* 
 
-This page is a textual summary of the lecture *title* for employeees of KB, national library of the Netherlands on 14 November 2023, 15:00-16:15 hrs. This (rather long) slidedeck (in Dutch) is available on [Wikimedia Commons] and [Zenodo].
+This page is a textual summary of the lecture *title* for employeees of KB, national library of the Netherlands on 14 November 2023, 15:00-16:15. The (rather long) slidedeck (in Dutch) for this lecture is available on [Wikimedia Commons] and [Zenodo] as PDFs. The [full text transcript] is avialabe at [page in this repo]
 
 **Reuse and licensing**
 
@@ -17,7 +19,7 @@ This overview can be reused freely and openly, it is available under the [CC-BY 
 Latest update: 15 November 2023
 <hr>
 
-### Contents
+### Contents - to adapt
 - [Recap Wikidata](#recap-wikidata)
   * [Institutional use cases incompatible with Wikidata](#institutional-use-cases-incompatible-with-Wikidata)
 - [What is Wikibase?](#what-is-wikibase-)
@@ -39,80 +41,79 @@ Latest update: 15 November 2023
 
 <hr>
 
-
+## Intro
 
 ========================================
-Interne communicatie over deze sessie
+Internal communication about this session
 * https://plein.kb.nl/calendar_events/8707
 * https://plein.kb.nl/thoughts/25719
 
-Benodigde basiskennis over Wikidata: Introductiecursus Wegwijzer in Wikidata, 6 juni 2023
+Required basic knowledge about Wikidata: Introduction course Guide to Wikidata, June 6, 2023
 * https://zenodo.org/record/8006441
-* https://commons.wikimedia.org/wiki/File:Wegwijzer_in_Wikidata,_Introductiecurus_Wikidata_-_Koninklijke_Bibliotheek,_6_juni_2023.pdf
+* https://commons.wikimedia.org/wiki/File:Wegwijzer_in_Wikidata,_Introductioncurus_Wikidata_-_Koninklijke_Bibliotheek,_6_juni_2023.pdf
 
-======================================  
-Doel van de cursus: Meer begrip geven over
-1. Waarom we als KB Wikidata gebruiken
-2. Hoe we Wikidata inzetten voor onze thesauri & erfgoed
-3. Welke meerwaarde dit ons oplevert
+=======================================
+Objective of the course: To provide more understanding about
+1. Why we at KB use Wikidata
+2. How we use Wikidata for our thesauri & heritage
+3. What added value this brings us
 
-Wat gaan we doen?
-BLOK 1) Wat voegt Wikidata toe voor de KB?
-BLOK 2) Wikidata & KB-thesauri (NTA + DBNLa)
-BLOK 3) Intermezzo: Koppeling van Wikimedia Commons met Wikidata
-BLOK 4) Wikidata & KB-erfgoedcollecties
+What do we do?
+BLOCK 1) What does Wikidata add for the KB?
+BLOCK 2) Wikidata & KB thesauri (NTA + DBNLa)
+BLOCK 3) Intermezzo: Linking Wikimedia Commons with Wikidata
+BLOCK 4) Wikidata & KB heritage collections
 
-==========================================================
-BLOK 1) Wat voegt Wikidata toe voor de KB?
-==========================================================
+
+## BLOCK 1) What does Wikidata add for the KB?
+
 (Captain Obvious)
-- Wees vindbaar in Google
-- Wees aanwezig op Facebook
-- Wees aanwezig op Instagram
-- Wees aanwezig op YouTube
-- Wees aanwezig op Twitter
-Samenvattende open deur: Wees aanwezig op de grote (webschaal) platformen
+- Be findable in Google
+- Be present on Facebook
+- Be present on Instagram
+- Be present on YouTube
+- Be present on Twitter
+Summary open door: Be present on the large (web-scale) platforms
 
-Dus ook open deur: 
-- Voeg je collectiekennis toe aan Wikipedia
-- Voeg je collectiebeelden toe aan Wikimedia Commons
-- Voeg je collectiedata toe aan Wikidata
+So also open door:
+- Add your collection knowledge to Wikipedia
+- Add your collection images to Wikimedia Commons
+- Add your collection data to Wikidata
 
-Wikidata is een van de grootse en meest populaire LOD-platformen ter wereld
-Kenmerken:
-- Centraal onderdeel van de (webschaal) Wikimedia-infrastructuur (Wikipedia, Commons, 700+ Wikimedia-platformen)
-- Gratis, openbare nutsvoorziening voor data (geen IT-kosten)
-- Gecentraliseerd, geen datasilo’s, 1 taal
-- Globale scope, (veel) breder dan KB/bibliotheek/erfgoed/Nederland domein
-- Koppelpunt voor 8000+ databases wereldwijd
-- Meertalig, taalonafhankelijk, 300+ talen
-- Collaboratief --> Internationale community, 25K+ contentmakers
-- Voor mensen (GUI) en machines (API, SPARQL, JSON, RDF, Python etc.)
-- LOD, maar dan wél begrijpelijk & warm (dankzij community!)
-- Geen auteursrechten (CC0)
-- Sterk groeiend & duurzaam
-Resultaat: schaalvoordelen, community- en netwerkeffecten
+Wikidata is one of the largest and most popular LOD platforms in the world
+Characteristics:
+- Central part of the (web-scale) Wikimedia infrastructure (Wikipedia, Commons, 700+ Wikimedia platforms)
+- Free, public utility for data (no IT costs)
+- Centralized, no data silos, 1 language
+- Global scope, (much) broader than KB/library/heritage/Netherlands domain
+- Connection point for 8000+ databases worldwide
+- Multilingual, language independent, 300+ languages
+- Collaborative --> International community, 25K+ content creators
+- For humans (GUI) and machines (API, SPARQL, JSON, RDF, Python etc.)
+- LOD, but understandable & warm (thanks to community!)
+- No copyright (CC0)
+- Strong growing & sustainable
+Result: economies of scale, community and network effects
 
-Meerwaarde: Wat voegt Wikidata toe voor de KB?
-1) Vergroten zichtbaarheid, vindbaarheid en herbruikbaarheid van onze collecties
-- Groter publieksbereik KB-collecties, wereldwijd
-- KB-data in cross-domain, globale, meertalige context --> Vergroting interoperabiliteit KB met buitenwereld
-- Community: Externe expertise, vaardigheden, tools en enthousiasme om KB-data te verrijken & verbinden
-2) Nieuwe functionaliteiten voor onze data (en beelden)
-- Functionaliteiten die we niet in onze KB-diensten (kunnen) bieden 
-- O.h.g.v. Zoeken, Dataverrijking, -kwaliteitscontrole, -visualisatie en -formaten, Metadatering van beelden, Machinematige interacties 
-- Zowel voor onze thesauri als erfgoedcollecties
-- Voor mensen en machines
-- KB-collecties als LEGO 
-3) Toolkit & platform om nieuwe KB LOD te maken en publiceren
-- Interne KB LOD vernieuwing laat op zich wachten
-4) Ontwikkelen en delen van kennis & vaardigheden o.h.g.v. LOD
-- Zowel intern als extern
-- Versterking samenwerking met KB-netwerkpartners via Wikidata/media
+Added value: What does Wikidata add for the KB?
+1) Increase visibility, findability and reusability of our collections
+- Greater public reach of KB collections, worldwide
+- KB data in cross-domain, global, multilingual context --> Increasing interoperability KB with the outside world
+- Community: External expertise, skills, tools and enthusiasm to enrich & connect KB data
+2) New functionalities for our data (and images)
+- Functionalities that we cannot (or cannot) offer in our KB services
+- Due to Search, Data enrichment, quality control, visualization and formats, Image metadata, Machine interactions
+- Both for our thesauri and heritage collections
+- For people and machines
+- KB collections as LEGO
+3) Toolkit & platform to create and publish new KB LOD
+- Internal KB LOD renewal is delayed
+4) Developing and sharing knowledge & skills based on LOD
+- Both internally and externally
+- Strengthening cooperation with KB network partners via Wikidata/media
 
-==========================================================
-BLOK 2) Wikidata & KB-thesauri (NTA + DBNLa)
-==========================================================
+
+## BLOK 2) Wikidata & KB-thesauri (NTA + DBNLa)
 KB-datasets (thesauri): http://data.bibliotheken.nl/ 
 
 Critaria geschiktheid KB-thesauri voor Wikidata
