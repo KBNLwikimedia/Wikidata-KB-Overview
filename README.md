@@ -1,4 +1,7 @@
-Logo Wikidata + Logo KB
+<p align="right">
+<image src="images/Wikidata-logo-en.png" width="180" hspace="10"/>
+<image src="images/KB_Nationale-Bibliotheek_Logo_RGB-Zwart-EN.jpg" width="400" align="top"/>
+</p>
 
 # Wikidata & KB national library of the Netherlands, an overview
 
@@ -19,7 +22,7 @@ This overview can be reused freely and openly, it is available under the [CC-BY 
 
 *Wikidata & KB national library of the Netherlands, an overview, Olaf Janssen & KB national library of the Netherlands, https://github.com/KBNLwikimedia/Wikidata-KB-Overview* 
 
-<kbd><img src="cc-by.png" width="100"/></kbd>
+<kbd><img src="images/cc-by.png" width="100"/></kbd>
 
 **Latest updates**
 
