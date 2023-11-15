@@ -68,67 +68,77 @@ To provide more understanding about
 3. What value this adds for us
 
 ### Course layout
-* BLOCK 1) [What does Wikidata add for the KB?](https://github.com/KBNLwikimedia/Wikidata-KB-Overview/edit/main/README.md#block-1---what-does-wikidata-add-for-the-kb))
-* BLOCK 2) [Wikidata & KB thesauri (NTA + DBNLa)](#block-2---wikidata--kb-thesauri-nta--dbnla)
-* BLOCK 3) [Intermezzo: Linking Wikimedia Commons with Wikidata](#block-3---intermezzo-linking-wikimedia-commons-with-wikidata)
-* BLOCK 4) [Wikidata & KB heritage collections](#block-4---wikidata--kb-heritage-collections)
+* BLOCK 1) [What does Wikidata add for the KB?](https://github.com/KBNLwikimedia/Wikidata-KB-Overview/blob/main/README.md#block-1---what-does-wikidata-add-for-the-kb)
+* BLOCK 2) [Wikidata & KB thesauri (NTA + DBNLa)](https://github.com/KBNLwikimedia/Wikidata-KB-Overview/blob/main/README.md#block-2---wikidata--kb-thesauri-nta--dbnla)
+* BLOCK 3) [Intermezzo: Linking Wikimedia Commons with Wikidata](https://github.com/KBNLwikimedia/Wikidata-KB-Overview/blob/main/README.md#block-3---intermezzo-linking-wikimedia-commons-with-wikidata)
+* BLOCK 4) [Wikidata & KB heritage collections](https://github.com/KBNLwikimedia/Wikidata-KB-Overview/blob/main/README.md#block-4---wikidata--kb-heritage-collections)
 
 <hr/>
 
 ## BLOCK 1 - What does Wikidata add for the KB?
-Captain Obvious mode: Be findable in Google - Be present on Facebook - Be present on Instagram - Be present on YouTube - Be present on Twitter. Summary (open door): Be present on the large (web-scale) platforms
+
+### Open doors
+(Captain Obvious mode) For KB & its services: Be findable in Google - Be present on Facebook - Be present on Instagram - Be present on YouTube - Be present on Twitter. --> Summary (open door): Be present on the large (web-scale) platforms
 
 So also open doors:
 * Add your collection knowledge to Wikipedia
 * Add your collection images to Wikimedia Commons
 * Add your collection data to Wikidata
 
-Wikidata is one of the largest and most popular LOD platforms in the world
+### Wikidata characteristics
+Wikidata is one of the largest and most popular LOD platforms in the world.
+
 Characteristics:
-- Central part of the (web-scale) Wikimedia infrastructure (Wikipedia, Commons, 700+ Wikimedia platforms)
+- Central part of the (web-scale) Wikimedia infrastructure (Wikipedia, Commons, [700+ Wikimedia platforms](https://meta.wikimedia.org/wiki/Complete_list_of_Wikimedia_projects))
 - Free, public utility for data (no IT costs)
-- Centralized, no data silos, 1 language
+- Centralized, no data silos, 1 language (w.r.t. SPARQL and API calling)
 - Global scope, (much) broader than KB/library/heritage/Netherlands domain
-- Connection point for 8000+ databases worldwide
-- Multilingual, language independent, 300+ languages
+- Connection point for [8330+ external databases](https://hay.toolforge.org/propbrowse/) worldwide
+- Multilingual, language independent, [300+ languages](https://www.wikidata.org/wiki/Help:Wikimedia_language_codes/lists/all)
 - Collaborative --> International community, 25K+ content creators
 - For humans (GUI) and machines (API, SPARQL, JSON, RDF, Python etc.)
-- LOD, but understandable & warm (thanks to community!)
-- No copyright (CC0)
-- Strong growing & sustainable
-Result: economies of scale, community and network effects
+- LOD, the least scary of all LOD platforms --> Understandable & warm, thanks to community!
+- No copyright on data ([CC0](https://creativecommons.org/public-domain/cc0/))
+- Strong growing, positive outlook & sustainable
 
-Added value: What does Wikidata add for the KB?
-1) Increase visibility, findability and reusability of our collections
-- Greater public reach of KB collections, worldwide
-- KB data in cross-domain, global, multilingual context --> Increasing interoperability KB with the outside world
-- Community: External expertise, skills, tools and enthusiasm to enrich & connect KB data
+Effective result: advantages of scale and community & network effects
+
+### Added value of Wikidata for KB
+What values does Wikidata add for the KB & its services?
+1) Increased visibility, findability and reusability of our collections
+    - Greater public reach of KB collections, worldwide
+    - KB data in cross-domain, global, multilingual context --> Increasing interoperability KB with the outside world
+    - Community: External expertise, skills, tools and enthusiasm to enrich & connect KB data
 2) New functionalities for our data (and images)
-- Functionalities that we cannot (or cannot) offer in our KB services
-- Due to Search, Data enrichment, quality control, visualization and formats, Image metadata, Machine interactions
-- Both for our thesauri and heritage collections
-- For people and machines
-- KB collections as LEGO
+    - Functionalities that we do not or cannot offer in our own KB services
+    - Regarding Search, Data enrichment, data quality control, data visualization and data formats, Image metadata, Machine interactions
+    - Both for our thesauri and heritage collections
+    - For people and machines
+    - 'KB collections as LEGO'
 3) Toolkit & platform to create and publish new KB LOD
-- Internal KB LOD renewal is delayed
-4) Developing and sharing knowledge & skills based on LOD
-- Both internally and externally
-- Strengthening cooperation with KB network partners via Wikidata/media
+    - Internal KB LOD renewal process is not yet delivering public results   
+4) Developing and sharing knowledge & skills related to LOD
+    - Both internally and externally
+    - Strengthening our cooperation with KB network partners via Wikidata/media
 
 <hr/>
 
 ## BLOCK 2 - Wikidata & KB thesauri (NTA + DBNLa)
-KB datasets (thesauri): http://data.bibliotheek.nl/
+KB datasets (thesauri): http://data.bibliotheken.nl/
 
-Criteria for suitability of KB thesauri for Wikidata
-- Persons (authors) are more popular on Wikidata than, for example, keywords or organizations --> NTA + DBNLa are more useful than Brinkman or GTT
-- NTA is internationally the only major authoritative dataset on 'Dutch authors' --> NTA useful for Wikidata (in an international context)
-- Flat/simple data is more suitable than layered/complex data --> People are easier to add to Wikidata than titles (WEMI = difficult)
-- Small datasets are easier than large ones --> Alba amicorum and Centsprenten are suitable for Wikidata
+### Criteria for suitability of KB thesauri for Wikidata
+- Persons (authors) are more popular and in demand on Wikidata than (eg.) keywords or organizations
+    - [Dutch Thesaurus of Author names (NTA)](http://data.bibliotheken.nl/id/dataset/persons) + [Thesaurus of DBNL authors (DBNLa)](http://data.bibliotheken.nl/id/dataset/dbnla) are more useful than [Brinkman](http://data.bibliotheken.nl/id/dataset/brinkman) or [GTT](http://data.bibliotheken.nl/id/dataset/gtt)
+- NTA is internationally the only major authoritative dataset on 'Dutch authors'
+    -NTA is very useful for Wikidata, in an international context
+- Flat/simple data is more suitable than layered/complex data
+    - People are easier to add to Wikidata than [titles](http://data.bibliotheken.nl/id/dataset/nbt) ([WEMI](https://rdabasics.com/2012/08/24/theoretical-foundations/) = difficult)
+- Small datasets are easier than large ones
+    - [Alba amicorum](http://data.bibliotheken.nl/id/dataset/rise-alba) and [catchpenny prints](http://data.bibliotheken.nl/id/dataset/rise-centsprenten) are suitable for Wikidata
 
-Ergo: Focus on NTA and DBNL authors with regard to the KB thesauri-Wikidata activities
+Ergo: Focus on [NTA](http://data.bibliotheken.nl/id/dataset/persons) and [DBNL authors](http://data.bibliotheken.nl/id/dataset/dbnla) with regard to the KB thesauri-Wikidata activities.
 
-Wikidata in the NTA
+### From the NTA to Wikidata
 
 Persons in the NTA with a Wikidata URI:
 - Eg. Darlene Dixon : http://data.bibliotheek.nl/doc/thes/p208140131 --> schema:sameAs --> http://www.wikidata.org/entity/Q88505402
@@ -154,7 +164,7 @@ Checks:
 - P69 (educated at): http://www.wikidata.org/entity/Q500740
 - P102 (member of political party): http://www.wikidata.org/entity/Q2532509
 
-And now the other way: The NTA (and DBNLa) in Wikidata
+### From Wikidata to the NTA
 
 Harry Mulisch in Wikidata: https://www.wikidata.org/wiki/Q927
 NTA in Wikidata: https://www.wikidata.org/wiki/Property:P1006
