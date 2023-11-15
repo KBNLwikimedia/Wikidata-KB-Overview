@@ -63,15 +63,17 @@ See the course *Wegwijzer in Wikidata* (Introduction to Wikidata), June 6, 2023 
 
 ### Course objectives
 To provide more understanding about
-1. Why we at KB use Wikidata
-2. How we use Wikidata for our thesauri & heritage
-3. What added value this brings us
+1. Why we use Wikidata  at KB
+2. How we use Wikidata for our thesauri & heritage collections
+3. What value this adds for us
 
 ### Course layout
-* BLOCK 1) [What does Wikidata add for the KB?](#block-1---what-does-wikidata-add-for-the-kb)
+* BLOCK 1) [What does Wikidata add for the KB?](https://github.com/KBNLwikimedia/Wikidata-KB-Overview/edit/main/README.md#block-1---what-does-wikidata-add-for-the-kb))
 * BLOCK 2) [Wikidata & KB thesauri (NTA + DBNLa)](#block-2---wikidata--kb-thesauri-nta--dbnla)
 * BLOCK 3) [Intermezzo: Linking Wikimedia Commons with Wikidata](#block-3---intermezzo-linking-wikimedia-commons-with-wikidata)
 * BLOCK 4) [Wikidata & KB heritage collections](#block-4---wikidata--kb-heritage-collections)
+
+<hr/>
 
 ## BLOCK 1 - What does Wikidata add for the KB?
 Captain Obvious mode: Be findable in Google - Be present on Facebook - Be present on Instagram - Be present on YouTube - Be present on Twitter. Summary (open door): Be present on the large (web-scale) platforms
@@ -113,6 +115,7 @@ Added value: What does Wikidata add for the KB?
 - Both internally and externally
 - Strengthening cooperation with KB network partners via Wikidata/media
 
+<hr/>
 
 ## BLOCK 2 - Wikidata & KB thesauri (NTA + DBNLa)
 KB datasets (thesauri): http://data.bibliotheek.nl/
@@ -228,6 +231,8 @@ DBNLa in Wikidata
 
 Use of KB identifiers in Wikidata, and v.v., both for the NTa and the DBNLa: https://nl.wikipedia.org/wiki/Wikipedia:GLAM/Koninklijke_Bibliotheek_en_Natieaal_Archief/Resultaten/KPIs/KPI10
 
+<hr/>
+
 ## BLOCK 3 - Intermezzo: Linking Wikimedia Commons with Wikidata
 
 The Sint Pancras Church in Leiden is now called the Hooglandse Kerk: https://commons.wikimedia.org/wiki/File:Atlas_de_Wit_1698-pl017-Leiden-St_Pancraskerk.jpg
@@ -321,6 +326,8 @@ Do you want to add Depicts tags to KB images yourself?
 -- 19,764 images on which something is tagged (can be seen) - https://hay.toolforge.org/sdsearch/#q=incategory:%22Media%20contributed%20by%20Koninklijke%20Library%22%20haswbstatement:P180
 -- KB tag champion: Madeleine van den Berg ? 34K+ things added - https://commons.wikimedia.org/w/index.php?title=Special%3AContributions&target=Madeleine+van+den+Berg&namespace=all&tagfilter=&start=&end=&limit=500
 
+<hr/>
+
 ## BLOCK 4 - Wikidata & KB heritage collections
 
 Examples of KB heritage collections: Manuscripts - Atlases - Coat of arms books - Friends books - Cent prints - Children's picture books - Flora and fauna books
@@ -381,18 +388,21 @@ By putting our collection highlights into Wikidata, Wikimedia Commons and Wikipe
 - Part 5, Reuse - some examples of programmatically reusing KB's collection highlights: https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection %20highlights/Part%205%2C%20Reuse.html
 
 A few examples:
-- 1) New functionalities from Block 3, see above
-- 2) Gallery of KB masterpieces: https://nl.wikipedia.org/wiki/Wikipedia:GLAM/Koninklijke_Bibliotheek_en_Nationaal_Archief/Topstuks/Galerij
-- 3) Persons/roles involved in each masterpiece: https://www.wikidata.org/wiki/Wikidata:WikiProject_Collection_highlights_National_Library_of_the_Netherlands/Admin/Overview/People
-- 4) Contributors to the Album Jacob Heyblocq
--- Face book: https://w.wiki/phx
--- M/F distribution: https://w.wiki/F5J
--- Occupation cloud: https://w.wiki/F5N
--- Lifespan table: https://w.wiki/qzx
-- 5) Works by these contributors in DBNL: https://w.wiki/3MLQ
-- 6) Works by these contributors elsewhere, via Europeana, as Excel: https://www.europeana.eu/en/collections/person/63198-govert-flinck + explanation at https://kbnlwikimedia.github.io/KBCollectionHighlights /stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%205%2C%20Reuse.html, Point 48
+1. New functionalities from Block 3, see above
+2. Gallery of KB masterpieces: https://nl.wikipedia.org/wiki/Wikipedia:GLAM/Koninklijke_Bibliotheek_en_Nationaal_Archief/Topstuks/Galerij
+3. Persons/roles involved in each masterpiece: https://www.wikidata.org/wiki/Wikidata:WikiProject_Collection_highlights_National_Library_of_the_Netherlands/Admin/Overview/People
+4. [Contributors to the Album Jacob Heyblocq](https://commons.wikimedia.org/wiki/Category:Contributors_to_the_album_amicorum_Jacobus_Heyblocq)
+   * [Facebook](https://w.wiki/phx)
+   * [M/F distribution](https://w.wiki/F5J)
+   * [Occupation cloud](https://w.wiki/F5N)
+   * [Lifespan table](https://w.wiki/qzx)
+5. [Works by these contributors in DBNL](https://w.wiki/3MLQ)
+6. Works by these contributors elsewhere, via Europeana, as Excel: https://www.europeana.eu/en/collections/person/63198-govert-flinck + explanation at https://kbnlwikimedia.github.io/KBCollectionHighlights /stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%205%2C%20Reuse.html, Point 48
 
-## The final conclusion of this story? Wikidata adds a lot of value to our KB thesauri & heritage collections!
+<hr/>
+
+## Final conclusions
+ Wikidata adds a lot of value to our KB thesauri & heritage collections!
 
 
 
