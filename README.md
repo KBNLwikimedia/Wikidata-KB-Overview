@@ -141,7 +141,7 @@ Ergo: Focus on [NTA](http://data.bibliotheken.nl/id/dataset/persons) and [DBNL a
 ### From the NTA to Wikidata
 
 Persons in the NTA with a Wikidata URI:
-- Eg. Darlene Dixon : http://data.bibliotheken.nl/doc/thes/p208140131 --> schema:sameAs --> http://www.wikidata.org/entity/Q88505402
+- Eg. *Darlene Dixon* : http://data.bibliotheken.nl/doc/thes/p208140131 --> schema:sameAs --> http://www.wikidata.org/entity/Q88505402
 - All persons via [this SPARQL query](data.bibliotheken.nl/sparql?default-graph-uri=&qtxt=%23+Which+NTA+items+have+a+link+to+Wikidata%3F%0D%0A%0D%0ASELECT++*+WHERE+{%0D%0A+%3Fnta+schema%3AmainEntityOfPage%2Fschema%3AisPartOf+<http%3A%2F%2Fdata.bibliotheken.nl%2Fid%2Fdataset%2Fpersons>+.%0D%0A+%3Fnta+rdfs%3Alabel+%3FntaLabel.++%0D%0A+%3Fnta+schema%3AsameAs+%3Fwikidata+.%0D%0AFILTER(regex(%3Fwikidata%2C+'wikidata'%2C+'i'))%0D%0A}+LIMIT+1000&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+)
 ```sparql
 # Which NTA items have a link to Wikidata?
@@ -157,7 +157,7 @@ FILTER(regex(?wikidata, 'wikidata', 'i'))
 ### From the DBNLa to Wikidata
   
 Persons in DBNLa with Wikidata URI (via the NTA)
-- E.g. Hans Aarsman (1951-): http://data.bibliotheken.nl/id/dbnla/aars001 --> owl:sameAs --> http://data.bibliotheken.nl/id/thes/p068680937 --> schema:sameAs --> http://www.wikidata.org/entity/Q325922
+- E.g. *Hans Aarsman (1951-)* : http://data.bibliotheken.nl/id/dbnla/aars001 --> owl:sameAs --> http://data.bibliotheken.nl/id/thes/p068680937 --> schema:sameAs --> http://www.wikidata.org/entity/Q325922
 - All persons via [this SPARQL query](http://data.bibliotheken.nl/sparql?default-graph-uri=&qtxt=%23+Welke+DBNLa-items+bevatten+een+link+naar+Wikidata%3F%0D%0ASELECT+*++%0D%0AWHERE+{%0D%0A+%3Fdbnl+schema%3AmainEntityOfPage%2Fschema%3AisPartOf+<http%3A%2F%2Fdata.bibliotheken.nl%2Fid%2Fdataset%2Fdbnla>+.%0D%0A+%3Fdbnl+rdfs%3Alabel++%3FdbnlLabel.++%0D%0A+%3Fdbnl+owl%3AsameAs+%3Fnta+.%0D%0A+%3Fnta+schema%3AmainEntityOfPage%2Fschema%3AisPartOf+<http%3A%2F%2Fdata.bibliotheken.nl%2Fid%2Fdataset%2Fpersons>+.%0D%0A+%3Fnta+rdfs%3Alabel+%3FntaLabel.+++%0D%0A+%3Fnta+schema%3AsameAs+%3Fwikidata+.%0D%0A+FILTER(regex(%3Fwikidata%2C+'wikidata'%2C+'i'))%0D%0A}+LIMIT+1000&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+)
 ```sparql
 # Which DBNLa authors have a link to Wikidata?
@@ -205,7 +205,6 @@ WHERE {
  }
 } 
 ```
-
 Checks:
 - P18 (image): http://commons.wikimedia.org/wiki/Special:FilePath/Achiel%20Van%20Acker1.jpg
 - P69 (educated at): http://www.wikidata.org/entity/Q500740
