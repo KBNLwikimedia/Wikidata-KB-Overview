@@ -7,7 +7,9 @@
 
 *An overview of how Wikidata is used by/in/for the KB, national library of the Netherlands* 
 
-This page is a textual summary of the course *Verdieping: Wikidata & de KB* for employeees of KB, national library of the Netherlands on 14 November 2023, 15:00-16:15. (include front page of slidedeck)
+<image src="images/VerdiepingWikidataEnKB_14Nov2023 - openingslide.png" width="250" align="right"/>
+
+This page is a textual summary of the course *Verdieping: Wikidata & de KB* for employeees of [KB, national library of the Netherlands](https://www.kb.nl) on 14 November 2023, 15:00-16:15. 
 * The (rather long) full slidedeck (in Dutch) for this course is available on [Wikimedia Commons]() and [Zenodo]() as PDFs.
 * The two videos (in Dutch) of the course are on YouTube: [Part 1]() (covering blocks 1 & 2) and [Part 2]() (covering blocks 3 & 4)--> To add
 * A [full text transcript](/transcripts/xxx) of the course in Dutch is also available.
