@@ -47,29 +47,25 @@ Latest update: 15 November 2023
 
 ## Intro
 
-========================================
-Internal communication about this session
-* https://plein.kb.nl/calendar_events/8707
-* https://plein.kb.nl/thoughts/25719
+### Required basic knowledge about Wikidata
+See the course *Wegwijzer in Wikidata* (Introduction to Wikidata), June 6, 2023 (in Dutch)
+* Slides on [Zenodo](https://zenodo.org/record/8006441) and [Wikimedia Commons](https://commons.wikimedia.org/w/index.php?title=File:Wegwijzer_in_Wikidata,_Introductiecurus_Wikidata_-_Koninklijke_Bibliotheek,_6_juni_2023.pdf)  (PDF)
+* [Textual summary in Dutch](https://commons.wikimedia.org/w/index.php?title=File:Wegwijzer_in_Wikidata,_Introductiecurus_Wikidata_-_Koninklijke_Bibliotheek,_6_juni_2023.pdf&page=141) (PDF)
+* Textual summary in English: To add to dedicated Github repo
 
-Required basic knowledge about Wikidata: Introduction course Guide to Wikidata, June 6, 2023
-* https://zenodo.org/record/8006441
-* https://commons.wikimedia.org/wiki/File:Wegwijzer_in_Wikidata,_Introductioncurus_Wikidata_-_Koninklijke_Bibliotheek,_6_juni_2023.pdf
-
-=======================================
-Objective of the course: To provide more understanding about
+### Objective
+To provide more understanding about
 1. Why we at KB use Wikidata
 2. How we use Wikidata for our thesauri & heritage
 3. What added value this brings us
 
-What do we do?
-BLOCK 1) What does Wikidata add for the KB?
-BLOCK 2) Wikidata & KB thesauri (NTA + DBNLa)
-BLOCK 3) Intermezzo: Linking Wikimedia Commons with Wikidata
-BLOCK 4) Wikidata & KB heritage collections
+### Layout
+* BLOCK 1) [What does Wikidata add for the KB?](#block-1---what-does-wikidata-add-for-the-kb)
+* BLOCK 2) [Wikidata & KB thesauri (NTA + DBNLa)](#block-2---wikidata--kb-thesauri-nta--dbnla)
+* BLOCK 3) [Intermezzo: Linking Wikimedia Commons with Wikidata](#block-3---intermezzo-linking-wikimedia-commons-with-wikidata)
+* BLOCK 4) [Wikidata & KB heritage collections](#block-4---wikidata--kb-heritage-collections)
 
-
-## BLOCK 1) What does Wikidata add for the KB?
+## BLOCK 1 - What does Wikidata add for the KB?
 Captain Obvious mode: Be findable in Google - Be present on Facebook - Be present on Instagram - Be present on YouTube - Be present on Twitter. Summary (open door): Be present on the large (web-scale) platforms
 
 So also open doors:
@@ -110,286 +106,285 @@ Added value: What does Wikidata add for the KB?
 - Strengthening cooperation with KB network partners via Wikidata/media
 
 
-## BLOK 2) Wikidata & KB-thesauri (NTA + DBNLa)
-KB-datasets (thesauri): http://data.bibliotheken.nl/ 
+## BLOCK 2 - Wikidata & KB thesauri (NTA + DBNLa)
+KB datasets (thesauri): http://data.bibliotheek.nl/
 
-Critaria geschiktheid KB-thesauri voor Wikidata
-- Personen (auteurs) zijn op Wikidata gewilder dan bv. trefwoorden of organisaties --> NTA + DBNLa zijn nuttiger dan Brinkman of GTT
-- NTA is internationaal de enige grote gezaghebbende dataset over ‘Nederlandse auteurs’ --> NTA nuttig voor Wikidata (in internationale context)
-- Platte/eenvoudige data is geschikter dan gelaagde/complexe data --> Personen zijn makkelijker aan Wikidata toe te voegen dan titels (WEMI = lastig)
-- Kleine datasets zijn makkelijker dan grote --> Alba amicorum en Centsprenten zijn geschikt voor Wikidata
+Criteria for suitability of KB thesauri for Wikidata
+- Persons (authors) are more popular on Wikidata than, for example, keywords or organizations --> NTA + DBNLa are more useful than Brinkman or GTT
+- NTA is internationally the only major authoritative dataset on 'Dutch authors' --> NTA useful for Wikidata (in an international context)
+- Flat/simple data is more suitable than layered/complex data --> People are easier to add to Wikidata than titles (WEMI = difficult)
+- Small datasets are easier than large ones --> Alba amicorum and Centsprenten are suitable for Wikidata
 
-Ergo: Focus op NTA en DBNLauteurs v.w.b. de KB thesauri-Wikidata-activiteiten
+Ergo: Focus on NTA and DBNL authors with regard to the KB thesauri-Wikidata activities
 
-Wikidata in de NTA
+Wikidata in the NTA
 
-Personen in de NTA met een Wikidata-URI: 
-- Bv. Darlene Dixon : http://data.bibliotheken.nl/doc/thes/p208140131  --> schema:sameAs --> http://www.wikidata.org/entity/Q88505402
-- Alle personen: http://data.bibliotheken.nl/sparql?default-graph-uri=&qtxt=%23+Welke+NTA-items+bevatten+een+Wikidata-link%3F%0D%0A%0D%0ASELECT+*+WHERE+{%0D%0A+%3Fnta+schema%3AmainEntityOfPage%2Fschema%3AisPartOf+%3Chttp%3A%2F%2Fdata.bibliotheken.nl%2Fid%2Fdataset%2Fpersons%3E+.%0D%0A+%3Fnta+rdfs%3Alabel+%3FntaLabel.++%0D%0A+%3Fnta+schema%3AsameAs+%3Fwikidata+.%0D%0AFILTER(regex(%3Fwikidata%2C+%27wikidata%27%2C+%27i%27))%0D%0A}+LIMIT+1000&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
-- 499K v/d 2.75M NTA-items hebben een Wikidata-link (bron= https://nl.wikipedia.org/wiki/Wikipedia:GLAM/Koninklijke_Bibliotheek_en_Nationaal_Archief/Resultaten/KPIs/KPI10#Historische_ontwikkeling_van_KPI_10)
+Persons in the NTA with a Wikidata URI:
+- Eg. Darlene Dixon : http://data.bibliotheek.nl/doc/thes/p208140131 --> schema:sameAs --> http://www.wikidata.org/entity/Q88505402
+- All persons: http://data.bibliotheek.nl/sparql?default-graph-uri=&qtxt=%23+Welke+NTA-items+bevatten+een+Wikidata-link%3F%0D%0A%0D%0ASELECT+ *+WHERE+{%0D%0A+%3Fnta+schema%3AmainEntityOfPage%2Fschema%3AisPartOf+%3Chttp%3A%2F%2Fdata.bibliotheek.nl%2Fid%2Fdataset%2Fpersons%3E+.%0D%0A+%3Fnta+rdfs%3Alabel+% 3FntaLabel.++%0D%0A+%3Fnta+schema%3AsameAs+%3Fwikidata+.%0D%0AFILTER(regex(%3Fwikidata%2C+%27wikidata%27%2C+%27i%27))%0D%0A}+LIMIT+1000&format= text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+- 499K of 2.75M NTA items have a Wikidata link (source= https://nl.wikipedia.org/wiki/Wikipedia:GLAM/Koninklijke_Bibliotheek_en_Nationaal_Archief/Resultaten/KPIs/KPI10#Historische_ontwikkeling_van_KPI_10)
+  
+Persons in DBNLa with Wikidata URI (via the NTA)
+- E.g. HansAarsman (1951-): http://data.bibliotheek.nl/id/dbnla/aars001 --> owl:sameAs --> http://data.bibliotheek.nl/id/thes/p068680937 --> schema:sameAs --> http://www.wikidata.org/entity/Q325922
+- All persons: http://data.bibliotheek.nl/sparql?default-graph-uri=&qtxt=%23+Welke+DBNLa-items+bevatten+een+link+naar+Wikidata%3F%0D%0ASELECT+*+ %0D%0AWHERE+{%0D%0A+%3Fdbnl+schema%3AmainEntityOfPage%2Fschema%3AisPartOf+%3Chttp%3A%2F%2Fdata.bibliotheek.nl%2Fid%2Fdataset%2Fdbnla%3E+.%0D%0A+%3Fdbnl+rdfs%3Alabel+ %3FdbnlLabel.++%0D%0A+%3Fdbnl+owl%3AsameAs+%3Fnta+.%0D%0A+%3Fnta+schema%3AmainEntityOfPage%2Fschema%3AisPartOf+%3Chttp%3A%2F%2Fdata.bibliotheek.nl%2Fid%2Fdataset%2Fpersons %3E+.%0D%0A+%3Fnta+rdfs%3Alabel+%3FntaLabel.+++%0D%0A+%3Fnta+scheme%3AsameAs+%3Fwikidata+.%0D%0A+FILTER(regex(%3Fwikidata%2C+%27wikidata%27% 2C+%27i%27))%0D%0A}+LIMIT+1000&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
+- 14.5K of 109K DBNLa items have a Wikidata link (source= https://nl.wikipedia.org/wiki/Wikipedia:GLAM/Koninklijke_Bibliotheek_en_Nationaal_Archief/Resultaten/KPIs/KPI10#Historische_ontwikkeling_van_KPI_10)
 
-Personen in DBNLa met Wikidata-URI (via de NTA)
-- Bv  HansAarsman (1951-): http://data.bibliotheken.nl/id/dbnla/aars001 -->  owl:sameAs --> http://data.bibliotheken.nl/id/thes/p068680937 --> schema:sameAs --> http://www.wikidata.org/entity/Q325922 
-- Alle personen: http://data.bibliotheken.nl/sparql?default-graph-uri=&qtxt=%23+Welke+DBNLa-items+bevatten+een+link+naar+Wikidata%3F%0D%0ASELECT+*+%0D%0AWHERE+{%0D%0A+%3Fdbnl+schema%3AmainEntityOfPage%2Fschema%3AisPartOf+%3Chttp%3A%2F%2Fdata.bibliotheken.nl%2Fid%2Fdataset%2Fdbnla%3E+.%0D%0A+%3Fdbnl+rdfs%3Alabel+%3FdbnlLabel.++%0D%0A+%3Fdbnl+owl%3AsameAs+%3Fnta+.%0D%0A+%3Fnta+schema%3AmainEntityOfPage%2Fschema%3AisPartOf+%3Chttp%3A%2F%2Fdata.bibliotheken.nl%2Fid%2Fdataset%2Fpersons%3E+.%0D%0A+%3Fnta+rdfs%3Alabel+%3FntaLabel.+++%0D%0A+%3Fnta+schema%3AsameAs+%3Fwikidata+.%0D%0A+FILTER(regex(%3Fwikidata%2C+%27wikidata%27%2C+%27i%27))%0D%0A}+LIMIT+1000&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
-- 14.5K v/d 109K DBNLa-items hebben een Wikidata-link (bron= https://nl.wikipedia.org/wiki/Wikipedia:GLAM/Koninklijke_Bibliotheek_en_Nationaal_Archief/Resultaten/KPIs/KPI10#Historische_ontwikkeling_van_KPI_10)
-
-Achille Van Acker 
-- In de DBNL: http://data.bibliotheken.nl/doc/dbnla/acke001 
-- In Wikidata: http://www.wikidata.org/entity/Q14997 
-Aanvullende data over 'acke001' uit Wikidata ophalen. We willen de volgende gegevens ophalen: 
-- Image: https://www.wikidata.org/wiki/Property:P18 
+Achille VanAcker
+- In the DBNL: http://data.bibliotheek.nl/doc/dbnla/acke001
+- In Wikidata: http://www.wikidata.org/entity/Q14997
+Get additional data about 'acke001' from Wikidata. We want to retrieve the following data:
+- Image: https://www.wikidata.org/wiki/Property:P18
 - Educated at: https://www.wikidata.org/wiki/Property:P69
 - Member of political party: https://www.wikidata.org/wiki/Property:P102
-SPARQL: 
-http://data.bibliotheken.nl/sparql?default-graph-uri=&qtxt=%23+Aanvullende+gegevens+over+DBNL-auteur+%27acke001%27+uit+Wikidata+ophalen%0D%0APREFIX+wdt%3A+%3Chttp%3A%2F%2Fwww.wikidata.org%2Fprop%2Fdirect%2F%3E%0D%0ASELECT+*+%0D%0AWHERE+{%0D%0A+%3Fdbnl+schema%3AmainEntityOfPage%2Fowl%3AsameAs++%3Chttp%3A%2F%2Fdata.bibliotheken.nl%2Fdoc%2Fdbnla%2Facke001%3E+.%0D%0A+%3Fdbnl+rdfs%3Alabel+%3FdbnlLabel.++%0D%0A+%3Fdbnl+owl%3AsameAs+%3Fnta+.%0D%0A+%3Fnta+schema%3AmainEntityOfPage%2Fschema%3AisPartOf+%3Chttp%3A%2F%2Fdata.bibliotheken.nl%2Fid%2Fdataset%2Fpersons%3E+.%0D%0A+%3Fnta+rdfs%3Alabel+%3FntaLabel.+++%0D%0A+%3Fnta+schema%3AsameAs+%3Fwikidata+.%0D%0A+FILTER(regex(%3Fwikidata%2C+%27wikidata%27%2C+%27i%27))%0D%0A%0D%0A+SERVICE+%3Chttps%3A%2F%2Fquery.wikidata.org%2Fsparql%3E+{%0D%0A+++%3Fwikidata+wdt%3AP18+%3FimageURL.+%23P18+%3D+image%0D%0A+++%3Fwikidata+wdt%3AP69+%3FedcucatedAt.+%23P69+%3D+educated+at%0D%0A+++%3Fwikidata+wdt%3AP102+%3FMemberOfPoliticalParty.+%23P102+%3D+member+of+political+party%0D%0A%0D%0A+}%0D%0A}+&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+
-Checks: 
-- P18 (image): http://commons.wikimedia.org/wiki/Special:FilePath/Achiel%20Van%20Acker1.jpg 
-- P69 (educated at): http://www.wikidata.org/entity/Q500740 
-- P102 (member of political party): http://www.wikidata.org/entity/Q2532509 
+SPARQL:
+http://data.bibliotheek.nl/sparql?default-graph-uri=&qtxt=%23+Supplementary+data+about+DBNL-author+%27acke001%27+uit+Wikidata+ophalen%0D%0APREFIX+wdt%3A+ %3Chttp%3A%2F%2Fwww.wikidata.org%2Fprop%2Fdirect%2F%3E%0D%0ASELECT+*+%0D%0AWHERE+{%0D%0A+%3Fdbnl+schema%3AmainEntityOfPage%2Fowl%3AsameAs++%3Chttp%3A% 2F%2Fdata.bibliotheek.nl%2Fdoc%2Fdbnla%2Facke001%3E+.%0D%0A+%3Fdbnl+rdfs%3Alabel+%3FdbnlLabel.++%0D%0A+%3Fdbnl+owl%3AsameAs+%3Fnta+.%0D%0A+%3Fnta +schema%3AmainEntityOfPage%2Fschema%3AisPartOf+%3Chttp%3A%2F%2Fdata.bibliotheek.nl%2Fid%2Fdataset%2Fpersons%3E+.%0D%0A+%3Fnta+rdfs%3Alabel+%3FntaLabel.+++%0D%0A+% 3Fnta+scheme%3AsameAs+%3Fwikidata+.%0D%0A+FILTER(regex(%3Fwikidata%2C+%27wikidata%27%2C+%27i%27))%0D%0A%0D%0A+SERVICE+%3Chttps%3A%2F% 2Fquery.wikidata.org%2Fsparql%3E+{%0D%0A+++%3Fwikidata+wdt%3AP18+%3FimageURL.+%23P18+%3D+image%0D%0A+++%3Fwikidata+wdt%3AP69+%3FedcucatedAt.+%23P69+%3D+educated +at%0D%0A+++%3Fwikidata+wdt%3AP102+%3FMemberOfPoliticalParty.+%23P102+%3D+member+of+political+party%0D%0A%0D%0A+}%0D%0A}+&format=text%2Fhtml&timeout=0&debug =on&run=+Run+Query+
+Checks:
+- P18 (image): http://commons.wikimedia.org/wiki/Special:FilePath/Achiel%20Van%20Acker1.jpg
+- P69 (educated at): http://www.wikidata.org/entity/Q500740
+- P102 (member of political party): http://www.wikidata.org/entity/Q2532509
 
-En nu de andere kant op: De NTA (en DBNLa) in Wikidata
+And now the other way: The NTA (and DBNLa) in Wikidata
 
-Harry Mulisch in Wikidata: https://www.wikidata.org/wiki/Q927 
-NTA in Wikidata: https://www.wikidata.org/wiki/Property:P1006 
-Harry Mulisch in de NTA: https://data.bibliotheken.nl/doc/thes/p06854796X 
+Harry Mulisch in Wikidata: https://www.wikidata.org/wiki/Q927
+NTA in Wikidata: https://www.wikidata.org/wiki/Property:P1006
+Harry Mulisch in the NTA: https://data.bibliotheek.nl/doc/thes/p06854796X
 
-Personen in Wikidata met een NTA-id: https://w.wiki/85Cs 
-Inzichten in het gebruik van P1006: https://www.wikidata.org/wiki/Property_talk:P1006 
-- Wikidata bevat 550K links naar de NTA: https://tinyurl.com/5bep7h8a
-- Kaart van geboorteplaatsen van mensen met een NTA-id: https://w.wiki/7rsT
-- Beroemde personen met een NTA-id: https://w.wiki/85si (beroemde personen hebben uitgebreide Wikidata-items)
+Persons in Wikidata with an NTA ID: https://w.wiki/85Cs
+Insights into using P1006: https://www.wikidata.org/wiki/Property_talk:P1006
+- Wikidata contains 550K links to the NTA: https://tinyurl.com/5bep7h8a
+- Map of birthplaces of people with an NTA ID: https://w.wiki/7rsT
+- Famous people with an NTA ID: https://w.wiki/85si (famous people have extensive Wikidata entries)
 
-P1006 en datakwaliteit
-Twee pagina’s geven inzicht in de datakwaliteit (en mogelijke verbeteringen) van zowel Wikidata als de NTA
+P1006 and data quality
+Two pages provide insight into the data quality (and possible improvements) of both Wikidata and the NTA
 
-1) Ontbrekende data in Wikidata: https://www.wikidata.org/wiki/Wikidata:Database_reports/Humans_with_missing_claims/P1006
-- Mensen die voorkomen in de NTA van wie geboorteplaats/datum in Wikidata ontbreekt: https://www.wikidata.org/wiki/Wikidata:Database_reports/Humans_with_missing_claims/P1006#Missing_date_of_birth_(P569)
-- Vanuit de NTA kunnen de ontbrekende geboortedata mogelijk aan Wikidata worden toegevoegd
+1) Missing data in Wikidata: https://www.wikidata.org/wiki/Wikidata:Database_reports/Humans_with_missing_claims/P1006
+- People listed in the NTA whose place of birth/date is missing in Wikidata: https://www.wikidata.org/wiki/Wikidata:Database_reports/Humans_with_missing_claims/P1006#Missing_date_of_birth_(P569)
+- The missing dates of birth may be added to Wikidata from the NTA
 
-2) Afwijkende data in Wikidata: https://www.wikidata.org/wiki/Wikidata:Database_reports/Constraint_violations/P1006 
-Deze pagina rapporteert afwijkingen en mogelijke fouten in Wikidata en de NTA 
+2) Deviating data in Wikidata: https://www.wikidata.org/wiki/Wikidata:Database_reports/Constraint_violations/P1006
+This page reports deviations and possible errors in Wikidata and the NTA
 
-a- Ontbrekende Nederlandstalige labels
+a- Missing Dutch labels
 -- https://www.wikidata.org/wiki/Wikidata:Database_reports/Constraint_violations/P1006#%22Label_in_'nl'_language%22_violations
 -- Via SPARQL: https://w.wiki/85xT
--- Bv: Anna Bhau Sathe, https://www.wikidata.org/wiki/Q55759 --> NL label ontbreekt
--- Vanuit de NTA kan het ontbrekende NL label worden toegevoegd
+-- E.g.: Anna Bhau Sathe, https://www.wikidata.org/wiki/Q55759 --> NL label is missing
+-- The missing NL label can be added from the NTA
 
-b- Zelfde NTA-id komt voor in meerdere Q-items: 
--- https://www.wikidata.org/wiki/Wikidata:Database_reports/Constraint_violations/P1006#Unique_value 
--- Via SPARQL: https://w.wiki/85zm 
--- Bv: Andreas Kaiser, https://data.bibliotheken.nl/doc/thes/p068685564 --> https://www.wikidata.org/wiki/Q498631 (fout) + https://www.wikidata.org/wiki/Q106361537 (goed)
--- https://www.wikidata.org/wiki/Q498631 moet een andere waarde bij P1006 krijgen
+b- The same NTA ID appears in multiple Q items:
+-- https://www.wikidata.org/wiki/Wikidata:Database_reports/Constraint_violations/P1006#Unique_value
+-- Via SPARQL: https://w.wiki/85zm
+-- E.g.: Andreas Kaiser, https://data.bibliotheek.nl/doc/thes/p068685564 --> https://www.wikidata.org/wiki/Q498631 (error) + https://www.wikidata. org/wiki/Q106361537 (good)
+-- https://www.wikidata.org/wiki/Q498631 should get a different value at P1006
 
-c- Eén Wikidata-item met meerdere NTA-ids: 
--- https://www.wikidata.org/wiki/Wikidata:Database_reports/Constraint_violations/P1006#Single_value 
--- Via SPARQL: https://w.wiki/85$o 
--- Bv. Douglas Adams, https://www.wikidata.org/wiki/Q42#P1006 --> http://data.bibliotheken.nl/doc/thes/p339433876 + http://data.bibliotheken.nl/doc/thes/p068744307 
--- Deze zijn vrijwel identiek, overweeg samenvoeging in de NTA
+c- One Wikidata item with multiple NTA IDs:
+-- https://www.wikidata.org/wiki/Wikidata:Database_reports/Constraint_violations/P1006#Single_value
+-- Via SPARQL: https://w.wiki/85$o
+-- E.g. Douglas Adams, https://www.wikidata.org/wiki/Q42#P1006 --> http://data.bibliotheek.nl/doc/thes/p339433876 + http://data.bibliotheek.nl/doc/thes /p068744307
+-- These are almost identical, consider merging into the NTA
 
-Samenvattend: door het integreren van NTA-data in Wikidata krijgen we een hoop nieuwe functionaliteiten m.b.t. datakwaliteit, -verbindingen en -visualisatie die we niet via onze eigen KB-LOD dienst data.bibliotheken.nl (kunnen) aanbieden! 
+In summary: by integrating NTA data into Wikidata we get a lot of new functionalities regarding data quality, connections and visualization that we cannot offer via our own KB-LOD service data.bibliotheek.nl!
 
-Theo van Veen, Wikidata als gemeenschappelijke thesaurus?, IP, Vakblad voor informatieprofessionals, oktober 2016, nr. 07
+Theo van Veen, Wikidata as a common thesaurus?, IP, Trade Journal for Information Professionals, October 2016, no. 07
 - https://informatieprofessional.nl/resources/uploads/2016/10/IP2016-07.pdf
-- https://web.archive.org/web/20221028121446/https://informatieprofessional.nl/resources/uploads/2016/10/IP2016-07.pdf 
+- https://web.archive.org/web/20221028121446/https://informatieprofessional.nl/resources/uploads/2016/10/IP2016-07.pdf
 
-WikiProject Dutch National Thesaurus for Author Names: https://www.wikidata.org/wiki/Wikidata:WikiProject_Dutch_National_Thesaurus_for_Author_Names 
+WikiProject Dutch National Thesaurus for Author Names: https://www.wikidata.org/wiki/Wikidata:WikiProject_Dutch_National_Thesaurus_for_Author_Names
 
-Gebruik NTA-ids in Wikipedia-artikelen
-- Wikidata: Category:Articles with NTA identifiers - https://www.wikidata.org/wiki/Q47763687 
-- Engelstalige Wikipedia: 
--- 234K artikelen op WP:EN zijn voorzien van een NTA-id
--- https://en.wikipedia.org/wiki/Category:Articles_with_NTA_identifiers 
--- Bv. https://en.wikipedia.org/wiki/50_Cent --> http://data.bibliotheken.nl/id/thes/p262032139  
-- Turkse Wikidia
--- 25K artikelen op WP:TR zijn voorzien van een NTA-id
--- https://tr.wikipedia.org/wiki/Kategori:NTA_tan%C4%B1mlay%C4%B1c%C4%B1s%C4%B1_olan_Vikipedi_maddeleri 
-- Tjechische Wikipedia
--- 36K artikelen op WP:CS zijn voorzien van een NTA-id
--- https://cs.wikipedia.org/wiki/Kategorie:Monitoring:%C4%8Cl%C3%A1nky_s_identifik%C3%A1torem_NTA 
-- Japanse Wikipedia
--- 51K artikelen op WP:JA zijn voorzien van een NTA-id
--- https://ja.wikipedia.org/wiki/Category:NTA%E8%AD%98%E5%88%A5%E5%AD%90%E3%81%8C%E6%8C%87%E5%AE%9A%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E8%A8%98%E4%BA%8B 
-Samenvattend: via Wikidata wordt onze NTA als autoriteit in 100.000den Wikipedia-artikelen in vele talen gebruikt. (maar niet het Nederlands!)
+Use NTA IDs in Wikipedia articles
+- Wikidata: Category:Articles with NTA identifiers - https://www.wikidata.org/wiki/Q47763687
+- English Wikipedia:
+-- 234K articles on WP:EN have an NTA ID
+-- https://en.wikipedia.org/wiki/Category:Articles_with_NTA_identifiers
+-- E.g. https://en.wikipedia.org/wiki/50_Cent --> http://data.bibliotheek.nl/id/thes/p262032139
+- Turkish Wikidia
+-- 25K articles on WP:TR have an NTA ID
+-- https://tr.wikipedia.org/wiki/Kategori:NTA_tan%C4%B1mlay%C4%B1c%C4%B1s%C4%B1_olan_Vikipedi_maddeleri
+- Czech Wikipedia
+-- 36K articles on WP:CS have an NTA ID
+-- https://cs.wikipedia.org/wiki/Category:Monitoring:%C4%8Cl%C3%A1nky_s_identifik%C3%A1torem_NTA
+- Japanese Wikipedia
+-- 51K articles on WP:JA have an NTA ID
+-- https://ja.wikipedia.org/wiki/Category:NTA%E8%AD%98%E5%88%A5%E5%AD%90%E3%81%8C%E6%8C%87%E5% AE%9A%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E8%A8%98%E4%BA%8B
+In summary: via Wikidata our NTA is used as an authority in 100,000 Wikipedia articles in many languages. (but not Dutch!)
 
 DBNLa in Wikidata
-- Alles wat hierboven genoemd wordt voor de NTA geldt analoog voor de DBNLa
-- DBNLa in Wikidata: https://www.wikidata.org/wiki/Property:P723 
-- Personen in Wikidata met een DBNLa-id : https://w.wiki/869Y 
-- Inzichten in het gebruik van P723: https://www.wikidata.org/wiki/Property_talk:P723 
-- Wikidata bevat 31K links naar de DBNLa: https://www.wikidata.org/wiki/Property_talk:P723 (onderaan, 'Current uses')
-- Inzicht in de datakwaliteit (en mogelijke verbeteringen) van zowel Wikidata als de DBNLa
+- Everything mentioned above for the NTA applies analogously to the DBNLa
+- DBNLa in Wikidata: https://www.wikidata.org/wiki/Property:P723
+- Persons in Wikidata with a DBNLa ID: https://w.wiki/869Y
+- Insights into using P723: https://www.wikidata.org/wiki/Property_talk:P723
+- Wikidata contains 31K links to the DBNLa: https://www.wikidata.org/wiki/Property_talk:P723 (bottom, 'Current uses')
+- Insight into the data quality (and possible improvements) of both Wikidata and the DBNLa
 -- https://www.wikidata.org/wiki/Wikidata:Database_reports/Humans_with_missing_claims/P723
 -- https://www.wikidata.org/wiki/Wikidata:Database_reports/Constraint_violations/P723
 
-Gebruik van KB-identifiers in Wikidata, en v.v., zowel voor de NTa als de DBNLa: https://nl.wikipedia.org/wiki/Wikipedia:GLAM/Koninklijke_Bibliotheek_en_Nationaal_Archief/Resultaten/KPIs/KPI10 
+Use of KB identifiers in Wikidata, and v.v., both for the NTa and the DBNLa: https://nl.wikipedia.org/wiki/Wikipedia:GLAM/Koninklijke_Bibliotheek_en_Natieaal_Archief/Resultaten/KPIs/KPI10
 
-##BLOK 3) Intermezzo: Koppeling van Wikimedia Commons met Wikidata
+## BLOCK 3 - Intermezzo: Linking Wikimedia Commons with Wikidata
 
-De Sint Pancraskerk in Leiden heet nu de Hooglandse Kerk: https://commons.wikimedia.org/wiki/File:Atlas_de_Wit_1698-pl017-Leiden-St_Pancraskerk.jpg
+The Sint Pancras Church in Leiden is now called the Hooglandse Kerk: https://commons.wikimedia.org/wiki/File:Atlas_de_Wit_1698-pl017-Leiden-St_Pancraskerk.jpg
 
-Reguliere metadata
-- Manifeste tekstuele en visuele KB-bronvermeldingen
-- ‘Handmatige’ meertaligheid
-- Broncode = ongestructureerde metadata (vrije tekst) --> https://commons.wikimedia.org/w/index.php?title=File:Atlas_de_Wit_1698-pl017-Leiden-St_Pancraskerk.jpg&action=edit
+Regular metadata
+- Manifest textual and visual KB source references
+- 'Manual' multilingualism
+- Source code = unstructured metadata (free text) --> https://commons.wikimedia.org/w/index.php?title=File:Atlas_de_Wit_1698-pl017-Leiden-St_Pancraskerk.jpg&action=edit
 
 Structured Data on Commons 
 - is a project to add multilingual structured information from Wikidata to files on Wikimedia Commons that can be understood by humans, with enough consistency that it can also be uniformly processed by machines. 
 - https://commons.wikimedia.org/wiki/Commons:Structured_data
 
-Gestructureerde metadata bij afbeeldingen op Commons
-- Afbeelding wordt gekoppeld met Wikidata 
-- Voorzien van echte gestructureerde (en dus machineleesbare) data
-- Linked open data voor Commons-bestanden
+Structured metadata for images on Commons
+- Image is linked to Wikidata
+- Provided with real structured (and therefore machine-readable) data
+- Linked open data for Commons files
 
-Niet alleen voor afbeeldingen, maar ook bv PDFs: https://commons.wikimedia.org/wiki/File:OpenRefine-Wikidata_introduction_workshop_-_Koninklijke_Bibliotheek,_4_juli_2023.pdf
+Not only for images, but also for example PDFs: https://commons.wikimedia.org/wiki/File:OpenRefine-Wikidata_introduction_workshop_-_Koninklijke_Bibliotheek,_4_juli_2023.pdf
 
-Meerwaarde voor KB
-- Gestructureerde 5* LOD metadata bij meer dan 30.000 KB-mediabestanden in https://commons.wikimedia.org/wiki/Category:Media_contributed_by_Koninklijke_Bibliotheek 
-- KB-bestanden worden onderdeel van de LOD-cloud, en worden via SPARQL doorzoekbaar.
-	
-SPARQL queries met KB-bestanden
-- Alle bestanden uit de KB-collectie: https://w.wiki/7zh5. - Collectie (P195) = Koninklijke Bibliotheek (Q1526131)
-- PDF-bestanden van de KB: https://w.wiki/7zhm - MIME-type (P1163) = “application/pdf”
-- Afbeeldingen van Album amicorum van Jacobus Heyblocq: https://w.wiki/7zjb
+Added value for KB
+- Structured 5* LOD metadata for more than 30,000 KB media files in https://commons.wikimedia.org/wiki/Category:Media_contributed_by_Koninklijke_Bibliotheek
+- KB files become part of the LOD cloud and become searchable via SPARQL.
 
-Wat is er op KB-afbeeldingen te zien??
+SPARQL queries with KB files
+- All files from the KB collection: https://w.wiki/7zh5. - Collection (P195) = Royal Library (Q1526131)
+- PDF files from the KB: https://w.wiki/7zhm - MIME type (P1163) = “application/pdf”
+- Images from Album amicorum by Jacobus Heyblocq: https://w.wiki/7zjb
+
+What can be seen on KB images?
 - https://commons.wikimedia.org/wiki/Commons:Depicts
-- Wat is er op deze afbeelding te zien, getagd m.b.v. Wikidata-items
-- Dingen afgebeeld op de plaat "Hooglandse kerk" in Atlas De Wit 1698 (https://commons.wikimedia.org/wiki/File:Atlas_de_Wit_1698-pl017-Leiden-St_Pancraskerk.jpg): Hooglandse Kerk (Q1537970) - paard (Q726) - hond (Q144) - klok (Q376) - volk (Q2472587) - wolk (Q8074) - rijtuig (Q235356) - trapgevel (Q1939660) - boom (Q10884) - wandelstok (Q1347864) - De Burcht (Q18813071) - vrouw (Q467) - kind (Q7569) - deur (Q36794) - hoed (Q80151) - windhaan (Q2157687) - glas-in-loodraam (Q488094)
-- Afgebeelde dingen op de plaat "Hooglandse kerk" in Atlas De Wit 1698 (M32246848) via SPARQL opvragen: https://w.wiki/7zps 
-- Afgebeelde dingen in heel Atlas de Wit (https://commons.wikimedia.org/wiki/Category:Atlas_de_Wit_1698) via SPARQL opvragen: https://w.wiki/7zqj 
+- What can be seen in this image, tagged using Wikidata entries
+- Things depicted on the plate "Hooglandse kerk" in Atlas De Wit 1698 (https://commons.wikimedia.org/wiki/File:Atlas_de_Wit_1698-pl017-Leiden-St_Pancraskerk.jpg): Hooglandse Kerk (Q1537970) - horse (Q726 ) - dog (Q144) - clock (Q376) - people (Q2472587) - cloud (Q8074) - carriage (Q235356) - stepped gable (Q1939660) - tree (Q10884) - walking stick (Q1347864) - The Castle (Q18813071) - woman ( Q467) - child (Q7569) - door (Q36794) - hat (Q80151) - weathercock (Q2157687) - stained glass window (Q488094)
+- Request images depicted on the plate "Hooglandse kerk" in Atlas De Wit 1698 (M32246848) via SPARQL: https://w.wiki/7zps
+- Depicted things throughout Atlas de Wit (https://commons.wikimedia.org/wiki/Category:Atlas_de_Wit_1698) via SPARQL: https://w.wiki/7zqj
 
-Even samenvatten: KB-beelden op Commons zijn dus op 3 manieren doorzoekbaar 
-1) Reguliere metadata (vrije tekst)
-2) Gestructureerde metadata
-3) Op inhoud (Wat is er op KB-afbeelding te zien?)
+Let's summarize: KB images on Commons are searchable in 3 ways
+1) Regular metadata (free text)
+2) Structured metadata
+3) By content (What is depicted in the KB images?)
 
-De (superhandige!) tool Hay’s Structured Search biedt alle drie de opties: 
-- Visuele, meertalige zoekmachine om afbeeldingen met (en zonder) gestructureerde data in Wikimedia Commons te vinden
-- https://hay.toolforge.org/sdsearch/ 
+The (super handy!) tool Hay's Structured Search offers all three options:
+- Visual, multilingual search engine to find images with (and without) structured data in Wikimedia Commons
+- https://hay.toolforge.org/sdsearch/
 
-- Alle KB-beelden, met én zonder gestructureerde data (30.617 beelden in https://commons.wikimedia.org/wiki/Category:Media_contributed_by_Koninklijke_Bibliotheek)
--- Zoeken in het Engels
--- https://hay.toolforge.org/sdsearch/#q=incategory:%22Media%20contributed%20by%20Koninklijke%20Bibliotheek%22
+- All KB images, with and without structured data (30,617 images in https://commons.wikimedia.org/wiki/Category:Media_contributed_by_Koninklijke_Bibliotheek)
+-- Search in English
+-- https://hay.toolforge.org/sdsearch/#q=incategory:%22Media%20contributed%20by%20Koninklijke%20Library%22
 
-- KB-beelden, waarop iets afgebeeld is
--- Zoeken in het Nederlands
--- https://hay.toolforge.org/sdsearch/#q=incategory:%22Media%20contributed%20by%20Koninklijke%20Bibliotheek%22%20haswbstatement:P180
--- 19.764 v/d 30.167 beelden (66%)
+- KB images on which something is depicted
+-- Search in Dutch
+-- https://hay.toolforge.org/sdsearch/#q=incategory:%22Media%20contributed%20by%20Koninklijke%20Library%22%20haswbstatement:P180
+-- 19,764 out of 30,167 images (66%)
 
-- KB-beelden, waarop honden zijn afgebeeld
--- Zoeken in het Nederlands
--- https://hay.toolforge.org/sdsearch/#q=incategory:%22Media%20contributed%20by%20Koninklijke%20Bibliotheek%22%20haswbstatement:P180=Q144
+- KB images, depicting dogs
+-- Search in Dutch
+-- https://hay.toolforge.org/sdsearch/#q=incategory:%22Media%20contributed%20by%20Koninklijke%20Library%22%20haswbstatement:P180=Q144
  
-- Steden aan de Zuiderzee
--- https://hay.toolforge.org/sdsearch/#q=incategory:%22Media%20contributed%20by%20Koninklijke%20Bibliotheek%22%20haswbstatement:P180=Q228655%20-incategory:%22Visboeck%20Coenen%22%20-incategory:%22Visboeck%20Coenen%20(openings)%22%20-incategory:%22Catchpenny%20prints%20from%20Koninklijke%20Bibliotheek%22 
+- Town on the Zuiderzee
+-- https://hay.toolforge.org/sdsearch/#q=incategory:%22Media%20contributed%20by%20Koninklijke%20Library%22%20haswbstatement:P180=Q228655%20-incategory:%22Visboeck%20Coenen%22%20 -incategory:%22Visboeck%20Coenen%20(opening)%22%20-incategory:%22Catchpenny%20prints%20from%20Royal%20Library%22
 
-- Miniaturen uit Der Naturen Bloeme waarop vissen staan
--- https://hay.toolforge.org/sdsearch/#q=incategory:%22Miniatures%20from%20Der%20naturen%20bloeme%20-%20KB%20KA%2016%22%20haswbstatement:P180=Q152 
--- https://commons.wikimedia.org/wiki/Category:Miniatures_from_Der_naturen_bloeme_-_KB_KA_16 
+- Miniatures from Der Naturen Bloeme showing fish
+-- https://hay.toolforge.org/sdsearch/#q=incategory:%22Miniatures%20from%20Der%20naturen%20bloeme%20-%20KB%20KA%2016%22%20haswbstatement:P180=Q152
+-- https://commons.wikimedia.org/wiki/Category:Miniatures_from_Der_naturen_bloeme_-_KB_KA_16
 
-- Beelden uit Atlas de Wit, waarop een brug staat
+- Images from Atlas de Wit, showing a bridge
 -- https://hay.toolforge.org/sdsearch/#q=incategory:%22Atlas%20de%20Wit%201698%22%20haswbstatement:P180=Q12280
--- https://commons.wikimedia.org/wiki/Category:Atlas_de_Wit_1698  
+-- https://commons.wikimedia.org/wiki/Category:Atlas_de_Wit_1698
 
-- Beelden uit Atlas de Wit waarop een 'igreja' (kerkgebouw) staat
--- Zoeken in het Portugees
--- igreja = kerkgebouw in het Portugees
+- Images from Atlas de Wit showing an 'igreja' (church building).
+-- Search in Portuguese
+-- igreja = church building in Portuguese
 -- https://hay.toolforge.org/sdsearch/#offset=0&q=incategory:%22Atlas%20de%20Wit%201698%22%20haswbstatement:P180=Q16970
--- https://commons.wikimedia.org/wiki/Category:Atlas_de_Wit_1698  
+-- https://commons.wikimedia.org/wiki/Category:Atlas_de_Wit_1698
 
-- Beelden waarop zowel 'église' (kerkgebouw) als 'chien' (hond) staan
--- Zoeken in het Frans
+- Statues showing both 'église' (church building) and 'chien' (dog).
+-- Search in French
 -- https://hay.toolforge.org/sdsearch/#q=incategory:%22Atlas%20de%20Wit%201698%22%20haswbstatement:P180=Q16970%20haswbstatement:P180=Q144
--- https://commons.wikimedia.org/wiki/Category:Atlas_de_Wit_1698 
--- Beeldt af : Kerkgebouw + Beeldt af : Hond
--- Taalonafhankelijk zoeken naar afgebeelde dingen in Atlas De Wit
+-- https://commons.wikimedia.org/wiki/Category:Atlas_de_Wit_1698
+-- Depicts: Church building + Depicts: Dog
+-- Language-independent search for depicted things in Atlas De Wit
 
-Samenvattend: Getoonde zoekfunctionaliteiten (SPARQL, gestructureerd, meertalig zoeken, op inhoud) zijn veel geavanceerder dan in onze eigen KB-(beeld)diensten!
+In summary: The search functionalities shown (SPARQL, structured, multilingual search, by content) are much more advanced than in our own KB (image) services!
 
-Wil je zelf Depicts-tags aan KB-beelden toevoegen?
-- https://commons.wikimedia.org/wiki/File:Instructie_KB-beelden_op_Commons_taggen_met_Wikidata_-_26032020.pdf
-- https://zenodo.org/record/7777755 
-- Deze handleiding (2020) legt stap voor stap uit hoe je afbeeldingen uit de KB-collectie beter vindbaar, zichtbaar en herbruikbaar maakt door aan te geven (taggen) welke dingen (entiteiten) er te zien zijn op die afbeeldingen. 
-- Resultaten dd 1-11-2023
--- 30.617 KB-collectiebeelden op Commons - https://commons.wikimedia.org/wiki/Category:Media_contributed_by_Koninklijke_Bibliotheek
--- 19.764 beelden waarop iets getagd is (te zien is) - https://hay.toolforge.org/sdsearch/#q=incategory:%22Media%20contributed%20by%20Koninklijke%20Bibliotheek%22%20haswbstatement:P180
--- KB-tagkampioene: Madeleine van den Berg ? 34K+ dingen toegevoegd - https://commons.wikimedia.org/w/index.php?title=Special%3AContributions&target=Madeleine+van+den+Berg&namespace=all&tagfilter=&start=&end=&limit=500  
+Do you want to add Depicts tags to KB images yourself?
+- https://commons.wikimedia.org/wiki/File:Instruction_KB-images_op_Commons_taggen_met_Wikidata_-_26032020.pdf
+- https://zenodo.org/record/7777755
+- This manual (2020) explains step by step how to make images from the KB collection more findable, visible and reusable by indicating (tagging) which things (entities) can be seen in those images.
+- Results dated 1-11-2023
+-- 30,617 KB collection images on Commons - https://commons.wikimedia.org/wiki/Category:Media_contributed_by_Koninklijke_Bibliotheek
+-- 19,764 images on which something is tagged (can be seen) - https://hay.toolforge.org/sdsearch/#q=incategory:%22Media%20contributed%20by%20Koninklijke%20Library%22%20haswbstatement:P180
+-- KB tag champion: Madeleine van den Berg ? 34K+ things added - https://commons.wikimedia.org/w/index.php?title=Special%3AContributions&target=Madeleine+van+den+Berg&namespace=all&tagfilter=&start=&end=&limit=500
 
-# BLOK 4) Wikidata & KB-erfgoedcollecties
+## BLOCK 4 - Wikidata & KB heritage collections
 
-Voorbeelden KB-erfgoedcollecties:Manuscripten - Atlassen - Wapenboeken - Vriendenboeken - Centsprenten - Kinderprentenboeken - Flora- en faunaboeken
+Examples of KB heritage collections: Manuscripts - Atlases - Coat of arms books - Friends books - Cent prints - Children's picture books - Flora and fauna books
 
-Criteria geschiktheid KB-erfgoed voor Wikidata
-- 1) Topstukken, canonieke objecten
-- 2) Rechtenvrije objecten (publiek domein)
-- 3) Beperkte collectieomvang
-- 4) Visueel rijke collecties
-- 5) Verbindbaar met andere dingen (personen, plaatsen, gebeurtenissen...)
-- 6) Collecties van gelijksoortige, unieke objecten (smalle, platte, goedgedefinieerd datamodel/klasse)
+Criteria for suitability of KB heritage for Wikidata
+- 1) Masterpieces, canonical objects
+- 2) Royalty-free objects (public domain)
+- 3) Limited collection size
+- 4) Visually rich collections
+- 5) Connectable to other things (persons, places, events...)
+- 6) Collections of similar, unique objects (narrow, flat, well-defined data model/class)
 
-WikiProject KB Topstukken (2020-heden)
-KB-Topstukken zijn onderdeel van ons nationale erfgoed, netzo als bv.
-- Plakkaat van Verlatinghe (Topstuk Nationaal Archief)
-- Victory Boogie Woogie (Topstuk Kunstmuseum Den Haag)
-- De Nachtwacht (Topstuk Rijksmuseum Amsterdam)
+WikiProject KB Top pieces (2020-present)
+KB masterpieces are part of our national heritage, just like e.g.
+- Placard of Abandonment (Top piece National Archives)
+- Victory Boogie Woogie (Top piece Art Museum The Hague)
+- The Night Watch (Top piece Rijksmuseum Amsterdam)
 
-Projectpagina WikiProject KB Topstukken: https://www.wikidata.org/wiki/Wikidata:WikiProject_Collection_highlights_National_Library_of_the_Netherlands
+Project page WikiProject KB Highlights: https://www.wikidata.org/wiki/Wikidata:WikiProject_Collection_highlights_National_Library_of_the_Netherlands
 
-Topstukken op (vorige) KB-website: https://www.kb.nl/galerij/digitale-topstukken
+Top pieces on (previous) KB website: https://www.kb.nl/gallery/digitale-topstuks
 
-Typische presentatie topstukken op kb.nl 
-- 1) Catalogusrecord --> Metadata
-- 2) Hi-res bladerboek --> Beelden
-- 3) Context-artikel --> Verhalen
+Typical presentation of masterpieces on kb.nl
+- 1) Catalog record --> Metadata
+- 2) Hi-res flip book --> Images
+- 3) Context article --> Stories
 
-Deze presentatie op kb.nl heeft beperkte functionaliteiten en hergebruiksmogelijkheden 
-Oude manier van denken: Topstukken (op kb.nl) zijn alleen om te lezen en bekijken --> Passief consumeren
-Meer uitleg in dit artikel: https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%201%2C%20Introduction.html
+This presentation on kb.nl has limited functionalities and reuse options
+Old way of thinking: Top pieces (on kb.nl) are only for reading and viewing --> Passive consumption
+More explanation in this article: https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%201%2C% 20Introduction.html
 
-Nieuwe manier van denken: KB-Topstukken zijn bouwstenen en nodigen uit tot actief creëren
-Bouwstenen voor tech community: Ontwikkelaars, app-bouwers, techbedrijven, AIs, digital humanities, data scientists, hackathons, LOD-wereld, NDE, Europeana etc.
+New way of thinking: KB Masterpieces are building blocks and invite active creation
+Building blocks for tech community: Developers, app builders, tech companies, AIs, digital humanities, data scientists, hackathons, LOD world, NDE, Europeana etc.
 
-KB Topstukken als doos Technisch LEGO
-Inhoud van de doos (The unboxing): 5* Linked Open Data - Automatische beeldherkenning (AI) - Semantic tagging - Datadumps & bulkdownloads - SPARQL - Afbeelding doorzoekbaar op inhoud - Datavisualisaties - Python - Machineleesbare data - Flexibele REST APIs - Manifeste juridische voorwaarden - IIIF - JSON, XML, CSV - Automatische meertaligheid - Externe LOD-identifiers
+KB Top pieces as a box Technical LEGO
+Contents of the box (The unboxing): 5* Linked Open Data - Automatic image recognition (AI) - Semantic tagging - Data dumps & bulk downloads - SPARQL - Image searchable by content - Data visualizations - Python - Machine-readable data - Flexible REST APIs - Manifest legal terms - IIIF - JSON, XML, CSV - Automatic Multilingualism - External LOD Identifiers
 
-Al deze bouwstenen zijn beschikbaar in de Wikimedia infrastructuur: Wikidata (metadata), Wikimedia Commons (beelden) en Wikipedia (verhalen) - en de bijbehorende internationale communities - bieden een samenhangende technische en sociale infrastructuur om onze Topstukken veel beter herbruikbaar te maken.
+All these building blocks are available in the Wikimedia infrastructure: Wikidata (metadata), Wikimedia Commons (images) and Wikipedia (stories) - and the associated international communities - provide a coherent technical and social infrastructure to make our masterpieces much more reusable.
 
-Wikificatie van onze Topstukken: https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%201%2C%20Introduction.html
+Wikification of our Top Pieces: https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%201%2C%20Introduction .html
 
-Bv a.d.h.v. Atlas Ortelius: 
-- 1) Catalogusrecord KB (https://opc-kb.oclc.org/DB=1/XMLPRS=Y/PPN?PPN=369376781) --> Metadata naar Wikidata (https://www.wikidata.org/wiki/Q67465742#P195 --> subject has role collection highlight)
-- 2) Hi-res bladerboek KB (https://galerij.kb.nl/kb.html#/nl/ortelius/page/59/zoom/2/lat/-72.28906720017673/lng/-30.585937499999996) --> Beelden naar Wikimedia Commons (https://commons.wikimedia.org/wiki/Atlas_Ortelius_1571)
-- 3) Context-artikel KB (https://www.kb.nl/ortelius) --> Verhaal op Wikipedia (https://nl.wikipedia.org/wiki/Theatrum_Orbis_Terrarum)
+E.g. Atlas Ortelius:
+- 1) Catalog record KB (https://opc-kb.oclc.org/DB=1/XMLPRS=Y/PPN?PPN=369376781) --> Metadata to Wikidata (https://www.wikidata.org/wiki /Q67465742#P195 --> subject has role collection highlight)
+- 2) Hi-res flip book KB (https://gallery.kb.nl/kb.html#/nl/ortelius/page/59/zoom/2/lat/-72.28906720017673/lng/-30.585937499999996) --> Images to Wikimedia Commons (https://commons.wikimedia.org/wiki/Atlas_Ortelius_1571)
+- 3) Context article KB (https://www.kb.nl/ortelius) --> Story on Wikipedia (https://nl.wikipedia.org/wiki/Theatrum_Orbis_Terrarum)
 
-Resultaat Topstukkenproject: Alle functionaliteiten & meerwaarden van de Wikimedia- infrastructuur zijn nu beschikbaar voor onze KB-Topstukken
+Result of the Masterpieces project: All functionalities & added values of the Wikimedia infrastructure are now available for our KB Masterpieces
 
-Het feest kan beginnen! Coole dingen bouwen!
-50 cool new things you can now do with KB’s collection highlights: https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/
+The party can start! Building cool things!
+50 cool new things you can do now with KB's collection highlights: https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights /
 
 By putting our collection highlights into Wikidata, Wikimedia Commons and Wikipedia, dozens of new functionalities have been added (LEGO box). As a result of Wikifying this collection in 2020, you can now do things with these highlights that were not possible before.
 
-50 cool new things: 
-- Part 2, Overviews of all highlights - new, handy & useful overviews for all highlights together: https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%202%2C%20Overviews%20of%20all%20highlights.html
-- Part 3, Overviews per highlight - new functionalities for individual highlights: https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%203%2C%20Overviews%20per%20highlight.html
-- Part 4, Images - new things you can do with our individual highlight images: https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%204%2C%20Images.html
-- Part 5, Reuse - some examples of programmatically reusing KB’s collection highlights: https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%205%2C%20Reuse.html
+50 cool new things:
+- Part 2, Overviews of all highlights - new, handy & useful overviews for all highlights together: https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with% 20the%20KB's%20collection%20highlights/Part%202%2C%20Overviews%20of%20all%20highlights.html
+- Part 3, Overviews per highlight - new functionalities for individual highlights: https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection% 20highlights/Part%203%2C%20Overviews%20per%20highlight.html
+- Part 4, Images - new things you can do with our individual highlight images: https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's %20collection%20highlights/Part%204%2C%20Images.html
+- Part 5, Reuse - some examples of programmatically reusing KB's collection highlights: https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection %20highlights/Part%205%2C%20Reuse.html
 
-Een paar voorbeelden: 
-- 1) Nieuwe functionaliteiten uit Blok 3, zie boven
-- 2) Galerij van KB-topstukken: https://nl.wikipedia.org/wiki/Wikipedia:GLAM/Koninklijke_Bibliotheek_en_Nationaal_Archief/Topstukken/Galerij
-- 3) Bij elk topstuk betrokken personen/rollen: https://www.wikidata.org/wiki/Wikidata:WikiProject_Collection_highlights_National_Library_of_the_Netherlands/Admin/Overview/People
-- 4) Bijdragers aan het Album Jacob Heyblocq
--- Smoelenboek: https://w.wiki/phx 
--- M/V-verdeling: https://w.wiki/F5J
--- Beroepenwolk: https://w.wiki/F5N
--- Levenduur tabel: https://w.wiki/qzx
-- 5) Werken van deze bijdragers in DBNL: https://w.wiki/3MLQ 
-- 6) Werken van deze bijdragers elders, via Europeana, als Excel: https://www.europeana.eu/en/collections/person/63198-govert-flinck + uitleg op https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%205%2C%20Reuse.html, Punt 48
+A few examples:
+- 1) New functionalities from Block 3, see above
+- 2) Gallery of KB masterpieces: https://nl.wikipedia.org/wiki/Wikipedia:GLAM/Koninklijke_Bibliotheek_en_Nationaal_Archief/Topstuks/Galerij
+- 3) Persons/roles involved in each masterpiece: https://www.wikidata.org/wiki/Wikidata:WikiProject_Collection_highlights_National_Library_of_the_Netherlands/Admin/Overview/People
+- 4) Contributors to the Album Jacob Heyblocq
+-- Face book: https://w.wiki/phx
+-- M/F distribution: https://w.wiki/F5J
+-- Occupation cloud: https://w.wiki/F5N
+-- Lifespan table: https://w.wiki/qzx
+- 5) Works by these contributors in DBNL: https://w.wiki/3MLQ
+- 6) Works by these contributors elsewhere, via Europeana, as Excel: https://www.europeana.eu/en/collections/person/63198-govert-flinck + explanation at https://kbnlwikimedia.github.io/KBCollectionHighlights /stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%205%2C%20Reuse.html, Point 48
 
-================================================
-De slotconclusie van dit verhaal? Wikidata voegt heel veel waarde toe aan onze KB-thesauri & -erfgoedcollecties!
+## The final conclusion of this story? Wikidata adds a lot of value to our KB thesauri & heritage collections!
 
 
 
