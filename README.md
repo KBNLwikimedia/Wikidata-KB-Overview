@@ -4,7 +4,10 @@ Logo Wikidata + Logo KB
 
 *An overview of how Wikidata is used by/in/for the KB, national library of the Netherlands* 
 
-This page is a textual summary of the lecture *title* for employeees of KB, national library of the Netherlands on 14 November 2023, 15:00-16:15. The (rather long) slidedeck (in Dutch) for this lecture is available on [Wikimedia Commons] and [Zenodo] as PDFs. The [full text transcript] is avialabe at [page in this repo]
+This page is a textual summary of the course *Verdieping: Wikidata & de KB* for employeees of KB, national library of the Netherlands on 14 November 2023, 15:00-16:15. 
+* The (rather long) slidedeck (in Dutch) for this course is available on [Wikimedia Commons] and [Zenodo] as PDFs.
+* The videos (in Dutch) of the course are on YouTube - [Part 1 (Blocks 1 & 2)] - [Part 2 (Blocks 3 & 4)] --> To add
+* The [full text transcript] in Dutch is avialable at [page in this repo].
 
 **Contact**
 
@@ -53,13 +56,13 @@ See the course *Wegwijzer in Wikidata* (Introduction to Wikidata), June 6, 2023 
 * [Textual summary in Dutch](https://commons.wikimedia.org/w/index.php?title=File:Wegwijzer_in_Wikidata,_Introductiecurus_Wikidata_-_Koninklijke_Bibliotheek,_6_juni_2023.pdf&page=141) (PDF)
 * Textual summary in English: To add to dedicated Github repo
 
-### Objective
+### Course objectives
 To provide more understanding about
 1. Why we at KB use Wikidata
 2. How we use Wikidata for our thesauri & heritage
 3. What added value this brings us
 
-### Layout
+### Course layout
 * BLOCK 1) [What does Wikidata add for the KB?](#block-1---what-does-wikidata-add-for-the-kb)
 * BLOCK 2) [Wikidata & KB thesauri (NTA + DBNLa)](#block-2---wikidata--kb-thesauri-nta--dbnla)
 * BLOCK 3) [Intermezzo: Linking Wikimedia Commons with Wikidata](#block-3---intermezzo-linking-wikimedia-commons-with-wikidata)
