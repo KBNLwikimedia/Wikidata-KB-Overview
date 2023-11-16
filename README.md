@@ -253,36 +253,26 @@ For example:
 - The same NTA id appears in multiple Q items
     - https://www.wikidata.org/wiki/Wikidata:Database_reports/Constraint_violations/P1006#Unique_value
     - Via SPARQL: https://w.wiki/85zm
-    - E.g. *Andreas Kaiser*: https://data.bibliotheken.nl/doc/thes/p068685564 appears in both https://www.wikidata.org/wiki/Q498631 (error) and in https://www.wikidata. org/wiki/Q106361537 (good)
-    - https://www.wikidata.org/wiki/Q498631 should get a different value at P1006
+    - E.g. *Andreas Kaiser*: https://data.bibliotheken.nl/doc/thes/p068685564 appears in both [Q498631](https://www.wikidata.org/wiki/Q498631) (error) and in [Q106361537](https://www.wikidata.org/wiki/Q106361537) (good)
+    - [Q498631](https://www.wikidata.org/wiki/Q498631) should get a different value at P1006
 - One Wikidata item with multiple NTA ids
     - https://www.wikidata.org/wiki/Wikidata:Database_reports/Constraint_violations/P1006#Single_value
     - Via SPARQL: https://w.wiki/85$o
-    - E.g. *Douglas Adams* : https://www.wikidata.org/wiki/Q42#P1006 contains both http://data.bibliotheken.nl/doc/thes/p339433876 and http://data.bibliotheken.nl/doc/thes /p068744307
+    - E.g. *Douglas Adams* : [Q43](https://www.wikidata.org/wiki/Q42#P1006) contains both http://data.bibliotheken.nl/doc/thes/p339433876 and http://data.bibliotheken.nl/doc/thes /p068744307
     - These NTA items are almost identical, consider merging into the NTA
 
 #### Usage of NTA ids in Wikipedia articles
-- Wikidata: [Category:Articles with NTA identifiers](https://www.wikidata.org/wiki/Q47763687)
-- English Wikipedia:
-    - 234K articles on WP:EN have NTA ids
-    - https://en.wikipedia.org/wiki/Category:Articles_with_NTA_identifiers
-    - E.g. https://en.wikipedia.org/wiki/50_Cent --> http://data.bibliotheken.nl/id/thes/p262032139
-- Turkish Wikidia
-    - 25K articles on WP:TR have NTA ids
-    - https://tr.wikipedia.org/wiki/Kategori:NTA_tan%C4%B1mlay%C4%B1c%C4%B1s%C4%B1_olan_Vikipedi_maddeleri
-- Czech Wikipedia
-    - 36K articles on WP:CS have NTA ids
-    - https://cs.wikipedia.org/wiki/Category:Monitoring:%C4%8Cl%C3%A1nky_s_identifik%C3%A1torem_NTA
-- Japanese Wikipedia
-    - 51K articles on WP:JA have NTA ids
-    - https://ja.wikipedia.org/wiki/Category:NTA%E8%AD%98%E5%88%A5%E5%AD%90%E3%81%8C%E6%8C%87%E5%AE%9A%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E8%A8%98%E4%BA%8B
+Wikidata: [Category:Articles with NTA identifiers](https://www.wikidata.org/wiki/Q47763687)
+- English Wikipedia: [234K articles](https://en.wikipedia.org/wiki/Category:Articles_with_NTA_identifiers) on WP:EN have NTA ids. E.g. https://en.wikipedia.org/wiki/50_Cent --> http://data.bibliotheken.nl/id/thes/p262032139
+- Turkish Wikidia: [25K articles](https://tr.wikipedia.org/wiki/Kategori:NTA_tan%C4%B1mlay%C4%B1c%C4%B1s%C4%B1_olan_Vikipedi_maddeleri) on WP:TR have NTA ids
+- Czech Wikipedia: [36K articles](https://cs.wikipedia.org/wiki/Category:Monitoring:%C4%8Cl%C3%A1nky_s_identifik%C3%A1torem_NTA) on WP:CS have NTA ids
+- Japanese Wikipedia: [51K articles](https://ja.wikipedia.org/wiki/Category:NTA%E8%AD%98%E5%88%A5%E5%AD%90%E3%81%8C%E6%8C%87%E5%AE%9A%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E8%A8%98%E4%BA%8B) on WP:JA have NTA ids
+
 In summary: via Wikidata our NTA is used as an authority in 100,000 Wikipedia articles in many languages. (but not Dutch!)
 
 #### Summary for NTA/P1006
 - In summary: by integrating NTA data into Wikidata we get a lot of new functionalities regarding data quality, connections and visualization that we cannot offer via our own KB-LOD service data.bibliotheken.nl! Also Wikipedia is having advantage from the NTA! 
-- Theo van Veen, *Wikidata als gemeenschappelijke thesaurus?*, IP|Vakblad voor de Informatie Professional, October 2016, no. 07
-    - https://informatieprofessional.nl/resources/uploads/2016/10/IP2016-07.pdf
-    - https://web.archive.org/web/20221028121446/https://informatieprofessional.nl/resources/uploads/2016/10/IP2016-07.pdf
+- Theo van Veen, *[Wikidata als gemeenschappelijke thesaurus?](https://informatieprofessional.nl/resources/uploads/2016/10/IP2016-07.pdf)*, IP|Vakblad voor de Informatie Professional, October 2016, no. 07 - See [archived version](https://web.archive.org/web/20221028121446/https://informatieprofessional.nl/resources/uploads/2016/10/IP2016-07.pdf) 
 - Project to include NTA in Wikidata and v.v. : [WikiProject Dutch National Thesaurus for Author Names](https://www.wikidata.org/wiki/Wikidata:WikiProject_Dutch_National_Thesaurus_for_Author_Names)
 
 ### d) From Wikidata to the DBNLa - P723
@@ -309,40 +299,36 @@ Two pages provide insight into the data quality (and possible improvements) of b
 - Deviations and possible errors in Wikidata as well as DBNLa: [Database_reports/Constraint_violations/P723](https://www.wikidata.org/wiki/Wikidata:Database_reports/Constraint_violations/P723)
 
 ### Historical overviews
-Historical overview of the usage of NTA and DBNLa identifiers in Wikidata, and v.v.: https://nl.wikipedia.org/wiki/Wikipedia:GLAM/Koninklijke_Bibliotheek_en_Natieaal_Archief/Resultaten/KPIs/KPI10
+Historical overview of the usage of NTA and DBNLa identifiers in Wikidata, and v.v.: https://nl.wikipedia.org/wiki/Wikipedia:GLAM/Koninklijke_Bibliotheek_en_Nationaal_Archief/Resultaten/KPIs/KPI10#Historische_ontwikkeling_van_KPI_10
 
 <hr/>
 
 ## BLOCK 3 - Intermezzo: Linking Wikimedia Commons with Wikidata
 
-The Sint Pancras Church in Leiden is now called the Hooglandse Kerk: https://commons.wikimedia.org/wiki/File:Atlas_de_Wit_1698-pl017-Leiden-St_Pancraskerk.jpg
+Look at [File:Atlas_de_Wit_1698-pl017-Leiden-St_Pancraskerk.jpg](https://commons.wikimedia.org/wiki/File:Atlas_de_Wit_1698-pl017-Leiden-St_Pancraskerk.jpg) on Wikimedia Commons (=Saint Pancras Church in Leiden, now called *Hooglandse Kerk* )
 
-Regular metadata
+### Regular metadata for KB images
 - Manifest textual and visual KB source references
-- 'Manual' multilingualism
-- Source code = unstructured metadata (free text) --> https://commons.wikimedia.org/w/index.php?title=File:Atlas_de_Wit_1698-pl017-Leiden-St_Pancraskerk.jpg&action=edit
+- 'Manual' multilingualism of the title in Latin, Dutch and French
+- [Source code](https://commons.wikimedia.org/w/index.php?title=File:Atlas_de_Wit_1698-pl017-Leiden-St_Pancraskerk.jpg&action=edit) appears to be structured, but really is unstructured metadata (free text)
+- Tab 'Structured Data' 
 
-Structured Data on Commons 
-- is a project to add multilingual structured information from Wikidata to files on Wikimedia Commons that can be understood by humans, with enough consistency that it can also be uniformly processed by machines. 
-- https://commons.wikimedia.org/wiki/Commons:Structured_data
+### Structured metadata for KB images
+- [Structured Data on Commons](https://commons.wikimedia.org/wiki/Commons:Structured_data) is a project to add multilingual structured information from Wikidata to files on Wikimedia Commons that can be understood by humans, with enough consistency that it can also be uniformly processed by machines. 
+- Added value of Structured metadata on Commons 
+    - Images are linked to Wikidata
+    - Images are provided with real structured (and therefore machine-readable) data
+    - Linked open data for Commons files is created, files become part of the LOD cloud
+    - Not only for images, but also for example PDFs: See the structured data on [this PDF file](https://commons.wikimedia.org/wiki/File:OpenRefine-Wikidata_introduction_workshop_-_Koninklijke_Bibliotheek,_4_juli_2023.pdf)
+    - Files are made searchable via SPARQL.
+    - For KB: Structured 5* LOD metadata for more than [30,000+ KB media files](https://commons.wikimedia.org/wiki/Category:Media_contributed_by_Koninklijke_Bibliotheek) 
 
-Structured metadata for images on Commons
-- Image is linked to Wikidata
-- Provided with real structured (and therefore machine-readable) data
-- Linked open data for Commons files
-
-Not only for images, but also for example PDFs: https://commons.wikimedia.org/wiki/File:OpenRefine-Wikidata_introduction_workshop_-_Koninklijke_Bibliotheek,_4_juli_2023.pdf
-
-Added value for KB
-- Structured 5* LOD metadata for more than 30,000 KB media files in https://commons.wikimedia.org/wiki/Category:Media_contributed_by_Koninklijke_Bibliotheek
-- KB files become part of the LOD cloud and become searchable via SPARQL.
-
-SPARQL queries with KB files
+### SPARQL queries for KB images
 - All files from the KB collection: https://w.wiki/7zh5. - Collection (P195) = Royal Library (Q1526131)
 - PDF files from the KB: https://w.wiki/7zhm - MIME type (P1163) = “application/pdf”
 - Images from Album amicorum by Jacobus Heyblocq: https://w.wiki/7zjb
 
-What can be seen on KB images?
+### What can be seen on KB images?
 - https://commons.wikimedia.org/wiki/Commons:Depicts
 - What can be seen in this image, tagged using Wikidata entries
 - Things depicted on the plate "Hooglandse kerk" in Atlas De Wit 1698 (https://commons.wikimedia.org/wiki/File:Atlas_de_Wit_1698-pl017-Leiden-St_Pancraskerk.jpg): Hooglandse Kerk (Q1537970) - horse (Q726 ) - dog (Q144) - clock (Q376) - people (Q2472587) - cloud (Q8074) - carriage (Q235356) - stepped gable (Q1939660) - tree (Q10884) - walking stick (Q1347864) - The Castle (Q18813071) - woman ( Q467) - child (Q7569) - door (Q36794) - hat (Q80151) - weathercock (Q2157687) - stained glass window (Q488094)
@@ -354,6 +340,7 @@ Let's summarize: KB images on Commons are searchable in 3 ways
 2) Structured metadata
 3) By content (What is depicted in the KB images?)
 
+### Tooltip: Hay's Structured Search
 The (super handy!) tool Hay's Structured Search offers all three options:
 - Visual, multilingual search engine to find images with (and without) structured data in Wikimedia Commons
 - https://hay.toolforge.org/sdsearch/
@@ -397,7 +384,7 @@ The (super handy!) tool Hay's Structured Search offers all three options:
 
 In summary: The search functionalities shown (SPARQL, structured, multilingual search, by content) are much more advanced than in our own KB (image) services!
 
-Do you want to add Depicts tags to KB images yourself?
+### Adding Depicts tags to KB images
 - https://commons.wikimedia.org/wiki/File:Instruction_KB-images_op_Commons_taggen_met_Wikidata_-_26032020.pdf
 - https://zenodo.org/record/7777755
 - This manual (2020) explains step by step how to make images from the KB collection more findable, visible and reusable by indicating (tagging) which things (entities) can be seen in those images.
