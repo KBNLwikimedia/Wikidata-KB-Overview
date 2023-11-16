@@ -244,27 +244,27 @@ For example:
     - Via SPARQL: https://w.wiki/85zm
     - E.g. *Andreas Kaiser*: https://data.bibliotheken.nl/doc/thes/p068685564 appears in both https://www.wikidata.org/wiki/Q498631 (error) and in https://www.wikidata. org/wiki/Q106361537 (good)
     - https://www.wikidata.org/wiki/Q498631 should get a different value at P1006
-- One Wikidata item with multiple NTA id
+- One Wikidata item with multiple NTA ids
     - https://www.wikidata.org/wiki/Wikidata:Database_reports/Constraint_violations/P1006#Single_value
     - Via SPARQL: https://w.wiki/85$o
     - E.g. *Douglas Adams* : https://www.wikidata.org/wiki/Q42#P1006 contains both http://data.bibliotheken.nl/doc/thes/p339433876 and http://data.bibliotheken.nl/doc/thes /p068744307
     - These NTA items are almost identical, consider merging into the NTA
 
-#### TOT HIER GEKOMEN!!!! OOOEEEEEE Usage of NTA IDs in Wikipedia articles
-- Wikidata: Category:Articles with NTA identifiers - https://www.wikidata.org/wiki/Q47763687
+#### Usage of NTA ids in Wikipedia articles
+- Wikidata: [Category:Articles with NTA identifiers](https://www.wikidata.org/wiki/Q47763687)
 - English Wikipedia:
--- 234K articles on WP:EN have an NTA ID
--- https://en.wikipedia.org/wiki/Category:Articles_with_NTA_identifiers
--- E.g. https://en.wikipedia.org/wiki/50_Cent --> http://data.bibliotheken.nl/id/thes/p262032139
+    - 234K articles on WP:EN have NTA ids
+    - https://en.wikipedia.org/wiki/Category:Articles_with_NTA_identifiers
+    - E.g. https://en.wikipedia.org/wiki/50_Cent --> http://data.bibliotheken.nl/id/thes/p262032139
 - Turkish Wikidia
--- 25K articles on WP:TR have an NTA ID
--- https://tr.wikipedia.org/wiki/Kategori:NTA_tan%C4%B1mlay%C4%B1c%C4%B1s%C4%B1_olan_Vikipedi_maddeleri
+    - 25K articles on WP:TR have NTA ids
+    - https://tr.wikipedia.org/wiki/Kategori:NTA_tan%C4%B1mlay%C4%B1c%C4%B1s%C4%B1_olan_Vikipedi_maddeleri
 - Czech Wikipedia
--- 36K articles on WP:CS have an NTA ID
--- https://cs.wikipedia.org/wiki/Category:Monitoring:%C4%8Cl%C3%A1nky_s_identifik%C3%A1torem_NTA
+    - 36K articles on WP:CS have NTA ids
+    - https://cs.wikipedia.org/wiki/Category:Monitoring:%C4%8Cl%C3%A1nky_s_identifik%C3%A1torem_NTA
 - Japanese Wikipedia
--- 51K articles on WP:JA have an NTA ID
--- https://ja.wikipedia.org/wiki/Category:NTA%E8%AD%98%E5%88%A5%E5%AD%90%E3%81%8C%E6%8C%87%E5% AE%9A%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E8%A8%98%E4%BA%8B
+    - 51K articles on WP:JA have NTA ids
+    - https://ja.wikipedia.org/wiki/Category:NTA%E8%AD%98%E5%88%A5%E5%AD%90%E3%81%8C%E6%8C%87%E5%AE%9A%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E8%A8%98%E4%BA%8B
 In summary: via Wikidata our NTA is used as an authority in 100,000 Wikipedia articles in many languages. (but not Dutch!)
 
 #### Summary for NTA/P1006
@@ -274,18 +274,18 @@ In summary: via Wikidata our NTA is used as an authority in 100,000 Wikipedia ar
     - https://web.archive.org/web/20221028121446/https://informatieprofessional.nl/resources/uploads/2016/10/IP2016-07.pdf
 - Project to include NTA in Wikidata and v.v. : [WikiProject Dutch National Thesaurus for Author Names](https://www.wikidata.org/wiki/Wikidata:WikiProject_Dutch_National_Thesaurus_for_Author_Names)
 
-### d) From Wikidata to the DBNLa - P723
-Persons in Wikidata with anDBNLa-id
+### d) TOT HIER GEKOMEN!!!! From Wikidata to the DBNLa - P723
+Persons in Wikidata with an DBNLa-id
 - Everything mentioned above for the NTA applies analogously to the DBNLa
 - DBNLa in Wikidata: https://www.wikidata.org/wiki/Property:P723
-- Persons in Wikidata with a DBNLa ID: https://w.wiki/869Y
+- Persons in Wikidata with a DBNLa id:  https://w.wiki/869Y
 - Insights into using P723: https://www.wikidata.org/wiki/Property_talk:P723
 - Wikidata contains 31K links to the DBNLa: https://www.wikidata.org/wiki/Property_talk:P723 (bottom, 'Current uses')
 - Insight into the data quality (and possible improvements) of both Wikidata and the DBNLa
 -- https://www.wikidata.org/wiki/Wikidata:Database_reports/Humans_with_missing_claims/P723
 -- https://www.wikidata.org/wiki/Wikidata:Database_reports/Constraint_violations/P723
 
-Use of KB identifiers in Wikidata, and v.v., both for the NTa and the DBNLa: https://nl.wikipedia.org/wiki/Wikipedia:GLAM/Koninklijke_Bibliotheek_en_Natieaal_Archief/Resultaten/KPIs/KPI10
+Use of KB identifiers in Wikidata, and v.v., both for the NTA and the DBNLa: https://nl.wikipedia.org/wiki/Wikipedia:GLAM/Koninklijke_Bibliotheek_en_Natieaal_Archief/Resultaten/KPIs/KPI10
 
 <hr/>
 
