@@ -5,7 +5,7 @@
 
 # Wikidata & KB national library of the Netherlands, an overview
 
-*An overview of how Wikidata is used by/in/for the KB, national library of the Netherlands* 
+*An overview of how Wikidata is used by/in/for the KB, national library of the Netherlands* - Latest update: 16 November 2023
 
 <image src="images/VerdiepingWikidataEnKB_14Nov2023 - openingslide.png" width="250" align="right"/>
 
@@ -26,9 +26,10 @@ This overview can be reused freely and openly, it is available under the [CC-BY 
 
 <kbd><img src="images/cc-by.png" width="100"/></kbd>
 
-**Latest updates**
-
-Latest update: 15 November 2023
+**See also**
+- [An overview of current, upcoming and possible future Wikidata (and Wikibase) activities, projects, ideas, experiments and opportunities for the KB](https://www.wikidata.org/wiki/Wikidata:GLAM/Koninklijke_Bibliotheek_Nederland)
+- [Wikidata projects of the KB](https://www.wikidata.org/wiki/Wikidata:GLAM/Koninklijke_Bibliotheek_Nederland/CurrentProjects)
+- [Our Structured Data on Commons efforts](https://commons.wikimedia.org/wiki/Commons:Koninklijke_Bibliotheek/SDoC)
 <hr>
 
 ### Contents - to adapt
@@ -459,6 +460,8 @@ A few examples:
 
 ## Final conclusions
  Wikidata adds a lot of value to our KB thesauri & heritage collections!
+
+ 
 
 
 
