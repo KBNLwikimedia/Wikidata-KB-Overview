@@ -130,7 +130,7 @@ KB datasets (thesauri): http://data.bibliotheken.nl/
 - Persons (authors) are more popular and in demand on Wikidata than (eg.) keywords or organizations
     - [Dutch Thesaurus of Author names (NTA)](http://data.bibliotheken.nl/id/dataset/persons) + [Thesaurus of DBNL authors (DBNLa)](http://data.bibliotheken.nl/id/dataset/dbnla) are more useful than [Brinkman](http://data.bibliotheken.nl/id/dataset/brinkman) or [GTT](http://data.bibliotheken.nl/id/dataset/gtt)
 - NTA is internationally the only major authoritative dataset on 'Dutch authors'
-    -NTA is very useful for Wikidata, in an international context
+    - NTA is very useful for Wikidata, in an international context
 - Flat/simple data is more suitable than layered/complex data
     - People are easier to add to Wikidata than [titles](http://data.bibliotheken.nl/id/dataset/nbt) ([WEMI](https://rdabasics.com/2012/08/24/theoretical-foundations/) = difficult)
 - Small datasets are easier than large ones
@@ -138,11 +138,11 @@ KB datasets (thesauri): http://data.bibliotheken.nl/
 
 Ergo: Focus on [NTA](http://data.bibliotheken.nl/id/dataset/persons) and [DBNL authors](http://data.bibliotheken.nl/id/dataset/dbnla) with regard to the KB thesauri-Wikidata activities.
 
-### From the NTA to Wikidata
+### a) From the NTA to Wikidata
 
 Persons in the NTA with a Wikidata URI:
 - Eg. *Darlene Dixon* : http://data.bibliotheken.nl/doc/thes/p208140131 --> schema:sameAs --> http://www.wikidata.org/entity/Q88505402
-- All persons via [this SPARQL query](data.bibliotheken.nl/sparql?default-graph-uri=&qtxt=%23+Which+NTA+items+have+a+link+to+Wikidata%3F%0D%0A%0D%0ASELECT++*+WHERE+{%0D%0A+%3Fnta+schema%3AmainEntityOfPage%2Fschema%3AisPartOf+<http%3A%2F%2Fdata.bibliotheken.nl%2Fid%2Fdataset%2Fpersons>+.%0D%0A+%3Fnta+rdfs%3Alabel+%3FntaLabel.++%0D%0A+%3Fnta+schema%3AsameAs+%3Fwikidata+.%0D%0AFILTER(regex(%3Fwikidata%2C+'wikidata'%2C+'i'))%0D%0A}+LIMIT+1000&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+)
+- All persons via [this SPARQL query](http://data.bibliotheken.nl/sparql?default-graph-uri=&qtxt=%23+Which+NTA+items+have+a+link+to+Wikidata%3F%0D%0A%0D%0ASELECT++*+WHERE+{%0D%0A+%3Fnta+schema%3AmainEntityOfPage%2Fschema%3AisPartOf+<http%3A%2F%2Fdata.bibliotheken.nl%2Fid%2Fdataset%2Fpersons>+.%0D%0A+%3Fnta+rdfs%3Alabel+%3FntaLabel.++%0D%0A+%3Fnta+schema%3AsameAs+%3Fwikidata+.%0D%0AFILTER(regex(%3Fwikidata%2C+'wikidata'%2C+'i'))%0D%0A}+LIMIT+1000&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+)
 ```sparql
 # Which NTA items have a link to Wikidata?
 SELECT  * WHERE {
@@ -152,12 +152,12 @@ SELECT  * WHERE {
 FILTER(regex(?wikidata, 'wikidata', 'i'))
 } LIMIT 1000
 ```
-- 499K of 2.75M NTA items have a Wikidata link (source= https://nl.wikipedia.org/wiki/Wikipedia:GLAM/Koninklijke_Bibliotheek_en_Nationaal_Archief/Resultaten/KPIs/KPI10#Historische_ontwikkeling_van_KPI_10)
+- 499K of 2.75M NTA items have a Wikidata link ([source](https://nl.wikipedia.org/wiki/Wikipedia:GLAM/Koninklijke_Bibliotheek_en_Nationaal_Archief/Resultaten/KPIs/KPI10#Historische_ontwikkeling_van_KPI_10))
 
-### From the DBNLa to Wikidata
+### b) From the DBNLa to Wikidata
   
-Persons in DBNLa with Wikidata URI (via the NTA)
-- E.g. *Hans Aarsman (1951-)* : http://data.bibliotheken.nl/id/dbnla/aars001 --> owl:sameAs --> http://data.bibliotheken.nl/id/thes/p068680937 --> schema:sameAs --> http://www.wikidata.org/entity/Q325922
+Persons in DBNLa with a Wikidata URI (via the NTA)
+- Eg. *Hans Aarsman (1951-)* : http://data.bibliotheken.nl/id/dbnla/aars001 --> owl:sameAs --> http://data.bibliotheken.nl/id/thes/p068680937 --> schema:sameAs --> http://www.wikidata.org/entity/Q325922
 - All persons via [this SPARQL query](http://data.bibliotheken.nl/sparql?default-graph-uri=&qtxt=%23+Welke+DBNLa-items+bevatten+een+link+naar+Wikidata%3F%0D%0ASELECT+*++%0D%0AWHERE+{%0D%0A+%3Fdbnl+schema%3AmainEntityOfPage%2Fschema%3AisPartOf+<http%3A%2F%2Fdata.bibliotheken.nl%2Fid%2Fdataset%2Fdbnla>+.%0D%0A+%3Fdbnl+rdfs%3Alabel++%3FdbnlLabel.++%0D%0A+%3Fdbnl+owl%3AsameAs+%3Fnta+.%0D%0A+%3Fnta+schema%3AmainEntityOfPage%2Fschema%3AisPartOf+<http%3A%2F%2Fdata.bibliotheken.nl%2Fid%2Fdataset%2Fpersons>+.%0D%0A+%3Fnta+rdfs%3Alabel+%3FntaLabel.+++%0D%0A+%3Fnta+schema%3AsameAs+%3Fwikidata+.%0D%0A+FILTER(regex(%3Fwikidata%2C+'wikidata'%2C+'i'))%0D%0A}+LIMIT+1000&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+)
 ```sparql
 # Which DBNLa authors have a link to Wikidata?
@@ -172,18 +172,13 @@ WHERE {
  FILTER(regex(?wikidata, 'wikidata', 'i'))
 } LIMIT 1000
 ```
-- 14.5K of 109K DBNLa items have a Wikidata link ([source](https://nl.wikipedia.org/wiki/Wikipedia:GLAM/Koninklijke_Bibliotheek_en_Nationaal_Archief/Resultaten/KPIs/KPI10#Historische_ontwikkeling_van_KPI_10)
+- 14.5K of 109K DBNLa items have a Wikidata link ([source](https://nl.wikipedia.org/wiki/Wikipedia:GLAM/Koninklijke_Bibliotheek_en_Nationaal_Archief/Resultaten/KPIs/KPI10#Historische_ontwikkeling_van_KPI_10))
 
 #### Federated query to retrieve extra data from Wikidata
-Achille VanAcker
-- In the DBNL: http://data.bibliotheken.nl/doc/dbnla/acke001
-- In Wikidata: http://www.wikidata.org/entity/Q14997
-Get additional data about 'acke001' from Wikidata. We want to retrieve the following data:
-- Image: https://www.wikidata.org/wiki/Property:P18
-- Educated at: https://www.wikidata.org/wiki/Property:P69
-- Member of political party: https://www.wikidata.org/wiki/Property:P102
-[SPARQL query](data.bibliotheken.nl/sparql?default-graph-uri=&qtxt=%23+Get+supplementary+data+about+DBNL+author+'acke001'+from+Wikidata%0D%0APREFIX+wdt%3A++<http%3A%2F%2Fwww.wikidata.org%2Fprop%2Fdirect%2F>%0D%0ASELECT+*+%0D%0AWHERE+{%0D%0A+%3Fdbnl+schema%3AmainEntityOfPage%2Fowl%3AsameAs++<http%3A%2F%2Fdata.bibliotheken.nl%2Fdoc%2Fdbnla%2Facke001>+.%0D%0A+%3Fdbnl+rdfs%3Alabel+%3FdbnlLabel.++%0D%0A+%3Fdbnl+owl%3AsameAs+%3Fnta+.%0D%0A+%3Fnta++schema%3AmainEntityOfPage%2Fschema%3AisPartOf+<http%3A%2F%2Fdata.bibliotheken.nl%2Fid%2Fdataset%2Fpersons>+.%0D%0A+%3Fnta+rdfs%3Alabel+%3FntaLabel.+++%0D%0A+%3Fnta+schema%3AsameAs+%3Fwikidata+.%0D%0A+FILTER(regex(%3Fwikidata%2C+'wikidata'%2C+'i'))%0D%0A%0D%0A+SERVICE+<https%3A%2F%2Fquery.wikidata.org%2Fsparql>+{%0D%0A+++%3Fwikidata+wdt%3AP18+%3FimageURL.+%23P18+%3D+image%0D%0A+++%3Fwikidata+wdt%3AP69+%3FedcucatedAt.+%23P69+%3D+educated++at%0D%0A+++%3Fwikidata+wdt%3AP102+%3FMemberOfPoliticalParty.+%23P102+%3D+member+of+political+party%0D%0A%0D%0A+}%0D%0A}+&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+)
-
+- *Achille Van Acker* ['acke001' in the DBNLa](http://data.bibliotheken.nl/doc/dbnla/acke001) and [in Wikidata](http://www.wikidata.org/entity/Q14997)
+- Get additional data about 'acke001' from Wikidata. We want to retrieve the following data from the Wikidata item:
+    - Image ([P18](https://www.wikidata.org/wiki/Property:P18)) -- Educated at ([P69](https://www.wikidata.org/wiki/Property:P69)) -- Member of political party ([P102](https://www.wikidata.org/wiki/Property:P102))
+- We use this [SPARQL query](http://data.bibliotheken.nl/sparql?default-graph-uri=&qtxt=%23+Get+supplementary+data+about+DBNL+author+'acke001'+from+Wikidata%0D%0APREFIX+wdt%3A++<http%3A%2F%2Fwww.wikidata.org%2Fprop%2Fdirect%2F>%0D%0ASELECT+*+%0D%0AWHERE+{%0D%0A+%3Fdbnl+schema%3AmainEntityOfPage%2Fowl%3AsameAs++<http%3A%2F%2Fdata.bibliotheken.nl%2Fdoc%2Fdbnla%2Facke001>+.%0D%0A+%3Fdbnl+rdfs%3Alabel+%3FdbnlLabel.++%0D%0A+%3Fdbnl+owl%3AsameAs+%3Fnta+.%0D%0A+%3Fnta++schema%3AmainEntityOfPage%2Fschema%3AisPartOf+<http%3A%2F%2Fdata.bibliotheken.nl%2Fid%2Fdataset%2Fpersons>+.%0D%0A+%3Fnta+rdfs%3Alabel+%3FntaLabel.+++%0D%0A+%3Fnta+schema%3AsameAs+%3Fwikidata+.%0D%0A+FILTER(regex(%3Fwikidata%2C+'wikidata'%2C+'i'))%0D%0A%0D%0A+SERVICE+<https%3A%2F%2Fquery.wikidata.org%2Fsparql>+{%0D%0A+++%3Fwikidata+wdt%3AP18+%3FimageURL.+%23P18+%3D+image%0D%0A+++%3Fwikidata+wdt%3AP69+%3FedcucatedAt.+%23P69+%3D+educated++at%0D%0A+++%3Fwikidata+wdt%3AP102+%3FMemberOfPoliticalParty.+%23P102+%3D+member+of+political+party%0D%0A%0D%0A+}%0D%0A}+&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+)
 ```sparql
 # Get supplementary data about DBNL author 'acke001' from Wikidata
 PREFIX wdt:  <http://www.wikidata.org/prop/direct/>
@@ -205,60 +200,65 @@ WHERE {
  }
 } 
 ```
-Checks:
-- P18 (image): http://commons.wikimedia.org/wiki/Special:FilePath/Achiel%20Van%20Acker1.jpg
-- P69 (educated at): http://www.wikidata.org/entity/Q500740
-- P102 (member of political party): http://www.wikidata.org/entity/Q2532509
+Checks are OK:
+- P18 (image): [Achiel Van Acker1.jpg](http://commons.wikimedia.org/wiki/Special:FilePath/Achiel%20Van%20Acker1.jpg)
+- P69 (educated at): [Lille University of Science and Technology](http://www.wikidata.org/entity/Q500740)
+- P102 (member of political party): [Belgian Socialist Party](http://www.wikidata.org/entity/Q2532509)
 
-### From Wikidata to the NTA - P1006
+### c) From Wikidata to the NTA - P1006
+Persons in Wikidata with an NTA-id
+- [P1006](https://www.wikidata.org/wiki/Property:P1006) = Nationale Thesaurus voor Auteursnamen ID
+- Eg. *Harry Mulisch* : https://www.wikidata.org/wiki/Q927 --> [P1006](https://www.wikidata.org/wiki/Property:P1006) -- > https://data.bibliotheken.nl/doc/thes/p06854796X
+-  All persons via [this SPARQL query](https://w.wiki/85Cs)
+```sparql
+SELECT ?item ?itemLabel ?NTAurl
+{
+  ?item wdt:P1006 ?NTAid.
+  BIND(IRI(CONCAT('http://data.bibliotheken.nl/doc/thes/p', ?NTAid)) AS  ?NTAurl)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,en"  }
+}
+LIMIT 1000
+```
+#### Insights in the usage of P1006 
+https://www.wikidata.org/wiki/Property_talk:P1006
+- Wikidata contains 550K links to the NTA: see 'Current uses' at bottom of this page, or via [this SPARQL query](https://tinyurl.com/5bep7h8a)
+- Map of birthplaces of people with an NTA id: https://w.wiki/7rsT
+- Famous people with an NTA id: https://w.wiki/85si (famous people have extensive Wikidata entries)
 
-Harry Mulisch in Wikidata: https://www.wikidata.org/wiki/Q927
-NTA in Wikidata: https://www.wikidata.org/wiki/Property:P1006
-Harry Mulisch in the NTA: https://data.bibliotheken.nl/doc/thes/p06854796X
-
-Persons in Wikidata with an NTA ID: https://w.wiki/85Cs
-Insights into using P1006: https://www.wikidata.org/wiki/Property_talk:P1006
-- Wikidata contains 550K links to the NTA: https://tinyurl.com/5bep7h8a
-- Map of birthplaces of people with an NTA ID: https://w.wiki/7rsT
-- Famous people with an NTA ID: https://w.wiki/85si (famous people have extensive Wikidata entries)
-
-### P1006 and data quality
+#### P1006 and data quality
 Two pages provide insight into the data quality (and possible improvements) of both Wikidata and the NTA
+- Missing data for people listed in the NTA: [Database_reports/Humans_with_missing_claims/P1006](https://www.wikidata.org/wiki/Wikidata:Database_reports/Humans_with_missing_claims/P1006)
+- Deviations and possible errors in Wikidata as well as NTA: [Database_reports/Constraint_violations/P1006](https://www.wikidata.org/wiki/Wikidata:Database_reports/Constraint_violations/P1006)
 
-1) Missing data in Wikidata: https://www.wikidata.org/wiki/Wikidata:Database_reports/Humans_with_missing_claims/P1006
-- People listed in the NTA whose place of birth/date is missing in Wikidata: https://www.wikidata.org/wiki/Wikidata:Database_reports/Humans_with_missing_claims/P1006#Missing_date_of_birth_(P569)
-- The missing dates of birth may be added to Wikidata from the NTA
+For example:
+- Missing birth date
+    - https://www.wikidata.org/wiki/Wikidata:Database_reports/Humans_with_missing_claims/P1006#Missing_date_of_birth_(P569)
+    - The missing dates of birth may be added to Wikidata from the NTA
+- Missing Dutch labels
+    - https://www.wikidata.org/wiki/Wikidata:Database_reports/Constraint_violations/P1006#%22Label_in_'nl'_language%22_violations
+    - Via SPARQL: https://w.wiki/85xT
+    - E.g.: *Anna Bhau Sathe*, https://www.wikidata.org/wiki/Q55759 --> NL label is missing
+    - The missing NL label can be added from the NTA
+- The same NTA id appears in multiple Q items
+    - https://www.wikidata.org/wiki/Wikidata:Database_reports/Constraint_violations/P1006#Unique_value
+    - Via SPARQL: https://w.wiki/85zm
+    - E.g. *Andreas Kaiser*: https://data.bibliotheken.nl/doc/thes/p068685564 appears in both https://www.wikidata.org/wiki/Q498631 (error) and in https://www.wikidata. org/wiki/Q106361537 (good)
+    - https://www.wikidata.org/wiki/Q498631 should get a different value at P1006
+- One Wikidata item with multiple NTA id
+    - https://www.wikidata.org/wiki/Wikidata:Database_reports/Constraint_violations/P1006#Single_value
+    - Via SPARQL: https://w.wiki/85$o
+    - E.g. *Douglas Adams* : https://www.wikidata.org/wiki/Q42#P1006 contains both http://data.bibliotheken.nl/doc/thes/p339433876 and http://data.bibliotheken.nl/doc/thes /p068744307
+    - These NTA items are almost identical, consider merging into the NTA
 
-2) Deviating data in Wikidata: https://www.wikidata.org/wiki/Wikidata:Database_reports/Constraint_violations/P1006
-This page reports deviations and possible errors in Wikidata and the NTA
+#### Summary
+- In summary: by integrating NTA data into Wikidata we get a lot of new functionalities regarding data quality, connections and visualization that we cannot offer via our own KB-LOD service data.bibliotheken.nl!
+- Theo van Veen, *Wikidata als gemeenschappelijke thesaurus?*, IP|Vakblad voor de Informatie Professional, October 2016, no. 07
+    - https://informatieprofessional.nl/resources/uploads/2016/10/IP2016-07.pdf
+    - https://web.archive.org/web/20221028121446/https://informatieprofessional.nl/resources/uploads/2016/10/IP2016-07.pdf
+- Project to include NTA in Wikidata and v.v. : [WikiProject Dutch National Thesaurus for Author Names](https://www.wikidata.org/wiki/Wikidata:WikiProject_Dutch_National_Thesaurus_for_Author_Names)
 
-a- Missing Dutch labels
--- https://www.wikidata.org/wiki/Wikidata:Database_reports/Constraint_violations/P1006#%22Label_in_'nl'_language%22_violations
--- Via SPARQL: https://w.wiki/85xT
--- E.g.: Anna Bhau Sathe, https://www.wikidata.org/wiki/Q55759 --> NL label is missing
--- The missing NL label can be added from the NTA
 
-b- The same NTA ID appears in multiple Q items:
--- https://www.wikidata.org/wiki/Wikidata:Database_reports/Constraint_violations/P1006#Unique_value
--- Via SPARQL: https://w.wiki/85zm
--- E.g.: Andreas Kaiser, https://data.bibliotheken.nl/doc/thes/p068685564 --> https://www.wikidata.org/wiki/Q498631 (error) + https://www.wikidata. org/wiki/Q106361537 (good)
--- https://www.wikidata.org/wiki/Q498631 should get a different value at P1006
-
-c- One Wikidata item with multiple NTA IDs:
--- https://www.wikidata.org/wiki/Wikidata:Database_reports/Constraint_violations/P1006#Single_value
--- Via SPARQL: https://w.wiki/85$o
--- E.g. Douglas Adams, https://www.wikidata.org/wiki/Q42#P1006 --> http://data.bibliotheken.nl/doc/thes/p339433876 + http://data.bibliotheken.nl/doc/thes /p068744307
--- These are almost identical, consider merging into the NTA
-
-In summary: by integrating NTA data into Wikidata we get a lot of new functionalities regarding data quality, connections and visualization that we cannot offer via our own KB-LOD service data.bibliotheken.nl!
-
-Theo van Veen, Wikidata as a common thesaurus?, IP, Trade Journal for Information Professionals, October 2016, no. 07
-- https://informatieprofessional.nl/resources/uploads/2016/10/IP2016-07.pdf
-- https://web.archive.org/web/20221028121446/https://informatieprofessional.nl/resources/uploads/2016/10/IP2016-07.pdf
-
-WikiProject Dutch National Thesaurus for Author Names: https://www.wikidata.org/wiki/Wikidata:WikiProject_Dutch_National_Thesaurus_for_Author_Names
-
-### Usage of NTA IDs in Wikipedia articles
+#### TOT HIER GEKOMEN!!!! OOOEEEEEE Usage of NTA IDs in Wikipedia articles
 - Wikidata: Category:Articles with NTA identifiers - https://www.wikidata.org/wiki/Q47763687
 - English Wikipedia:
 -- 234K articles on WP:EN have an NTA ID
@@ -275,8 +275,8 @@ WikiProject Dutch National Thesaurus for Author Names: https://www.wikidata.org/
 -- https://ja.wikipedia.org/wiki/Category:NTA%E8%AD%98%E5%88%A5%E5%AD%90%E3%81%8C%E6%8C%87%E5% AE%9A%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E8%A8%98%E4%BA%8B
 In summary: via Wikidata our NTA is used as an authority in 100,000 Wikipedia articles in many languages. (but not Dutch!)
 
-### From Wikidata to the DBNLa - P723
-DBNLa in Wikidata
+### d) From Wikidata to the DBNLa - P723
+Persons in Wikidata with anDBNLa-id
 - Everything mentioned above for the NTA applies analogously to the DBNLa
 - DBNLa in Wikidata: https://www.wikidata.org/wiki/Property:P723
 - Persons in Wikidata with a DBNLa ID: https://w.wiki/869Y
