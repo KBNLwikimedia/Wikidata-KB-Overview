@@ -313,20 +313,21 @@ Look at [File:Atlas_de_Wit_1698-pl017-Leiden-St_Pancraskerk.jpg](https://commons
 - [Source code](https://commons.wikimedia.org/w/index.php?title=File:Atlas_de_Wit_1698-pl017-Leiden-St_Pancraskerk.jpg&action=edit) appears to be structured, but really is unstructured metadata (free text)
 - Tab 'Structured Data' 
 
-### Structured metadata for KB images
-- [Structured Data on Commons](https://commons.wikimedia.org/wiki/Commons:Structured_data) is a project to add multilingual structured information from Wikidata to files on Wikimedia Commons that can be understood by humans, with enough consistency that it can also be uniformly processed by machines. 
-- Added value of Structured metadata on Commons 
-    - Images are linked to Wikidata
-    - Images are provided with real structured (and therefore machine-readable) data
-    - Linked open data for Commons files is created, files become part of the LOD cloud
-    - Not only for images, but also for example PDFs: See the structured data on [this PDF file](https://commons.wikimedia.org/wiki/File:OpenRefine-Wikidata_introduction_workshop_-_Koninklijke_Bibliotheek,_4_juli_2023.pdf)
-    - Files are made searchable via SPARQL.
-    - For KB: Structured 5* LOD metadata for more than [30,000+ KB media files](https://commons.wikimedia.org/wiki/Category:Media_contributed_by_Koninklijke_Bibliotheek) 
+### Structured Data on Commons
+[Structured Data on Commons](https://commons.wikimedia.org/wiki/Commons:Structured_data) (SDoC) is a project to add multilingual structured information from Wikidata to files on Wikimedia Commons that can be understood by humans, with enough consistency that it can also be uniformly processed by machines. 
+
+#### Added value of SDoC 
+- Images are linked to Wikidata
+- Images are provided with real structured (and therefore machine-readable) data
+- Linked open data for Commons files is created, files become part of the LOD cloud
+- Not only for images, but also for example PDFs: See the structured data on [this PDF file](https://commons.wikimedia.org/wiki/File:OpenRefine-Wikidata_introduction_workshop_-_Koninklijke_Bibliotheek,_4_juli_2023.pdf)
+- Files are made searchable via SPARQL.
+- For KB: Structured 5* LOD metadata for more than [30,000+ KB media files](https://commons.wikimedia.org/wiki/Category:Media_contributed_by_Koninklijke_Bibliotheek) 
 
 ### SPARQL queries for KB images
-- All files from the KB collection: https://w.wiki/7zh5. - Collection (P195) = Royal Library (Q1526131)
-- PDF files from the KB: https://w.wiki/7zhm - MIME type (P1163) = “application/pdf”
-- Images from Album amicorum by Jacobus Heyblocq: https://w.wiki/7zjb
+- [All files from the KB collection](https://w.wiki/7zh5) --> Collection ([P195](https://www.wikidata.org/wiki/Property:P195)) = Koninklijke Bibliotheek ([Q1526131](https://www.wikidata.org/wiki/Q1526131))
+- [PDF files from the KB](https://w.wiki/7zhm) --> MIME type ([P1163](https://www.wikidata.org/wiki/Property:P1163)) = “application/pdf”
+- [Images from Album amicorum by Jacobus Heyblocq](https://w.wiki/7zjb)
 
 ### What can be seen on KB images?
 - https://commons.wikimedia.org/wiki/Commons:Depicts
