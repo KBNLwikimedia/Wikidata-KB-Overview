@@ -33,24 +33,34 @@ This overview can be reused freely and openly, it is available under the [CC-BY 
 <hr>
 
 ### Contents - to adapt
-- [Recap Wikidata](#recap-wikidata)
-  * [Institutional use cases incompatible with Wikidata](#institutional-use-cases-incompatible-with-Wikidata)
-- [What is Wikibase?](#what-is-wikibase-)
-- [Wikibase courses and tutorials](#wikibase-courses-and-tutorials)
-- [Examples of institutions/projects using Wikibase](#examples-of-institutions-projects-using-wikibase)
-  * [Wikibase projects in libraries](#wikibase-projects-in-libraries)
-- [Wikibase components & architecture](#wikibase-components---architecture)
-- [Wikibase data model](#wikibase-data-model)
-  * [Using alternative vocabularies in Wikibase](#using-alternative-vocabularies-in-wikibase)
-- [Wikibase hosting](#wikibase-hosting)
-- [Requesting data from a Wikibase](#requesting-data-from-a-wikibase)
-  * [Cool Wikibase SPARQL queries](#cool-wikibase-sparql-queries)
-- [Adding data to a Wikibase](#adding-data-to-a-wikibase)
-- [Wikibase community](#wikibase-community)
-- [Staying updated](#staying-updated)
-- [Finding help](#finding-help)
+  * [Intro](#intro)
+    + [Required basic knowledge about Wikidata](#required-basic-knowledge-about-wikidata)
+    + [Course objectives](#course-objectives)
+    + [Course layout](#course-layout)
+  * [BLOCK 1 - What does Wikidata add for the KB?](#block-1---what-does-wikidata-add-for-the-kb-)
+    + [Open doors](#open-doors)
+    + [Wikidata characteristics](#wikidata-characteristics)
+    + [Added value of Wikidata for KB](#added-value-of-wikidata-for-kb)
+  * [BLOCK 2 - Wikidata & KB thesauri (NTA + DBNLa)](#block-2---wikidata---kb-thesauri--nta---dbnla-)
+    + [Criteria for suitability of KB thesauri for Wikidata](#criteria-for-suitability-of-kb-thesauri-for-wikidata)
+    + [a) From the NTA to Wikidata](#a--from-the-nta-to-wikidata)
+    + [b) From the DBNLa to Wikidata](#b--from-the-dbnla-to-wikidata)
+      - [Federated query to retrieve extra data from Wikidata](#federated-query-to-retrieve-extra-data-from-wikidata)
+    + [c) From Wikidata to the NTA - P1006](#c--from-wikidata-to-the-nta---p1006)
+      - [Insights in the usage of P1006](#insights-in-the-usage-of-p1006)
+      - [P1006 and data quality](#p1006-and-data-quality)
+      - [Usage of NTA ids in Wikipedia articles](#usage-of-nta-ids-in-wikipedia-articles)
+      - [Summary for NTA/P1006](#summary-for-nta-p1006)
+    + [d) From Wikidata to the DBNLa - P723](#d--from-wikidata-to-the-dbnla---p723)
+      - [Insights into the usage of P723](#insights-into-the-usage-of-p723)
+      - [P723 and data quality](#p723-and-data-quality)
+    + [Historical overviews](#historical-overviews)
+  * [BLOCK 3 - Intermezzo: Linking Wikimedia Commons with Wikidata](#block-3---intermezzo--linking-wikimedia-commons-with-wikidata)
+  * [BLOCK 4 - Wikidata & KB heritage collections](#block-4---wikidata---kb-heritage-collections)
+  * [Final conclusions](#final-conclusions)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 
 <hr>
 
@@ -207,9 +217,9 @@ Checks are OK:
 - P102 (member of political party): [Belgian Socialist Party](http://www.wikidata.org/entity/Q2532509)
 
 ### c) From Wikidata to the NTA - P1006
-Persons in Wikidata with an NTA-id
+Persons in Wikidata with an NTA id
 - [P1006](https://www.wikidata.org/wiki/Property:P1006) = Nationale Thesaurus voor Auteursnamen ID
-- Eg. *Harry Mulisch* : https://www.wikidata.org/wiki/Q927 --> [P1006](https://www.wikidata.org/wiki/Property:P1006) -- > https://data.bibliotheken.nl/doc/thes/p06854796X
+- Eg. *Harry Mulisch* : https://www.wikidata.org/wiki/Q927#P1006 --> [P1006](https://www.wikidata.org/wiki/Property:P1006) -- > https://data.bibliotheken.nl/doc/thes/p06854796X
 -  All persons via [this SPARQL query](https://w.wiki/85Cs)
 ```sparql
 SELECT ?item ?itemLabel ?NTAurl
@@ -224,7 +234,7 @@ LIMIT 1000
 https://www.wikidata.org/wiki/Property_talk:P1006
 - Wikidata contains 550K links to the NTA: see 'Current uses' at bottom of this page, or via [this SPARQL query](https://tinyurl.com/5bep7h8a)
 - Map of birthplaces of people with an NTA id: https://w.wiki/7rsT
-- Famous people with an NTA id: https://w.wiki/85si (famous people have extensive Wikidata entries)
+- Famous people with an NTA id: https://w.wiki/85si (famous people have extensive Wikidata entries) with many statements
 
 #### P1006 and data quality
 Two pages provide insight into the data quality (and possible improvements) of both Wikidata and the NTA
@@ -275,18 +285,31 @@ In summary: via Wikidata our NTA is used as an authority in 100,000 Wikipedia ar
     - https://web.archive.org/web/20221028121446/https://informatieprofessional.nl/resources/uploads/2016/10/IP2016-07.pdf
 - Project to include NTA in Wikidata and v.v. : [WikiProject Dutch National Thesaurus for Author Names](https://www.wikidata.org/wiki/Wikidata:WikiProject_Dutch_National_Thesaurus_for_Author_Names)
 
-### d) TOT HIER GEKOMEN!!!! From Wikidata to the DBNLa - P723
-Persons in Wikidata with an DBNLa-id
-- Everything mentioned above for the NTA applies analogously to the DBNLa
-- DBNLa in Wikidata: https://www.wikidata.org/wiki/Property:P723
-- Persons in Wikidata with a DBNLa id:  https://w.wiki/869Y
-- Insights into using P723: https://www.wikidata.org/wiki/Property_talk:P723
+### d) From Wikidata to the DBNLa - P723
+Persons in Wikidata with an DBNLa id
+- [P723](https://www.wikidata.org/wiki/Property:P723) = Digitale Bibliotheek voor de Nederlandse Letteren author ID
+- Eg. *Harry Mulisch* : https://www.wikidata.org/wiki/Q927#P723 --> [P723](https://www.wikidata.org/wiki/Property:P723) -- > http://www.dbnl.org/auteurs/auteur.php?id=muli002
+-  All persons via [this SPARQL query](https://w.wiki/869Y)
+```sparql
+SELECT ?item ?itemLabel ?DBNLaUrl
+{
+  ?item wdt:P723 ?DBNLaId.
+  BIND(IRI(CONCAT('http://data.bibliotheken.nl/id/dbnla/', ?DBNLaId)) AS ?DBNLaUrl)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,en"  }
+}
+LIMIT 1000
+```
+#### Insights into the usage of P723
+https://www.wikidata.org/wiki/Property_talk:P723
 - Wikidata contains 31K links to the DBNLa: https://www.wikidata.org/wiki/Property_talk:P723 (bottom, 'Current uses')
-- Insight into the data quality (and possible improvements) of both Wikidata and the DBNLa
--- https://www.wikidata.org/wiki/Wikidata:Database_reports/Humans_with_missing_claims/P723
--- https://www.wikidata.org/wiki/Wikidata:Database_reports/Constraint_violations/P723
 
-Use of KB identifiers in Wikidata, and v.v., both for the NTA and the DBNLa: https://nl.wikipedia.org/wiki/Wikipedia:GLAM/Koninklijke_Bibliotheek_en_Natieaal_Archief/Resultaten/KPIs/KPI10
+#### P723 and data quality
+Two pages provide insight into the data quality (and possible improvements) of both Wikidata and the DBNLa
+- Missing data for people listed in the DBNLa: [Database_reports/Humans_with_missing_claims/P723](https://www.wikidata.org/wiki/Wikidata:Database_reports/Humans_with_missing_claims/P723)
+- Deviations and possible errors in Wikidata as well as DBNLa: [Database_reports/Constraint_violations/P723](https://www.wikidata.org/wiki/Wikidata:Database_reports/Constraint_violations/P723)
+
+### Historical overviews
+Historical overview of the usage of NTA and DBNLa identifiers in Wikidata, and v.v.: https://nl.wikipedia.org/wiki/Wikipedia:GLAM/Koninklijke_Bibliotheek_en_Natieaal_Archief/Resultaten/KPIs/KPI10
 
 <hr/>
 
