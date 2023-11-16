@@ -250,14 +250,6 @@ For example:
     - E.g. *Douglas Adams* : https://www.wikidata.org/wiki/Q42#P1006 contains both http://data.bibliotheken.nl/doc/thes/p339433876 and http://data.bibliotheken.nl/doc/thes /p068744307
     - These NTA items are almost identical, consider merging into the NTA
 
-#### Summary
-- In summary: by integrating NTA data into Wikidata we get a lot of new functionalities regarding data quality, connections and visualization that we cannot offer via our own KB-LOD service data.bibliotheken.nl!
-- Theo van Veen, *Wikidata als gemeenschappelijke thesaurus?*, IP|Vakblad voor de Informatie Professional, October 2016, no. 07
-    - https://informatieprofessional.nl/resources/uploads/2016/10/IP2016-07.pdf
-    - https://web.archive.org/web/20221028121446/https://informatieprofessional.nl/resources/uploads/2016/10/IP2016-07.pdf
-- Project to include NTA in Wikidata and v.v. : [WikiProject Dutch National Thesaurus for Author Names](https://www.wikidata.org/wiki/Wikidata:WikiProject_Dutch_National_Thesaurus_for_Author_Names)
-
-
 #### TOT HIER GEKOMEN!!!! OOOEEEEEE Usage of NTA IDs in Wikipedia articles
 - Wikidata: Category:Articles with NTA identifiers - https://www.wikidata.org/wiki/Q47763687
 - English Wikipedia:
@@ -274,6 +266,13 @@ For example:
 -- 51K articles on WP:JA have an NTA ID
 -- https://ja.wikipedia.org/wiki/Category:NTA%E8%AD%98%E5%88%A5%E5%AD%90%E3%81%8C%E6%8C%87%E5% AE%9A%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E8%A8%98%E4%BA%8B
 In summary: via Wikidata our NTA is used as an authority in 100,000 Wikipedia articles in many languages. (but not Dutch!)
+
+#### Summary for NTA/P1006
+- In summary: by integrating NTA data into Wikidata we get a lot of new functionalities regarding data quality, connections and visualization that we cannot offer via our own KB-LOD service data.bibliotheken.nl! Also Wikipedia is having advantage from the NTA! 
+- Theo van Veen, *Wikidata als gemeenschappelijke thesaurus?*, IP|Vakblad voor de Informatie Professional, October 2016, no. 07
+    - https://informatieprofessional.nl/resources/uploads/2016/10/IP2016-07.pdf
+    - https://web.archive.org/web/20221028121446/https://informatieprofessional.nl/resources/uploads/2016/10/IP2016-07.pdf
+- Project to include NTA in Wikidata and v.v. : [WikiProject Dutch National Thesaurus for Author Names](https://www.wikidata.org/wiki/Wikidata:WikiProject_Dutch_National_Thesaurus_for_Author_Names)
 
 ### d) From Wikidata to the DBNLa - P723
 Persons in Wikidata with anDBNLa-id
