@@ -11,8 +11,8 @@
 
 This page is a textual summary of the course *Verdieping: Wikidata & de KB* for employeees of [KB, national library of the Netherlands](https://www.kb.nl) on 14 November 2023, 15:00-16:15. 
 * The (rather long) full slidedeck (in Dutch) for this course is available on [Wikimedia Commons]() and [Zenodo]() as PDFs.
-* The two videos (in Dutch) of the course are on YouTube: [Part 1]() (covering blocks 1 & 2) and [Part 2]() (covering blocks 3 & 4)--> To add
-* A [full text transcript](/transcripts/xxx) of the course in Dutch is also available.
+* The two videos (in Dutch) of the course are on YouTube: [Part 1]() (covering blocks 1 & 2) and [Part 2]() (covering blocks 3 & 4) --> **To add**
+* A [full text transcript](/transcripts/xxx) of the course in Dutch is also available. --> **To add**
 
 **Contact**
 
@@ -82,14 +82,14 @@ This overview can be reused freely and openly, it is available under the [CC-BY 
 ### Required basic knowledge about Wikidata
 See the course *Wegwijzer in Wikidata* (Introduction to Wikidata), June 6, 2023 (in Dutch)
 * Slides on [Zenodo](https://zenodo.org/record/8006441) and [Wikimedia Commons](https://commons.wikimedia.org/w/index.php?title=File:Wegwijzer_in_Wikidata,_Introductiecurus_Wikidata_-_Koninklijke_Bibliotheek,_6_juni_2023.pdf)  (PDF)
-* [Textual summary in Dutch](https://commons.wikimedia.org/w/index.php?title=File:Wegwijzer_in_Wikidata,_Introductiecurus_Wikidata_-_Koninklijke_Bibliotheek,_6_juni_2023.pdf&page=141) (PDF)
-* Textual summary in English: To add to dedicated Github repo
+* [Textual summary in Dutch](https://commons.wikimedia.org/w/index.php?title=File:Wegwijzer_in_Wikidata,_Introductiecurus_Wikidata_-_Koninklijke_Bibliotheek,_6_juni_2023.pdf&page=141) (PDF) 
+* Textual summary in English: **To add to dedicated Github repo**
 
 ### Course objectives
 To provide more understanding about
 1. Why we use Wikidata  at KB
-2. How we use Wikidata for our thesauri & heritage collections
-3. What value this adds for us
+2. How we use Wikidata for KB thesauri & heritage collections
+3. What value this adds for KB
 
 ### Course layout
 * BLOCK 1) [What does Wikidata add for the KB?](https://github.com/KBNLwikimedia/Wikidata-KB-Overview/blob/main/README.md#block-1---what-does-wikidata-add-for-the-kb)
@@ -133,7 +133,7 @@ What values does Wikidata add for the KB & its services?
     - Greater public reach of KB collections, worldwide
     - KB data in cross-domain, global, multilingual context --> Increasing interoperability KB with the outside world
     - Community: External expertise, skills, tools and enthusiasm to enrich & connect KB data
-2) New functionalities for our data (and images)
+2) New functionalities for our data (and images) --> See [block 4](#block-4---wikidata---kb-heritage-collections)
     - Functionalities that we do not or cannot offer in our own KB services
     - Regarding Search, Data enrichment, data quality control, data visualization and data formats, Image metadata, Machine interactions
     - Both for our thesauri and heritage collections
@@ -156,7 +156,7 @@ KB datasets (thesauri): http://data.bibliotheken.nl/
 - NTA is internationally the only major authoritative dataset on 'Dutch authors'
     - NTA is very useful for Wikidata, in an international context
 - Flat/simple data is more suitable than layered/complex data
-    - People are easier to add to Wikidata than [titles](http://data.bibliotheken.nl/id/dataset/nbt) ([WEMI](https://rdabasics.com/2012/08/24/theoretical-foundations/) = difficult)
+    - People are easier to add to Wikidata than [titles](http://data.bibliotheken.nl/id/dataset/nbt) ([WEMI](https://rdabasics.com/2012/08/24/theoretical-foundations/) = complex)
 - Small datasets are easier than large ones
     - [Alba amicorum](http://data.bibliotheken.nl/id/dataset/rise-alba) and [catchpenny prints](http://data.bibliotheken.nl/id/dataset/rise-centsprenten) are suitable for Wikidata
 
@@ -281,7 +281,7 @@ Wikidata: [Category:Articles with NTA identifiers](https://www.wikidata.org/wiki
 - Czech Wikipedia: [36K articles](https://cs.wikipedia.org/wiki/Category:Monitoring:%C4%8Cl%C3%A1nky_s_identifik%C3%A1torem_NTA) on WP:CS have NTA ids
 - Japanese Wikipedia: [51K articles](https://ja.wikipedia.org/wiki/Category:NTA%E8%AD%98%E5%88%A5%E5%AD%90%E3%81%8C%E6%8C%87%E5%AE%9A%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E8%A8%98%E4%BA%8B) on WP:JA have NTA ids
 
-**In summary:** via Wikidata our NTA is used as an authority in 100,000 Wikipedia articles in many languages. (but not Dutch!)
+**In summary:** via Wikidata the NTA is used as an authority in 100,000 Wikipedia articles in many languages. (but not Dutch!)
 
 #### Summary for NTA/P1006
 - By integrating NTA data into Wikidata we get a lot of new functionalities regarding data quality, connections and visualization that we cannot offer via our own KB-LOD service data.bibliotheken.nl! Also Wikipedia is having advantage from the NTA! 
@@ -334,11 +334,11 @@ Look at [File:Atlas_de_Wit_1698-pl017-Leiden-St_Pancraskerk.jpg](https://commons
 - Linked open data for Commons files is created, files become part of the LOD cloud
 - Not only for images, eg. see the structured data on [this PDF file](https://commons.wikimedia.org/wiki/File:OpenRefine-Wikidata_introduction_workshop_-_Koninklijke_Bibliotheek,_4_juli_2023.pdf)
 - Files are made searchable via SPARQL
-- For KB: Structured 5* LOD metadata for more than [30,000+ KB media files](https://commons.wikimedia.org/wiki/Category:Media_contributed_by_Koninklijke_Bibliotheek) 
+- For KB: Structured 5* LOD metadata for [31,348 KB files](https://w.wiki/8BXk)
 
 ### SPARQL queries for KB images
 - [All files from the KB collection](https://w.wiki/7zh5) --> Collection ([P195](https://www.wikidata.org/wiki/Property:P195)) = Koninklijke Bibliotheek ([Q1526131](https://www.wikidata.org/wiki/Q1526131))
-     - The result include [30,617 KB collection images](https://commons.wikimedia.org/wiki/Category:Media_contributed_by_Koninklijke_Bibliotheek), as well as non-collection images of the KB, such as images of [the KB buildings](https://commons.wikimedia.org/wiki/Buildings_of_Koninklijke_Bibliotheek), [events](https://commons.wikimedia.org/wiki/Events_at_Koninklijke_Bibliotheek) or [directors](https://commons.wikimedia.org/wiki/Directors_of_the_Koninklijke_Bibliotheek) 
+     - The [result](https://w.wiki/8BXq) include [30,617 KB collection images](https://commons.wikimedia.org/wiki/Category:Media_contributed_by_Koninklijke_Bibliotheek), as well as non-collection images of the KB, such as images of [the KB buildings](https://commons.wikimedia.org/wiki/Buildings_of_Koninklijke_Bibliotheek), [events](https://commons.wikimedia.org/wiki/Events_at_Koninklijke_Bibliotheek) or [directors](https://commons.wikimedia.org/wiki/Directors_of_the_Koninklijke_Bibliotheek) 
 - [PDF files from the KB](https://w.wiki/7zhm) --> MIME type ([P1163](https://www.wikidata.org/wiki/Property:P1163)) = “application/pdf”
 - [Images from *Album amicorum by Jacobus Heyblocq*](https://w.wiki/7zjb)
 
@@ -396,8 +396,6 @@ KB collection highlights are part of our national heritage, just like e.g.
 - [Victory Boogie Woogie](https://en.wikipedia.org/wiki/Victory_Boogie_Woogie) (collection highlight [Kunstmuseum The Hague](https://en.wikipedia.org/wiki/Kunstmuseum_Den_Haag))
 - [The Night Watch](https://en.wikipedia.org/wiki/The_Night_Watch) (collection highlight [Rijksmuseum Amsterdam](https://en.wikipedia.org/wiki/Rijksmuseum))
 
-Project page WikiProject KB Collection highlights: https://www.wikidata.org/wiki/Wikidata:WikiProject_Collection_highlights_National_Library_of_the_Netherlands
-
 #### Presentation of collection highlights on kb.nl
 [Collection highlights on (previous) KB website](https://web.archive.org/web/20200213191235/https://www.kb.nl/galerij/digitale-topstukken) from Febr 2020
 
@@ -410,7 +408,7 @@ This presentation on kb.nl has limited functionalities and reuse options. This p
 
 #### A new paradigm for collection highlights
 A new way of thinking: 
-- KB collection highlights are building blocks and invite active creation.
+- KB collection highlights are building blocks and invite for active reuse and creation.
 - Building blocks for tech community: Developers, app builders, tech companies, AIs, digital humanities, data scientists, hackathons, Wikimedia communities, LOD world, NDE, Europeana etc.
 - KB collection highlights as a toolbox of Technical LEGO
     - Contents of this toolbox: Eg. 5-star Linked Open Data - Automatic image recognition (AI) - Semantic tagging - Data dumps & bulk downloads - SPARQL - Images searchable by content - Data visualizations - Python - Machine-readable data - Flexible REST APIs - Manifest legal terms - IIIF - Data as JSON, XML, CSV - Automatic multilingualism - External LOD Identifiers
@@ -423,6 +421,11 @@ E.g. Atlas Ortelius:
 1) [Catalog record KB](https://opc-kb.oclc.org/DB=1/XMLPRS=Y/PPN?PPN=369376781) --> Metadata to [Q67465742](https://www.wikidata.org/wiki/Q67465742#P195) on Wikidata, with [collection](https://www.wikidata.org/wiki/Property:P195) = [Koninklijke Bibliotheek](https://www.wikidata.org/wiki/Q1526131), and qualifier [subject has role](https://www.wikidata.org/wiki/Property:P2868) = [collection highlight](https://www.wikidata.org/wiki/Q29188408)
 2) [Hi-res flip book KB](https://gallery.kb.nl/kb.html#/nl/ortelius/page/59/zoom/2/lat/-72.28906720017673/lng/-30.585937499999996) --> Images to [Atlas Ortelius 1571](https://commons.wikimedia.org/wiki/Atlas_Ortelius_1571) on Wikimedia Commons 
 3) [Contextual article KB](https://www.kb.nl/ortelius) --> Context to [Theatrum Orbis Terrarum](https://nl.wikipedia.org/wiki/Theatrum_Orbis_Terrarum) on Dutch Wikipedia
+
+The [WikiProject KB Collection highlights](https://www.wikidata.org/wiki/Wikidata:WikiProject_Collection_highlights_National_Library_of_the_Netherlands) (2020-present) aims to improve the findabilty, visibilty and reusability of KB's collection highlights for both humans and machines by
+- creating and improving the [Wikidata descriptions](https://w.wiki/QpD) for all digitised KB collection highlights,
+- uploading their [public domain images](https://commons.wikimedia.org/wiki/Category:Collection_highlights_of_Koninklijke_Bibliotheek) to Wikimedia Commons, reusing data from Wikidata as much as possible to create image metadata
+- creating and improving the Wikipedia articles about them on Dutch and English Wikipedia
 
 **Result of the project**: All  cool and value adding functionalities, tools and community capacities of the Wikimedia infrastructure are now available for our KB collection highlights. The party can start!
 
