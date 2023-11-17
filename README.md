@@ -268,10 +268,10 @@ Wikidata: [Category:Articles with NTA identifiers](https://www.wikidata.org/wiki
 - Czech Wikipedia: [36K articles](https://cs.wikipedia.org/wiki/Category:Monitoring:%C4%8Cl%C3%A1nky_s_identifik%C3%A1torem_NTA) on WP:CS have NTA ids
 - Japanese Wikipedia: [51K articles](https://ja.wikipedia.org/wiki/Category:NTA%E8%AD%98%E5%88%A5%E5%AD%90%E3%81%8C%E6%8C%87%E5%AE%9A%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E8%A8%98%E4%BA%8B) on WP:JA have NTA ids
 
-In summary: via Wikidata our NTA is used as an authority in 100,000 Wikipedia articles in many languages. (but not Dutch!)
+**In summary:** via Wikidata our NTA is used as an authority in 100,000 Wikipedia articles in many languages. (but not Dutch!)
 
 #### Summary for NTA/P1006
-- In summary: by integrating NTA data into Wikidata we get a lot of new functionalities regarding data quality, connections and visualization that we cannot offer via our own KB-LOD service data.bibliotheken.nl! Also Wikipedia is having advantage from the NTA! 
+- By integrating NTA data into Wikidata we get a lot of new functionalities regarding data quality, connections and visualization that we cannot offer via our own KB-LOD service data.bibliotheken.nl! Also Wikipedia is having advantage from the NTA! 
 - Theo van Veen, *[Wikidata als gemeenschappelijke thesaurus?](https://informatieprofessional.nl/resources/uploads/2016/10/IP2016-07.pdf)*, IP|Vakblad voor de Informatie Professional, October 2016, no. 07 - See [archived version](https://web.archive.org/web/20221028121446/https://informatieprofessional.nl/resources/uploads/2016/10/IP2016-07.pdf) 
 - Project to include NTA in Wikidata and v.v. : [WikiProject Dutch National Thesaurus for Author Names](https://www.wikidata.org/wiki/Wikidata:WikiProject_Dutch_National_Thesaurus_for_Author_Names)
 
@@ -320,8 +320,8 @@ Look at [File:Atlas_de_Wit_1698-pl017-Leiden-St_Pancraskerk.jpg](https://commons
 - Images are linked to Wikidata
 - Images are provided with real structured (and therefore machine-readable) data
 - Linked open data for Commons files is created, files become part of the LOD cloud
-- Not only for images, but also for example PDFs: See the structured data on [this PDF file](https://commons.wikimedia.org/wiki/File:OpenRefine-Wikidata_introduction_workshop_-_Koninklijke_Bibliotheek,_4_juli_2023.pdf)
-- Files are made searchable via SPARQL.
+- Not only for images, eg. see the structured data on [this PDF file](https://commons.wikimedia.org/wiki/File:OpenRefine-Wikidata_introduction_workshop_-_Koninklijke_Bibliotheek,_4_juli_2023.pdf)
+- Files are made searchable via SPARQL
 - For KB: Structured 5* LOD metadata for more than [30,000+ KB media files](https://commons.wikimedia.org/wiki/Category:Media_contributed_by_Koninklijke_Bibliotheek) 
 
 ### SPARQL queries for KB images
@@ -329,70 +329,39 @@ Look at [File:Atlas_de_Wit_1698-pl017-Leiden-St_Pancraskerk.jpg](https://commons
 - [PDF files from the KB](https://w.wiki/7zhm) --> MIME type ([P1163](https://www.wikidata.org/wiki/Property:P1163)) = “application/pdf”
 - [Images from Album amicorum by Jacobus Heyblocq](https://w.wiki/7zjb)
 
-### What can be seen on KB images?
-- https://commons.wikimedia.org/wiki/Commons:Depicts
-- What can be seen in this image, tagged using Wikidata entries
-- Things depicted on the plate "Hooglandse kerk" in Atlas De Wit 1698 (https://commons.wikimedia.org/wiki/File:Atlas_de_Wit_1698-pl017-Leiden-St_Pancraskerk.jpg): Hooglandse Kerk (Q1537970) - horse (Q726 ) - dog (Q144) - clock (Q376) - people (Q2472587) - cloud (Q8074) - carriage (Q235356) - stepped gable (Q1939660) - tree (Q10884) - walking stick (Q1347864) - The Castle (Q18813071) - woman ( Q467) - child (Q7569) - door (Q36794) - hat (Q80151) - weathercock (Q2157687) - stained glass window (Q488094)
-- Request images depicted on the plate "Hooglandse kerk" in Atlas De Wit 1698 (M32246848) via SPARQL: https://w.wiki/7zps
-- Depicted things throughout Atlas de Wit (https://commons.wikimedia.org/wiki/Category:Atlas_de_Wit_1698) via SPARQL: https://w.wiki/7zqj
+### What is depicted on KB images?
+- What can be seen in / is depicted on images, tagged using Wikidata entries
+- [Commons:Depicts](https://commons.wikimedia.org/wiki/Commons:Depicts) - documentation
+- Things depicted on the image [Hooglandse kerk](https://commons.wikimedia.org/wiki/File:Atlas_de_Wit_1698-pl017-Leiden-St_Pancraskerk.jpg) in [Atlas De Wit 1698](https://commons.wikimedia.org/wiki/Category:Atlas_de_Wit_1698) : Hooglandse Kerk ([Q1537970](https://www.wikidata.org/wiki/Q1537970)) - horse ([Q726](https://www.wikidata.org/wiki/Q726) ) - dog ([Q144](https://www.wikidata.org/wiki/Q144)) - clock ([Q376](https://www.wikidata.org/wiki/Q376)) - people ([Q2472587](https://www.wikidata.org/wiki/Q2472587)) - cloud ([Q8074](https://www.wikidata.org/wiki/Q8074)) - carriage ([Q235356](https://www.wikidata.org/wiki/Q235356)) - stepped gable ([Q1939660](https://www.wikidata.org/wiki/Q1939660)) - tree ([Q10884](https://www.wikidata.org/wiki/Q10884)) - walking stick ([Q1347864](https://www.wikidata.org/wiki/Q1347864)) - The Castle ([Q18813071](https://www.wikidata.org/wiki/Q18813071)) - woman ( [Q467](https://www.wikidata.org/wiki/Q467)) - child ([Q7569](https://www.wikidata.org/wiki/Q7569)) - door ([Q36794](https://www.wikidata.org/wiki/Q36794)) - hat ([Q80151](https://www.wikidata.org/wiki/Q80151)) - weathercock ([Q2157687](https://www.wikidata.org/wiki/Q2157687)) - stained glass window ([Q488094](https://www.wikidata.org/wiki/Q488094))
+- Depicted things in this plate via SPARQL: https://w.wiki/7zps
+- Depicted things in [all plates of Atlas de Wit]((https://commons.wikimedia.org/wiki/Category:Atlas_de_Wit_1698)) via SPARQL: https://w.wiki/7zqj
 
+### Summary of image search options in Wikimedia Commons
 Let's summarize: KB images on Commons are searchable in 3 ways
-1) Regular metadata (free text)
-2) Structured metadata
-3) By content (What is depicted in the KB images?)
+1) Via regular metadata (free text)
+2) Via structured metadata
+3) By content (What is [depicted](https://commons.wikimedia.org/wiki/Commons:Depicts) in the KB images?)
 
 ### Tooltip: Hay's Structured Search
-The (super handy!) tool Hay's Structured Search offers all three options:
-- Visual, multilingual search engine to find images with (and without) structured data in Wikimedia Commons
-- https://hay.toolforge.org/sdsearch/
+The (super handy!) tool [Hay's Structured Search](https://hay.toolforge.org/sdsearch/) offers all three options. It is a visual, multilingual search engine to find images with (and without) structured data in Wikimedia Commons. 
+- [All KB images, with and without structured data](https://hay.toolforge.org/sdsearch/#q=incategory:%22Media%20contributed%20by%20Koninklijke%20Bibliotheek%22) --> 30,617 images in [Category:Media_contributed_by_Koninklijke_Bibliotheek](https://commons.wikimedia.org/wiki/Category:Media_contributed_by_Koninklijke_Bibliotheek) (search in English interface)
+- [KB images in which *something* is depicted](https://hay.toolforge.org/sdsearch/#q=incategory:%22Media%20contributed%20by%20Koninklijke%20Bibliotheek%22%20haswbstatement:P180) --> 19,764 out of 30,167 images (66%) (search in Dutch interface)
+- [KB images, depicting dogs](https://hay.toolforge.org/sdsearch/#q=incategory:%22Media%20contributed%20by%20Koninklijke%20Bibliotheek%22%20haswbstatement:P180=Q144) - [dog = Q144](https://www.wikidata.org/wiki/Q144) (search in Dutch interface)
+- [Town on the Zuiderzee](https://hay.toolforge.org/sdsearch/#q=incategory:%22Media%20contributed%20by%20Koninklijke%20Bibliotheek%22%20haswbstatement:P180=Q228655%20-incategory:%22Visboeck%20Coenen%22%20-incategory:%22Visboeck%20Coenen%20(opening)%22%20-incategory:%22Catchpenny%20prints%20from%20Royal%20Library%22) - [Zuiderzee = Q228655](https://www.wikidata.org/wiki/Q228655)
+- [Miniatures from *Der Naturen Bloeme* showing fish](https://hay.toolforge.org/sdsearch/#q=incategory:%22Miniatures%20from%20Der%20naturen%20bloeme%20-%20KB%20KA%2016%22%20haswbstatement:P180=Q152) - [fish = Q152](https://www.wikidata.org/wiki/Q152) + [Category:Miniatures_from_Der_naturen_bloeme_-_KB_KA_16](https://commons.wikimedia.org/wiki/Category:Miniatures_from_Der_naturen_bloeme_-_KB_KA_16)
+- [Images from *Atlas de Wit*, showing a bridge](https://hay.toolforge.org/sdsearch/#q=incategory:%22Atlas%20de%20Wit%201698%22%20haswbstatement:P180=Q12280) - [bridge = Q12280](https://www.wikidata.org/wiki/Q12280)
+- [Images from *Atlas de Wit* depicting an 'igreja'](https://hay.toolforge.org/sdsearch/#offset=0&q=incategory:%22Atlas%20de%20Wit%201698%22%20haswbstatement:P180=Q16970) - [igreja = Q16970](https://www.wikidata.org/wiki/Q16970) = church building in Portuguese (search in Portuguese interface)
+- [Images from *Atlas de Wit* showing both 'église' and 'chien'](https://hay.toolforge.org/sdsearch/#q=incategory:%22Atlas%20de%20Wit%201698%22%20haswbstatement:P180=Q16970%20haswbstatement:P180=Q144) - [église = Q16970](https://www.wikidata.org/wiki/Q16970) = church building in French, [chien = Q144](https://www.wikidata.org/wiki/Q144) = dog in French (search in  French interface)
+  
+**In summary:** The search functionalities shown (SPARQL, structured, multilingual search, by content) are much more advanced than in our own KB (image) services!
 
-- All KB images, with and without structured data (30,617 images in https://commons.wikimedia.org/wiki/Category:Media_contributed_by_Koninklijke_Bibliotheek)
--- Search in English
--- https://hay.toolforge.org/sdsearch/#q=incategory:%22Media%20contributed%20by%20Koninklijke%20Library%22
+### Adding Depicts tags to KB images yourself
+[This manual](https://commons.wikimedia.org/wiki/File:Instruction_KB-images_op_Commons_taggen_met_Wikidata_-_26032020.pdf) from 2020 explains step by step how to make images from the KB collection more discoverable, visible and reusable by indicating (tagging) which things (entities) can be seen on those images. This is done by connecting Wikidata items to those things. Available on [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Instruction_KB-images_op_Commons_taggen_met_Wikidata_-_26032020.pdf) and [Zenodo](https://zenodo.org/record/7777755)
 
-- KB images on which something is depicted
--- Search in Dutch
--- https://hay.toolforge.org/sdsearch/#q=incategory:%22Media%20contributed%20by%20Koninklijke%20Library%22%20haswbstatement:P180
--- 19,764 out of 30,167 images (66%)
-
-- KB images, depicting dogs
--- Search in Dutch
--- https://hay.toolforge.org/sdsearch/#q=incategory:%22Media%20contributed%20by%20Koninklijke%20Library%22%20haswbstatement:P180=Q144
- 
-- Town on the Zuiderzee
--- https://hay.toolforge.org/sdsearch/#q=incategory:%22Media%20contributed%20by%20Koninklijke%20Library%22%20haswbstatement:P180=Q228655%20-incategory:%22Visboeck%20Coenen%22%20 -incategory:%22Visboeck%20Coenen%20(opening)%22%20-incategory:%22Catchpenny%20prints%20from%20Royal%20Library%22
-
-- Miniatures from Der Naturen Bloeme showing fish
--- https://hay.toolforge.org/sdsearch/#q=incategory:%22Miniatures%20from%20Der%20naturen%20bloeme%20-%20KB%20KA%2016%22%20haswbstatement:P180=Q152
--- https://commons.wikimedia.org/wiki/Category:Miniatures_from_Der_naturen_bloeme_-_KB_KA_16
-
-- Images from Atlas de Wit, showing a bridge
--- https://hay.toolforge.org/sdsearch/#q=incategory:%22Atlas%20de%20Wit%201698%22%20haswbstatement:P180=Q12280
--- https://commons.wikimedia.org/wiki/Category:Atlas_de_Wit_1698
-
-- Images from Atlas de Wit showing an 'igreja' (church building).
--- Search in Portuguese
--- igreja = church building in Portuguese
--- https://hay.toolforge.org/sdsearch/#offset=0&q=incategory:%22Atlas%20de%20Wit%201698%22%20haswbstatement:P180=Q16970
--- https://commons.wikimedia.org/wiki/Category:Atlas_de_Wit_1698
-
-- Statues showing both 'église' (church building) and 'chien' (dog).
--- Search in French
--- https://hay.toolforge.org/sdsearch/#q=incategory:%22Atlas%20de%20Wit%201698%22%20haswbstatement:P180=Q16970%20haswbstatement:P180=Q144
--- https://commons.wikimedia.org/wiki/Category:Atlas_de_Wit_1698
--- Depicts: Church building + Depicts: Dog
--- Language-independent search for depicted things in Atlas De Wit
-
-In summary: The search functionalities shown (SPARQL, structured, multilingual search, by content) are much more advanced than in our own KB (image) services!
-
-### Adding Depicts tags to KB images
-- https://commons.wikimedia.org/wiki/File:Instruction_KB-images_op_Commons_taggen_met_Wikidata_-_26032020.pdf
-- https://zenodo.org/record/7777755
-- This manual (2020) explains step by step how to make images from the KB collection more findable, visible and reusable by indicating (tagging) which things (entities) can be seen in those images.
-- Results dated 1-11-2023
--- 30,617 KB collection images on Commons - https://commons.wikimedia.org/wiki/Category:Media_contributed_by_Koninklijke_Bibliotheek
--- 19,764 images on which something is tagged (can be seen) - https://hay.toolforge.org/sdsearch/#q=incategory:%22Media%20contributed%20by%20Koninklijke%20Library%22%20haswbstatement:P180
--- KB tag champion: Madeleine van den Berg ? 34K+ things added - https://commons.wikimedia.org/w/index.php?title=Special%3AContributions&target=Madeleine+van+den+Berg&namespace=all&tagfilter=&start=&end=&limit=500
+Results per 1 november 2023
+- [30,617 KB collection images](https://commons.wikimedia.org/wiki/Category:Media_contributed_by_Koninklijke_Bibliotheek) on Commons
+- [19,764 images on which something is tagged](https://hay.toolforge.org/sdsearch/#q=incategory:%22Media%20contributed%20by%20Koninklijke%20Bibliotheek%22%20haswbstatement:P180)
+- KB tagging champion is Madeleine van den Berg with [34K+ things added](https://commons.wikimedia.org/w/index.php?title=Special%3AContributions&target=Madeleine+van+den+Berg&namespace=all&tagfilter=&start=&end=&limit=1000)
 
 <hr/>
 
