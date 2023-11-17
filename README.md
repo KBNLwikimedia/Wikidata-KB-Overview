@@ -326,8 +326,9 @@ Look at [File:Atlas_de_Wit_1698-pl017-Leiden-St_Pancraskerk.jpg](https://commons
 
 ### SPARQL queries for KB images
 - [All files from the KB collection](https://w.wiki/7zh5) --> Collection ([P195](https://www.wikidata.org/wiki/Property:P195)) = Koninklijke Bibliotheek ([Q1526131](https://www.wikidata.org/wiki/Q1526131))
+     - The result include [30,617 KB collection images](https://commons.wikimedia.org/wiki/Category:Media_contributed_by_Koninklijke_Bibliotheek), as well as non-collection images of the KB, such as images of [the KB buildings](https://commons.wikimedia.org/wiki/Buildings_of_Koninklijke_Bibliotheek), [events](https://commons.wikimedia.org/wiki/Events_at_Koninklijke_Bibliotheek) or [directors](https://commons.wikimedia.org/wiki/Directors_of_the_Koninklijke_Bibliotheek) 
 - [PDF files from the KB](https://w.wiki/7zhm) --> MIME type ([P1163](https://www.wikidata.org/wiki/Property:P1163)) = “application/pdf”
-- [Images from Album amicorum by Jacobus Heyblocq](https://w.wiki/7zjb)
+- [Images from *Album amicorum by Jacobus Heyblocq*](https://w.wiki/7zjb)
 
 ### What is depicted on KB images?
 - What can be seen in / is depicted on images, tagged using Wikidata entries
