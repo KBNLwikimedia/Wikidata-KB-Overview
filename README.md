@@ -71,7 +71,7 @@ This overview can be reused freely and openly, it is available under the [CC-BY 
     - [A new paradigm for collection highlights](#a-new-paradigm-for-collection-highlights)
     - [Wikification of KB collection highlights](#wikification-of-kb-collection-highlights)
     - [50 cool new things you can do now with KB's collection highlights](#50-cool-new-things-you-can-do-now-with-kb-s-collection-highlights)
-    - [Examples](#examples)
+      - [Examples](#examples)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -390,7 +390,7 @@ Examples of KB heritage collections: [Medieval manuscripts](https://commons.wiki
 5) Connectable to other things: Making semantic links between the KB collections and persons, places, events etc. described in Wikidata
 6) Collections consisting of similar, unique objects with narrow, flat, well-defined data models/classes: Similar values for [instance of](https://www.wikidata.org/wiki/Property:P31) and/or [subclass of](https://www.wikidata.org/wiki/Property:P279). Not OK: hetereogenous ephemera.
 
-### WikiProject KB Collection highlight (2020-present)
+### WikiProject KB Collection highlights (2020-present)
 KB collection highlights are part of our national heritage, just like e.g.
 - [Act of Abjuration](https://en.wikipedia.org/wiki/Act_of_Abjuration) (collection highlight [National Archives](https://en.wikipedia.org/wiki/Nationaal_Archief))
 - [Victory Boogie Woogie](https://en.wikipedia.org/wiki/Victory_Boogie_Woogie) (collection highlight [Kunstmuseum The Hague](https://en.wikipedia.org/wiki/Kunstmuseum_Den_Haag))
@@ -437,7 +437,7 @@ This article has 5 parts:
 - [Part 4, Images](https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%204%2C%20Images.html) - new things you can do with our individual highlight images
 - [Part 5, Reuse](https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%205%2C%20Reuse.html) - some examples of programmatically reusing KB's collection highlights
 
-#### Examples
+##### Examples
 1. All functionalities for KB images regarding SPARQL, structured search, multilingual search, search by content, as explained in Block 3
 2. [Gallery of KB collection highlights](https://nl.wikipedia.org/wiki/Wikipedia:GLAM/Koninklijke_Bibliotheek_en_Nationaal_Archief/Topstuks/Galerij) on Dutch Wikipedia (never mind the new WP layout!)
 3. [Persons/roles involved in each collection highlight](https://www.wikidata.org/wiki/Wikidata:WikiProject_Collection_highlights_National_Library_of_the_Netherlands/Admin/Overview/People)
