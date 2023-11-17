@@ -304,7 +304,6 @@ Historical overview of the usage of NTA and DBNLa identifiers in Wikidata, and v
 <hr/>
 
 ## BLOCK 3 - Intermezzo: Linking Wikimedia Commons with Wikidata
-
 Look at [File:Atlas_de_Wit_1698-pl017-Leiden-St_Pancraskerk.jpg](https://commons.wikimedia.org/wiki/File:Atlas_de_Wit_1698-pl017-Leiden-St_Pancraskerk.jpg) on Wikimedia Commons (=Saint Pancras Church in Leiden, now called *Hooglandse Kerk* )
 
 ### Regular metadata for KB images
@@ -339,9 +338,9 @@ Look at [File:Atlas_de_Wit_1698-pl017-Leiden-St_Pancraskerk.jpg](https://commons
 
 ### Summary of image search options in Wikimedia Commons
 Let's summarize: KB images on Commons are searchable in 3 ways
-1) Via regular metadata (free text)
+1) Via regular metadata (= free text search)
 2) Via structured metadata
-3) By content (What is [depicted](https://commons.wikimedia.org/wiki/Commons:Depicts) in the KB images?)
+3) By content (What is [depicted](https://commons.wikimedia.org/wiki/Commons:Depicts) in KB images?)
 
 ### Tooltip: Hay's Structured Search
 The (super handy!) tool [Hay's Structured Search](https://hay.toolforge.org/sdsearch/) offers all three options. It is a visual, multilingual search engine to find images with (and without) structured data in Wikimedia Commons. 
@@ -354,7 +353,7 @@ The (super handy!) tool [Hay's Structured Search](https://hay.toolforge.org/sdse
 - [Images from *Atlas de Wit* depicting an 'igreja'](https://hay.toolforge.org/sdsearch/#offset=0&q=incategory:%22Atlas%20de%20Wit%201698%22%20haswbstatement:P180=Q16970) - [igreja = Q16970](https://www.wikidata.org/wiki/Q16970) = church building in Portuguese (search in Portuguese interface)
 - [Images from *Atlas de Wit* showing both 'église' and 'chien'](https://hay.toolforge.org/sdsearch/#q=incategory:%22Atlas%20de%20Wit%201698%22%20haswbstatement:P180=Q16970%20haswbstatement:P180=Q144) - [église = Q16970](https://www.wikidata.org/wiki/Q16970) = church building in French, [chien = Q144](https://www.wikidata.org/wiki/Q144) = dog in French (search in  French interface)
   
-**In summary:** The search functionalities shown (SPARQL, structured, multilingual search, by content) are much more advanced than in our own KB (image) services!
+**In summary:** The search functionalities shown (SPARQL, structured search, multilingual search, search by content) are much more advanced than the propriatary KB (image) services such as [Het Geheugen](https://geheugen.delpher.nl/nl)!
 
 ### Adding Depicts tags to KB images yourself
 [This manual](https://commons.wikimedia.org/wiki/File:Instruction_KB-images_op_Commons_taggen_met_Wikidata_-_26032020.pdf) from 2020 explains step by step how to make images from the KB collection more discoverable, visible and reusable by indicating (tagging) which things (entities) can be seen on those images. This is done by connecting Wikidata items to those things. Available on [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Instruction_KB-images_op_Commons_taggen_met_Wikidata_-_26032020.pdf) and [Zenodo](https://zenodo.org/record/7777755)
@@ -368,74 +367,78 @@ Results per 1 november 2023
 
 ## BLOCK 4 - Wikidata & KB heritage collections
 
-Examples of KB heritage collections: Manuscripts - Atlases - Coat of arms books - Friends books - Cent prints - Children's picture books - Flora and fauna books
+Examples of KB heritage collections: [Medieval manuscripts](https://commons.wikimedia.org/wiki/Koninklijke_Bibliotheek/Manuscripts/Medieval) - [Maps and atlases](https://commons.wikimedia.org/wiki/Koninklijke_Bibliotheek/Maps_and_atlases) - [Armorials](https://commons.wikimedia.org/wiki/Koninklijke_Bibliotheek/Manuscripts/Armorials) - [Alba amicorum](https://commons.wikimedia.org/wiki/Alba_amicorum_from_Koninklijke_Bibliotheek) - [Catchpenny prints](https://commons.wikimedia.org/wiki/Catchpenny_prints_from_Koninklijke_Bibliotheek) - [Children's picture books](https://commons.wikimedia.org/wiki/Koninklijke_Bibliotheek/Books/Picture_books) - [Flora and fauna books](https://commons.wikimedia.org/wiki/Koninklijke_Bibliotheek/Books/Flora_and_fauna)
 
-Criteria for suitability of KB heritage for Wikidata
-- 1) Masterpieces, canonical objects
-- 2) Royalty-free objects (public domain)
-- 3) Limited collection size
-- 4) Visually rich collections
-- 5) Connectable to other things (persons, places, events...)
-- 6) Collections of similar, unique objects (narrow, flat, well-defined data model/class)
+### Criteria for suitability of KB heritage collections for Wikidata
+1) Collection highlights, canonical objects: The most important objects of the KB must be present on Wikidata (and Commons)
+2) Copyright free objects: Public domain = no hassle with copyright
+3) Limited collection size: 10-100s of images are easier to process than 10-100Ks
+4) Visually rich collections: What is depicted on the images, see Block 3
+5) Connectable to other things: Making semantic links between the KB collections and persons, places, events etc. described in Wikidata
+6) Collections consisting of similar, unique objects with narrow, flat, well-defined data models/classes: Similar values for [instance of](https://www.wikidata.org/wiki/Property:P31) and/or [subclass of](https://www.wikidata.org/wiki/Property:P279). Not OK: hetereogenous ephemera.
 
-WikiProject KB Top pieces (2020-present)
-KB masterpieces are part of our national heritage, just like e.g.
-- Placard of Abandonment (Top piece National Archives)
-- Victory Boogie Woogie (Top piece Art Museum The Hague)
-- The Night Watch (Top piece Rijksmuseum Amsterdam)
+### WikiProject KB Collection highlight (2020-present)
+KB collection highlights are part of our national heritage, just like e.g.
+- Placard of Abandonment (collection highlight National Archives)
+- Victory Boogie Woogie (collection highlight Kunstmuseum The Hague)
+- The Night Watch (collection highlight Rijksmuseum Amsterdam)
 
-Project page WikiProject KB Highlights: https://www.wikidata.org/wiki/Wikidata:WikiProject_Collection_highlights_National_Library_of_the_Netherlands
+Project page WikiProject KB Collection highlights: https://www.wikidata.org/wiki/Wikidata:WikiProject_Collection_highlights_National_Library_of_the_Netherlands
 
-Top pieces on (previous) KB website: https://www.kb.nl/gallery/digitale-topstuks
+#### Presentation of collection highlights on kb.nl
+[Collection highlights on (previous) KB website](https://web.archive.org/web/20200213191235/https://www.kb.nl/galerij/digitale-topstukken) from Febr 2020
 
-Typical presentation of masterpieces on kb.nl
-- 1) Catalog record --> Metadata
-- 2) Hi-res flip book --> Images
-- 3) Context article --> Stories
+Typical presentation of collection highlights on kb.nl, for instance for *Atlas Ortelius 1571*
+1) [Catalog record](https://opc-kb.oclc.org/DB=1/XMLPRS=Y/PPN?PPN=369376781) --> Metadata
+2) [Hi-res flip book](https://galerij.kb.nl/kb.html#/nl/ortelius/page/9/zoom/2/lat/-57.42129439209404/lng/-67.8515625) --> Images
+3) [Contextual article](https://web.archive.org/web/20200213191235/https://www.kb.nl/themas/atlassen/atlas-ortelius) --> Stories, context
 
-This presentation on kb.nl has limited functionalities and reuse options
-Old way of thinking: Top pieces (on kb.nl) are only for reading and viewing --> Passive consumption
-More explanation in this article: https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%201%2C% 20Introduction.html
+This presentation on kb.nl has limited functionalities and reuse options. This presentation represents an old way of thinking: Collection highlights (on kb.nl) are only for reading and viewing, inviting for passive consumption. More explanation in [this article](https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%201%2C%20Introduction.html).
 
-New way of thinking: KB Masterpieces are building blocks and invite active creation
+#### A new paradigm for collection highlights
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+New way of thinking: KB collection highlights are building blocks and invite active creation
 Building blocks for tech community: Developers, app builders, tech companies, AIs, digital humanities, data scientists, hackathons, LOD world, NDE, Europeana etc.
 
-KB Top pieces as a box Technical LEGO
+KB Collection highlights as a box Technical LEGO
 Contents of the box (The unboxing): 5* Linked Open Data - Automatic image recognition (AI) - Semantic tagging - Data dumps & bulk downloads - SPARQL - Image searchable by content - Data visualizations - Python - Machine-readable data - Flexible REST APIs - Manifest legal terms - IIIF - JSON, XML, CSV - Automatic Multilingualism - External LOD Identifiers
 
 All these building blocks are available in the Wikimedia infrastructure: Wikidata (metadata), Wikimedia Commons (images) and Wikipedia (stories) - and the associated international communities - provide a coherent technical and social infrastructure to make our masterpieces much more reusable.
 
-Wikification of our Top Pieces: https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%201%2C%20Introduction .html
+#### Wikification of KB collection highlights
+: https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%201%2C%20Introduction .html
 
 E.g. Atlas Ortelius:
 - 1) Catalog record KB (https://opc-kb.oclc.org/DB=1/XMLPRS=Y/PPN?PPN=369376781) --> Metadata to Wikidata (https://www.wikidata.org/wiki /Q67465742#P195 --> subject has role collection highlight)
 - 2) Hi-res flip book KB (https://gallery.kb.nl/kb.html#/nl/ortelius/page/59/zoom/2/lat/-72.28906720017673/lng/-30.585937499999996) --> Images to Wikimedia Commons (https://commons.wikimedia.org/wiki/Atlas_Ortelius_1571)
 - 3) Context article KB (https://www.kb.nl/ortelius) --> Story on Wikipedia (https://nl.wikipedia.org/wiki/Theatrum_Orbis_Terrarum)
 
-Result of the Masterpieces project: All functionalities & added values of the Wikimedia infrastructure are now available for our KB Masterpieces
+Result of the project: All functionalities & added values of the Wikimedia infrastructure are now available for our KB Masterpieces
 
+#### 50 cool new things you can do now with KB's collection highlights
 The party can start! Building cool things!
 50 cool new things you can do now with KB's collection highlights: https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights /
 
 By putting our collection highlights into Wikidata, Wikimedia Commons and Wikipedia, dozens of new functionalities have been added (LEGO box). As a result of Wikifying this collection in 2020, you can now do things with these highlights that were not possible before.
 
-50 cool new things:
-- Part 2, Overviews of all highlights - new, handy & useful overviews for all highlights together: https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with% 20the%20KB's%20collection%20highlights/Part%202%2C%20Overviews%20of%20all%20highlights.html
-- Part 3, Overviews per highlight - new functionalities for individual highlights: https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection% 20highlights/Part%203%2C%20Overviews%20per%20highlight.html
-- Part 4, Images - new things you can do with our individual highlight images: https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's %20collection%20highlights/Part%204%2C%20Images.html
-- Part 5, Reuse - some examples of programmatically reusing KB's collection highlights: https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection %20highlights/Part%205%2C%20Reuse.html
+5 aticles
+- [Part 1, Introduction](https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%201%2C%20Introduction.html) - things you could already do with KB’s collection highlights before we started Wikifying them in 2020.
+- [Part 2, Overviews of all highlights](https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%202%2C%20Overviews%20of%20all%20highlights.html) - new, handy & useful overviews for all highlights together
+- [Part 3, Overviews per highlight](https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%203%2C%20Overviews%20per%20highlight.html) - new functionalities for individual highlights
+- [Part 4, Images](https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%204%2C%20Images.html) - new things you can do with our individual highlight images
+- [Part 5, Reuse](https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%205%2C%20Reuse.html) - some examples of programmatically reusing KB's collection highlights
 
-A few examples:
-1. New functionalities from Block 3, see above
-2. Gallery of KB masterpieces: https://nl.wikipedia.org/wiki/Wikipedia:GLAM/Koninklijke_Bibliotheek_en_Nationaal_Archief/Topstuks/Galerij
-3. Persons/roles involved in each masterpiece: https://www.wikidata.org/wiki/Wikidata:WikiProject_Collection_highlights_National_Library_of_the_Netherlands/Admin/Overview/People
-4. [Contributors to the Album Jacob Heyblocq](https://commons.wikimedia.org/wiki/Category:Contributors_to_the_album_amicorum_Jacobus_Heyblocq)
-   * [Facebook](https://w.wiki/phx)
+#### Examples
+1. All functionalities for KB images regarding SPARQL, structured search, multilingual search, search by content, as explained in Block 3
+2. [Gallery of KB collection highlights](https://nl.wikipedia.org/wiki/Wikipedia:GLAM/Koninklijke_Bibliotheek_en_Nationaal_Archief/Topstuks/Galerij) on Dutch Wikipedia (never mind the new WP layout!)
+3. [Persons/roles involved in each collection highlight](https://www.wikidata.org/wiki/Wikidata:WikiProject_Collection_highlights_National_Library_of_the_Netherlands/Admin/Overview/People)
+4. [Contributors to the *Album Jacob Heyblocq*](https://commons.wikimedia.org/wiki/Category:Contributors_to_the_album_amicorum_Jacobus_Heyblocq)
+   * [Facebook of contributors](https://w.wiki/phx)
    * [M/F distribution](https://w.wiki/F5J)
    * [Occupation cloud](https://w.wiki/F5N)
    * [Lifespan table](https://w.wiki/qzx)
 5. [Works by these contributors in DBNL](https://w.wiki/3MLQ)
-6. Works by these contributors elsewhere, via Europeana, as Excel: https://www.europeana.eu/en/collections/person/63198-govert-flinck + explanation at https://kbnlwikimedia.github.io/KBCollectionHighlights /stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%205%2C%20Reuse.html, Point 48
+6. Works by these contributors elsewhere, via Europeana, as Excel: See for example [Govert Flinck on Europeana](https://www.europeana.eu/en/collections/person/63198-govert-flinck) + [this explanation](https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%205%2C%20Reuse.html), see Point 48
 
 <hr/>
 
