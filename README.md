@@ -32,35 +32,48 @@ This overview can be reused freely and openly, it is available under the [CC-BY 
 - [Our Structured Data on Commons efforts](https://commons.wikimedia.org/wiki/Commons:Koninklijke_Bibliotheek/SDoC)
 <hr>
 
-### Contents - to adapt
-  * [Intro](#intro)
-    + [Required basic knowledge about Wikidata](#required-basic-knowledge-about-wikidata)
-    + [Course objectives](#course-objectives)
-    + [Course layout](#course-layout)
-  * [BLOCK 1 - What does Wikidata add for the KB?](#block-1---what-does-wikidata-add-for-the-kb-)
-    + [Open doors](#open-doors)
-    + [Wikidata characteristics](#wikidata-characteristics)
-    + [Added value of Wikidata for KB](#added-value-of-wikidata-for-kb)
-  * [BLOCK 2 - Wikidata & KB thesauri (NTA + DBNLa)](#block-2---wikidata---kb-thesauri--nta---dbnla-)
-    + [Criteria for suitability of KB thesauri for Wikidata](#criteria-for-suitability-of-kb-thesauri-for-wikidata)
-    + [a) From the NTA to Wikidata](#a--from-the-nta-to-wikidata)
-    + [b) From the DBNLa to Wikidata](#b--from-the-dbnla-to-wikidata)
-      - [Federated query to retrieve extra data from Wikidata](#federated-query-to-retrieve-extra-data-from-wikidata)
-    + [c) From Wikidata to the NTA - P1006](#c--from-wikidata-to-the-nta---p1006)
-      - [Insights in the usage of P1006](#insights-in-the-usage-of-p1006)
-      - [P1006 and data quality](#p1006-and-data-quality)
-      - [Usage of NTA ids in Wikipedia articles](#usage-of-nta-ids-in-wikipedia-articles)
-      - [Summary for NTA/P1006](#summary-for-nta-p1006)
-    + [d) From Wikidata to the DBNLa - P723](#d--from-wikidata-to-the-dbnla---p723)
-      - [Insights into the usage of P723](#insights-into-the-usage-of-p723)
-      - [P723 and data quality](#p723-and-data-quality)
-    + [Historical overviews](#historical-overviews)
-  * [BLOCK 3 - Intermezzo: Linking Wikimedia Commons with Wikidata](#block-3---intermezzo--linking-wikimedia-commons-with-wikidata)
-  * [BLOCK 4 - Wikidata & KB heritage collections](#block-4---wikidata---kb-heritage-collections)
-  * [Final conclusions](#final-conclusions)
+### Contents
+* [Intro](#intro)
+  + [Required basic knowledge about Wikidata](#required-basic-knowledge-about-wikidata)
+  + [Course objectives](#course-objectives)
+  + [Course layout](#course-layout)
+* [BLOCK 1 - What does Wikidata add for the KB?](#block-1---what-does-wikidata-add-for-the-kb-)
+  + [Open doors](#open-doors)
+  + [Wikidata characteristics](#wikidata-characteristics)
+  + [Added value of Wikidata for KB](#added-value-of-wikidata-for-kb)
+* [BLOCK 2 - Wikidata & KB thesauri (NTA + DBNLa)](#block-2---wikidata---kb-thesauri--nta---dbnla-)
+  + [Criteria for suitability of KB thesauri for Wikidata](#criteria-for-suitability-of-kb-thesauri-for-wikidata)
+  + [a) From the NTA to Wikidata](#a--from-the-nta-to-wikidata)
+  + [b) From the DBNLa to Wikidata](#b--from-the-dbnla-to-wikidata)
+    - [Federated query to retrieve extra data from Wikidata](#federated-query-to-retrieve-extra-data-from-wikidata)
+  + [c) From Wikidata to the NTA - P1006](#c--from-wikidata-to-the-nta---p1006)
+    - [Insights in the usage of P1006](#insights-in-the-usage-of-p1006)
+    - [P1006 and data quality](#p1006-and-data-quality)
+    - [Usage of NTA ids in Wikipedia articles](#usage-of-nta-ids-in-wikipedia-articles)
+    - [Summary for NTA/P1006](#summary-for-nta-p1006)
+  + [d) From Wikidata to the DBNLa - P723](#d--from-wikidata-to-the-dbnla---p723)
+    - [Insights into the usage of P723](#insights-into-the-usage-of-p723)
+    - [P723 and data quality](#p723-and-data-quality)
+  + [Historical overviews](#historical-overviews)
+* [BLOCK 3 - Intermezzo: Linking Wikimedia Commons with Wikidata](#block-3---intermezzo--linking-wikimedia-commons-with-wikidata)
+  + [Regular metadata for KB images](#regular-metadata-for-kb-images)
+  + [Structured Data on Commons](#structured-data-on-commons)
+    - [Added value of SDoC](#added-value-of-sdoc)
+  + [SPARQL queries for KB images](#sparql-queries-for-kb-images)
+  + [What is depicted on KB images?](#what-is-depicted-on-kb-images-)
+  + [Summary of image search options in Wikimedia Commons](#summary-of-image-search-options-in-wikimedia-commons)
+  + [Tooltip: Hay's Structured Search](#tooltip--hay-s-structured-search)
+  + [Adding Depicts tags to KB images yourself](#adding-depicts-tags-to-kb-images-yourself)
+* [BLOCK 4 - Wikidata & KB heritage collections](#block-4---wikidata---kb-heritage-collections)
+  + [Criteria for suitability of KB heritage collections for Wikidata](#criteria-for-suitability-of-kb-heritage-collections-for-wikidata)
+  + [WikiProject KB Collection highlight (2020-present)](#wikiproject-kb-collection-highlight--2020-present-)
+    - [Presentation of collection highlights on kb.nl](#presentation-of-collection-highlights-on-kbnl)
+    - [A new paradigm for collection highlights](#a-new-paradigm-for-collection-highlights)
+    - [Wikification of KB collection highlights](#wikification-of-kb-collection-highlights)
+    - [50 cool new things you can do now with KB's collection highlights](#50-cool-new-things-you-can-do-now-with-kb-s-collection-highlights)
+    - [Examples](#examples)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 
 <hr>
 
@@ -379,9 +392,9 @@ Examples of KB heritage collections: [Medieval manuscripts](https://commons.wiki
 
 ### WikiProject KB Collection highlight (2020-present)
 KB collection highlights are part of our national heritage, just like e.g.
-- Placard of Abandonment (collection highlight National Archives)
-- Victory Boogie Woogie (collection highlight Kunstmuseum The Hague)
-- The Night Watch (collection highlight Rijksmuseum Amsterdam)
+- [Act of Abjuration](https://en.wikipedia.org/wiki/Act_of_Abjuration) (collection highlight [National Archives](https://en.wikipedia.org/wiki/Nationaal_Archief))
+- [Victory Boogie Woogie](https://en.wikipedia.org/wiki/Victory_Boogie_Woogie) (collection highlight [Kunstmuseum The Hague](https://en.wikipedia.org/wiki/Kunstmuseum_Den_Haag))
+- [The Night Watch](https://en.wikipedia.org/wiki/The_Night_Watch) (collection highlight [Rijksmuseum Amsterdam](https://en.wikipedia.org/wiki/Rijksmuseum))
 
 Project page WikiProject KB Collection highlights: https://www.wikidata.org/wiki/Wikidata:WikiProject_Collection_highlights_National_Library_of_the_Netherlands
 
@@ -396,32 +409,28 @@ Typical presentation of collection highlights on kb.nl, for instance for *Atlas 
 This presentation on kb.nl has limited functionalities and reuse options. This presentation represents an old way of thinking: Collection highlights (on kb.nl) are only for reading and viewing, inviting for passive consumption. More explanation in [this article](https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%201%2C%20Introduction.html).
 
 #### A new paradigm for collection highlights
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
-New way of thinking: KB collection highlights are building blocks and invite active creation
-Building blocks for tech community: Developers, app builders, tech companies, AIs, digital humanities, data scientists, hackathons, LOD world, NDE, Europeana etc.
-
-KB Collection highlights as a box Technical LEGO
-Contents of the box (The unboxing): 5* Linked Open Data - Automatic image recognition (AI) - Semantic tagging - Data dumps & bulk downloads - SPARQL - Image searchable by content - Data visualizations - Python - Machine-readable data - Flexible REST APIs - Manifest legal terms - IIIF - JSON, XML, CSV - Automatic Multilingualism - External LOD Identifiers
-
-All these building blocks are available in the Wikimedia infrastructure: Wikidata (metadata), Wikimedia Commons (images) and Wikipedia (stories) - and the associated international communities - provide a coherent technical and social infrastructure to make our masterpieces much more reusable.
+A new way of thinking: 
+- KB collection highlights are building blocks and invite active creation.
+- Building blocks for tech community: Developers, app builders, tech companies, AIs, digital humanities, data scientists, hackathons, Wikimedia communities, LOD world, NDE, Europeana etc.
+- KB collection highlights as a toolbox of Technical LEGO
+    - Contents of this toolbox: Eg. 5-star Linked Open Data - Automatic image recognition (AI) - Semantic tagging - Data dumps & bulk downloads - SPARQL - Images searchable by content - Data visualizations - Python - Machine-readable data - Flexible REST APIs - Manifest legal terms - IIIF - Data as JSON, XML, CSV - Automatic multilingualism - External LOD Identifiers
+- All these building blocks are available in the **Wikimedia infrastructure**: the combination of Wikidata (for metadata), Wikimedia Commons (for images) and Wikipedia (for contextual stories) - and their associated international communities - providing a coherent technical and social infrastructure to make KB's collection highlights much more visible, findable and reusable.
 
 #### Wikification of KB collection highlights
-: https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%201%2C%20Introduction .html
+[Wikifying KB’s collection highlights](https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%201%2C%20Introduction.html#wikifying-kbs-collection-highlights)
 
 E.g. Atlas Ortelius:
-- 1) Catalog record KB (https://opc-kb.oclc.org/DB=1/XMLPRS=Y/PPN?PPN=369376781) --> Metadata to Wikidata (https://www.wikidata.org/wiki /Q67465742#P195 --> subject has role collection highlight)
-- 2) Hi-res flip book KB (https://gallery.kb.nl/kb.html#/nl/ortelius/page/59/zoom/2/lat/-72.28906720017673/lng/-30.585937499999996) --> Images to Wikimedia Commons (https://commons.wikimedia.org/wiki/Atlas_Ortelius_1571)
-- 3) Context article KB (https://www.kb.nl/ortelius) --> Story on Wikipedia (https://nl.wikipedia.org/wiki/Theatrum_Orbis_Terrarum)
+1) [Catalog record KB](https://opc-kb.oclc.org/DB=1/XMLPRS=Y/PPN?PPN=369376781) --> Metadata to [Q67465742](https://www.wikidata.org/wiki/Q67465742#P195) on Wikidata, with [collection](https://www.wikidata.org/wiki/Property:P195) = [Koninklijke Bibliotheek](https://www.wikidata.org/wiki/Q1526131), and qualifier [subject has role](https://www.wikidata.org/wiki/Property:P2868) = [collection highlight](https://www.wikidata.org/wiki/Q29188408)
+2) [Hi-res flip book KB](https://gallery.kb.nl/kb.html#/nl/ortelius/page/59/zoom/2/lat/-72.28906720017673/lng/-30.585937499999996) --> Images to [Atlas Ortelius 1571](https://commons.wikimedia.org/wiki/Atlas_Ortelius_1571) on Wikimedia Commons 
+3) [Contextual article KB](https://www.kb.nl/ortelius) --> Context to [Theatrum Orbis Terrarum](https://nl.wikipedia.org/wiki/Theatrum_Orbis_Terrarum) on Dutch Wikipedia
 
-Result of the project: All functionalities & added values of the Wikimedia infrastructure are now available for our KB Masterpieces
+**Result of the project**: All  cool and value adding functionalities, tools and community capacities of the Wikimedia infrastructure are now available for our KB collection highlights. The party can start!
 
 #### 50 cool new things you can do now with KB's collection highlights
-The party can start! Building cool things!
-50 cool new things you can do now with KB's collection highlights: https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights /
+The party can start, let's build cool new things! --> See the article [50 cool new things you can do now with KB's collection highlights](https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights)<br/>
+<sub>*In this series of 5 articles we show the added value of putting images and metadata of digitised collection highlights of the KB, national library of the Netherlands, into the Wikimedia infrastructure. By putting our collection highlights into Wikidata, Wikimedia Commons and Wikipedia, dozens of new functionalities have been added. As a result of Wikifying this collection in 2020, you can now do things with these highlights that were not possible before.*</sub>
 
-By putting our collection highlights into Wikidata, Wikimedia Commons and Wikipedia, dozens of new functionalities have been added (LEGO box). As a result of Wikifying this collection in 2020, you can now do things with these highlights that were not possible before.
-
-5 aticles
+This article has 5 parts:
 - [Part 1, Introduction](https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%201%2C%20Introduction.html) - things you could already do with KB’s collection highlights before we started Wikifying them in 2020.
 - [Part 2, Overviews of all highlights](https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%202%2C%20Overviews%20of%20all%20highlights.html) - new, handy & useful overviews for all highlights together
 - [Part 3, Overviews per highlight](https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%203%2C%20Overviews%20per%20highlight.html) - new functionalities for individual highlights
@@ -439,12 +448,6 @@ By putting our collection highlights into Wikidata, Wikimedia Commons and Wikipe
    * [Lifespan table](https://w.wiki/qzx)
 5. [Works by these contributors in DBNL](https://w.wiki/3MLQ)
 6. Works by these contributors elsewhere, via Europeana, as Excel: See for example [Govert Flinck on Europeana](https://www.europeana.eu/en/collections/person/63198-govert-flinck) + [this explanation](https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%205%2C%20Reuse.html), see Point 48
-
-<hr/>
-
-## Final conclusions
- Wikidata adds a lot of value to our KB thesauri & heritage collections!
-
  
 
 
