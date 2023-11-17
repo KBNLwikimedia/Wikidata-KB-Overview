@@ -28,7 +28,7 @@ This overview can be reused freely and openly, it is available under the [CC-BY 
 
 **See also**
 - [An overview of current, upcoming and possible future Wikidata (and Wikibase) activities, projects, ideas, experiments and opportunities for the KB](https://www.wikidata.org/wiki/Wikidata:GLAM/Koninklijke_Bibliotheek_Nederland)
-- [Wikidata projects of the KB](https://www.wikidata.org/wiki/Wikidata:GLAM/Koninklijke_Bibliotheek_Nederland/CurrentProjects)
+    - [Wikidata projects of the KB](https://www.wikidata.org/wiki/Wikidata:GLAM/Koninklijke_Bibliotheek_Nederland/CurrentProjects)
 - [Our Structured Data on Commons efforts](https://commons.wikimedia.org/wiki/Commons:Koninklijke_Bibliotheek/SDoC)
 <hr>
 
@@ -54,7 +54,7 @@ This overview can be reused freely and openly, it is available under the [CC-BY 
   + [d) From Wikidata to the DBNLa - P723](#d--from-wikidata-to-the-dbnla---p723)
     - [Insights into the usage of P723](#insights-into-the-usage-of-p723)
     - [P723 and data quality](#p723-and-data-quality)
-  + [Historical overviews](#historical-overviews)
+  + [Historical metrics of Wikidata and NTA & DBNLa](#historical-metrics-of-Wikidata-and-NTA--DBNLa)
 * [BLOCK 3 - Intermezzo: Linking Wikimedia Commons with Wikidata](#block-3---intermezzo--linking-wikimedia-commons-with-wikidata)
   + [Regular metadata for KB images](#regular-metadata-for-kb-images)
   + [Structured Data on Commons](#structured-data-on-commons)
@@ -311,8 +311,8 @@ Two pages provide insight into the data quality (and possible improvements) of b
 - Missing data for people listed in the DBNLa: [Database_reports/Humans_with_missing_claims/P723](https://www.wikidata.org/wiki/Wikidata:Database_reports/Humans_with_missing_claims/P723)
 - Deviations and possible errors in Wikidata as well as DBNLa: [Database_reports/Constraint_violations/P723](https://www.wikidata.org/wiki/Wikidata:Database_reports/Constraint_violations/P723)
 
-### Historical overviews
-Historical overview of the usage of NTA and DBNLa identifiers in Wikidata, and v.v.: https://nl.wikipedia.org/wiki/Wikipedia:GLAM/Koninklijke_Bibliotheek_en_Nationaal_Archief/Resultaten/KPIs/KPI10#Historische_ontwikkeling_van_KPI_10
+### Historical metrics of Wikidata and NTA & DBNLa
+Historical metrics of the usage of NTA and DBNLa identifiers in Wikidata, and v.v.: https://nl.wikipedia.org/wiki/Wikipedia:GLAM/Koninklijke_Bibliotheek_en_Nationaal_Archief/Resultaten/KPIs/KPI10#Historische_ontwikkeling_van_KPI_10
 
 <hr/>
 
