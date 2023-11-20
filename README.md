@@ -98,6 +98,7 @@ To provide more understanding about
 * BLOCK 4) [Wikidata & KB heritage collections](https://github.com/KBNLwikimedia/Wikidata-KB-Overview/blob/main/README.md#block-4---wikidata--kb-heritage-collections)
 
 <hr/>
+<image src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Verdieping_Wikidata_en_de_KB_-_Koninklijke_Bibliotheek%2C_14_november_2023.pdf/page5-640px-Verdieping_Wikidata_en_de_KB_-_Koninklijke_Bibliotheek%2C_14_november_2023.pdf.jpg" width="200" align="right"/>
 
 ## BLOCK 1 - What does Wikidata add for the KB?
 
