@@ -5,7 +5,9 @@
 
 # Wikidata & KB national library of the Netherlands, an overview
 
-*An overview of how Wikidata is used by/in/for both the linked open datasets (thesauri) and public domain heritage collections of the KB, national library of the Netherlands.* - Latest update: 20 November 2023
+*An overview of how Wikidata is used by/in/for both the linked open datasets (thesauri) and public domain heritage collections of the KB, national library of the Netherlands.* 
+
+Latest update: 20 November 2023
 
 <image src="images/VerdiepingWikidataEnKB_14Nov2023 - openingslide.png" width="250" align="right"/>
 
