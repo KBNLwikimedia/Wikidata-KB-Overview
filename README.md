@@ -350,6 +350,8 @@ Look at [File:Atlas_de_Wit_1698-pl017-Leiden-St_Pancraskerk.jpg](https://commons
 - [Images from *Album amicorum by Jacobus Heyblocq*](https://w.wiki/7zjb)
 
 ### What is depicted on KB images?
+<image src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Verdieping_Wikidata_en_de_KB_-_Koninklijke_Bibliotheek%2C_14_november_2023.pdf/page79-640px-Verdieping_Wikidata_en_de_KB_-_Koninklijke_Bibliotheek%2C_14_november_2023.pdf.jpg" width="200" align="right"/>
+
 - What can be seen in / is depicted on images, tagged using Wikidata entries
 - [Commons:Depicts](https://commons.wikimedia.org/wiki/Commons:Depicts) - documentation
 - Things depicted on the image [Hooglandse kerk](https://commons.wikimedia.org/wiki/File:Atlas_de_Wit_1698-pl017-Leiden-St_Pancraskerk.jpg) in [Atlas De Wit 1698](https://commons.wikimedia.org/wiki/Category:Atlas_de_Wit_1698) : Hooglandse Kerk ([Q1537970](https://www.wikidata.org/wiki/Q1537970)) - horse ([Q726](https://www.wikidata.org/wiki/Q726) ) - dog ([Q144](https://www.wikidata.org/wiki/Q144)) - clock ([Q376](https://www.wikidata.org/wiki/Q376)) - people ([Q2472587](https://www.wikidata.org/wiki/Q2472587)) - cloud ([Q8074](https://www.wikidata.org/wiki/Q8074)) - carriage ([Q235356](https://www.wikidata.org/wiki/Q235356)) - stepped gable ([Q1939660](https://www.wikidata.org/wiki/Q1939660)) - tree ([Q10884](https://www.wikidata.org/wiki/Q10884)) - walking stick ([Q1347864](https://www.wikidata.org/wiki/Q1347864)) - The Castle ([Q18813071](https://www.wikidata.org/wiki/Q18813071)) - woman ( [Q467](https://www.wikidata.org/wiki/Q467)) - child ([Q7569](https://www.wikidata.org/wiki/Q7569)) - door ([Q36794](https://www.wikidata.org/wiki/Q36794)) - hat ([Q80151](https://www.wikidata.org/wiki/Q80151)) - weathercock ([Q2157687](https://www.wikidata.org/wiki/Q2157687)) - stained glass window ([Q488094](https://www.wikidata.org/wiki/Q488094))
@@ -441,6 +443,8 @@ The [WikiProject KB Collection highlights](https://www.wikidata.org/wiki/Wikidat
 **Result of the project**: All  cool and value adding functionalities, tools and community capacities of the Wikimedia infrastructure are now available for our KB collection highlights. The party can start!
 
 #### 50 cool new things you can do now with KB's collection highlights
+<image src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Verdieping_Wikidata_en_de_KB_-_Koninklijke_Bibliotheek%2C_14_november_2023.pdf/page138-640px-Verdieping_Wikidata_en_de_KB_-_Koninklijke_Bibliotheek%2C_14_november_2023.pdf.jpg" width="200" align="right"/>
+
 The party can start, let's build cool new things! --> See the article [50 cool new things you can do now with KB's collection highlights](https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights)<br/>
 <sub>*In this series of 5 articles we show the added value of putting images and metadata of digitised collection highlights of the KB, national library of the Netherlands, into the Wikimedia infrastructure. By putting our collection highlights into Wikidata, Wikimedia Commons and Wikipedia, dozens of new functionalities have been added. As a result of Wikifying this collection in 2020, you can now do things with these highlights that were not possible before.*</sub>
 
