@@ -10,7 +10,7 @@
 <image src="images/VerdiepingWikidataEnKB_14Nov2023 - openingslide.png" width="250" align="right"/>
 
 This page is a textual summary of the course *Verdieping: Wikidata & de KB* for employeees of [KB, national library of the Netherlands](https://www.kb.nl) on 14 November 2023, 15:00-16:15. 
-* The (rather long) full slidedeck (in Dutch) for this course is available on [Wikimedia Commons]() and [Zenodo]() as PDFs.
+* The (rather long) full slidedeck (in Dutch) for this course is available on [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Verdieping_Wikidata_en_de_KB_-_Koninklijke_Bibliotheek,_14_november_2023.pdf) and [Zenodo](https://zenodo.org/records/10160817) as PDFs.
 * The two videos (in Dutch) of the course are on YouTube: [Part 1]() (covering blocks 1 & 2) and [Part 2]() (covering blocks 3 & 4) --> **To add**
 * A [full text transcript](/transcripts/xxx) of the course in Dutch is also available. --> **To add**
 
