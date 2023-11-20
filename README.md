@@ -82,6 +82,8 @@ This overview can be reused freely and openly, it is available under the [CC-BY 
 ## Intro
 
 ### Required basic knowledge about Wikidata
+[<image src="images/Wegwijzer_in_Wikidata,_Introductiecurus_Wikidata_-_Koninklijke_Bibliotheek,_6_juni_2023.jpg" width="250" align="right" >](https://commons.wikimedia.org/w/index.php?title=File:Wegwijzer_in_Wikidata,_Introductiecurus_Wikidata_-_Koninklijke_Bibliotheek,_6_juni_2023.pdf)
+
 See the course *Wegwijzer in Wikidata* (Introduction to Wikidata), June 6, 2023 (in Dutch)
 * Slides on [Zenodo](https://zenodo.org/record/8006441) and [Wikimedia Commons](https://commons.wikimedia.org/w/index.php?title=File:Wegwijzer_in_Wikidata,_Introductiecurus_Wikidata_-_Koninklijke_Bibliotheek,_6_juni_2023.pdf)  (PDF)
 * [Textual summary in Dutch](https://commons.wikimedia.org/w/index.php?title=File:Wegwijzer_in_Wikidata,_Introductiecurus_Wikidata_-_Koninklijke_Bibliotheek,_6_juni_2023.pdf&page=141) (PDF) 
@@ -149,6 +151,7 @@ What values does Wikidata add for the KB & its services?
     - Strengthening our cooperation with KB network partners via Wikidata/media
 
 <hr/>
+<image src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Verdieping_Wikidata_en_de_KB_-_Koninklijke_Bibliotheek%2C_14_november_2023.pdf/page17-640px-Verdieping_Wikidata_en_de_KB_-_Koninklijke_Bibliotheek%2C_14_november_2023.pdf.jpg" width="200" align="right"/>
 
 ## BLOCK 2 - Wikidata & KB thesauri (NTA + DBNLa)
 KB datasets (thesauri): http://data.bibliotheken.nl/
@@ -318,6 +321,7 @@ Two pages provide insight into the data quality (and possible improvements) of b
 Historical metrics of the usage of NTA and DBNLa identifiers in Wikidata, and v.v.: https://nl.wikipedia.org/wiki/Wikipedia:GLAM/Koninklijke_Bibliotheek_en_Nationaal_Archief/Resultaten/KPIs/KPI10#Historische_ontwikkeling_van_KPI_10
 
 <hr/>
+<image src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Verdieping_Wikidata_en_de_KB_-_Koninklijke_Bibliotheek%2C_14_november_2023.pdf/page62-640px-Verdieping_Wikidata_en_de_KB_-_Koninklijke_Bibliotheek%2C_14_november_2023.pdf.jpg" width="200" align="right"/>
 
 ## BLOCK 3 - Intermezzo: Linking Wikimedia Commons with Wikidata
 Look at [File:Atlas_de_Wit_1698-pl017-Leiden-St_Pancraskerk.jpg](https://commons.wikimedia.org/wiki/File:Atlas_de_Wit_1698-pl017-Leiden-St_Pancraskerk.jpg) on Wikimedia Commons (=Saint Pancras Church in Leiden, now called *Hooglandse Kerk* )
@@ -380,6 +384,7 @@ Results per 1 november 2023
 - KB tagging champion is Madeleine van den Berg with [34K+ things added](https://commons.wikimedia.org/w/index.php?title=Special%3AContributions&target=Madeleine+van+den+Berg&namespace=all&tagfilter=&start=&end=&limit=1000)
 
 <hr/>
+<image src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Verdieping_Wikidata_en_de_KB_-_Koninklijke_Bibliotheek%2C_14_november_2023.pdf/page100-640px-Verdieping_Wikidata_en_de_KB_-_Koninklijke_Bibliotheek%2C_14_november_2023.pdf.jpg" width="200" align="right"/>
 
 ## BLOCK 4 - Wikidata & KB heritage collections
 
@@ -410,6 +415,9 @@ Typical presentation of collection highlights on kb.nl, for instance for *Atlas 
 This presentation on kb.nl has limited functionalities and reuse options. This presentation represents an old way of thinking: Collection highlights (on kb.nl) are only for reading and viewing, inviting for passive consumption. More explanation in [this article](https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%201%2C%20Introduction.html).
 
 #### A new paradigm for collection highlights
+
+<image src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Verdieping_Wikidata_en_de_KB_-_Koninklijke_Bibliotheek%2C_14_november_2023.pdf/page124-640px-Verdieping_Wikidata_en_de_KB_-_Koninklijke_Bibliotheek%2C_14_november_2023.pdf.jpg" width="200" align="right"/>
+
 A new way of thinking: 
 - KB collection highlights are building blocks and invite for active reuse and creation.
 - Building blocks for tech community: Developers, app builders, tech companies, AIs, digital humanities, data scientists, hackathons, Wikimedia communities, LOD world, NDE, Europeana etc.
