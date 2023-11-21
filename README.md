@@ -7,7 +7,7 @@
 
 *An overview of how Wikidata is used by/in/for both the linked open datasets (thesauri) and public domain heritage collections of the KB, national library of the Netherlands.* 
 
-Latest update: 20 November 2023
+Latest update: 21 November 2023
 
 <image src="images/VerdiepingWikidataEnKB_14Nov2023 - openingslide.png" width="250" align="right"/>
 
@@ -15,18 +15,6 @@ This page is a textual summary of the course *Verdieping: Wikidata & de KB* for 
 * The (rather long) full slidedeck (in Dutch) for this course is available on [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Verdieping_Wikidata_en_de_KB_-_Koninklijke_Bibliotheek,_14_november_2023.pdf) and [Zenodo](https://zenodo.org/records/10160817) as PDFs.
 * The two videos (in Dutch) of the course are on YouTube: [Part 1]() (covering blocks 1 & 2) and [Part 2]() (covering blocks 3 & 4) --> **To add**
 * A [full text transcript](/transcripts/xxx) of the course in Dutch is also available. --> **To add**
-
-**Contact**
-
-Questions or remarks can be sent to Olaf Janssen, Wikimedia coordinator of the KB - olaf.janssen@kb.nl - @ookgezellig
-
-**Reuse and licensing**
-
-This overview can be reused freely and openly, it is available under the [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) license, so attribution is required. Use something like 
-
-*Wikidata & KB national library of the Netherlands, an overview, Olaf Janssen & KB national library of the Netherlands, https://github.com/KBNLwikimedia/Wikidata-KB-Overview* 
-
-<kbd><img src="images/cc-by.png" width="100"/></kbd>
 
 **See also**
 - [An overview of current, upcoming and possible future Wikidata (and Wikibase) activities, projects, ideas, experiments and opportunities for the KB](https://www.wikidata.org/wiki/Wikidata:GLAM/Koninklijke_Bibliotheek_Nederland)
@@ -74,6 +62,8 @@ This overview can be reused freely and openly, it is available under the [CC-BY 
     - [Wikification of KB collection highlights](#wikification-of-kb-collection-highlights)
     - [50 cool new things you can do now with KB's collection highlights](#50-cool-new-things-you-can-do-now-with-kb-s-collection-highlights)
       - [Examples](#examples)
+* [Contact](#contact)
+* [Reuse and licensing](#reuse-and-licensing)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -468,5 +458,14 @@ This article has 5 parts:
 6. Works by these contributors elsewhere, via Europeana, as Excel: See for example [Govert Flinck on Europeana](https://www.europeana.eu/en/collections/person/63198-govert-flinck) + [this explanation](https://kbnlwikimedia.github.io/KBCollectionHighlights/stories/Cool%20new%20things%20you%20can%20now%20do%20with%20the%20KB's%20collection%20highlights/Part%205%2C%20Reuse.html), see Point 48
  
 
+## Contact
 
+Questions or remarks can be sent to Olaf Janssen, Wikimedia coordinator of the KB - olaf.janssen@kb.nl - @ookgezellig
 
+## Reuse and licensing
+
+This overview can be reused freely and openly, it is available under the [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) license, so attribution is required. Use something like 
+
+*Wikidata & KB national library of the Netherlands, an overview, Olaf Janssen & KB national library of the Netherlands, https://github.com/KBNLwikimedia/Wikidata-KB-Overview* 
+
+<kbd><img src="images/cc-by.png" width="100"/></kbd>
