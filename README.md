@@ -78,7 +78,7 @@ This page is a textual summary of the course *Verdieping: Wikidata & de KB* for 
 See the course *Wegwijzer in Wikidata* (Introduction to Wikidata), June 6, 2023 (in Dutch)
 * Slides on [Zenodo](https://zenodo.org/record/8006441) and [Wikimedia Commons](https://commons.wikimedia.org/w/index.php?title=File:Wegwijzer_in_Wikidata,_Introductiecurus_Wikidata_-_Koninklijke_Bibliotheek,_6_juni_2023.pdf)  (PDF)
 * [Textual summary in Dutch](https://commons.wikimedia.org/w/index.php?title=File:Wegwijzer_in_Wikidata,_Introductiecurus_Wikidata_-_Koninklijke_Bibliotheek,_6_juni_2023.pdf&page=141) (PDF) 
-* Textual summary in English: **To add to dedicated Github repo**
+* Textual summary in English: https://github.com/KBNLwikimedia/Wikidata-General-Overview/
 
 ### Course objectives
 To provide more understanding about
