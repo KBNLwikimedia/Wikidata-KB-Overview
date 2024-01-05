@@ -14,8 +14,8 @@ Latest update: 21 November 2023
 This page is a textual summary of the course *Verdieping: Wikidata & de KB* for employeees of [KB, national library of the Netherlands](https://www.kb.nl) on 14 November 2023, 15:00-16:15. 
 * The (rather long) full slidedeck (in Dutch) for this course is available on [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Verdieping_Wikidata_en_de_KB_-_Koninklijke_Bibliotheek,_14_november_2023.pdf) and [Zenodo](https://zenodo.org/records/10160817) as PDFs.
 * This course builds upon the [general overview of the Wikidata universe](https://github.com/KBNLwikimedia/Wikidata-General-Overview), an introduction course for newcomers to Wikidata.
-* The two videos (in Dutch) of the course are on YouTube: [Part 1]() (covering blocks 1 & 2) and [Part 2]() (covering blocks 3 & 4) --> **To add**
-* A [full text transcript](/transcripts/xxx) of the course in Dutch is also available. --> **To add**
+* The two videos (in Dutch) of the course are on YouTube: [Part 1]() (covering blocks 1 & 2) and [Part 2]() (covering blocks 3 & 4) 
+* A [full text transcript](/transcripts/xxx) of the course in Dutch is also available. 
 
 **See also**
 - [An overview of current, upcoming and possible future Wikidata (and Wikibase) activities, projects, ideas, experiments and opportunities for the KB](https://www.wikidata.org/wiki/Wikidata:GLAM/Koninklijke_Bibliotheek_Nederland)
