@@ -1,5 +1,8 @@
-[<< Back to workshops and courses index](https://kbnlwikimedia.github.io/workshops-courses)
+---
+layout: none
+---
 
+[<< Back to workshops and courses index](https://kbnlwikimedia.github.io/workshops-courses)
 
 <p align="left">
 <image src="images/Wikidata-logo-en.png" width="180" hspace="10"/>
