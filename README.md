@@ -1,7 +1,3 @@
----
-layout: none
----
-
 [<< Back to workshops and courses index](https://kbnlwikimedia.github.io/workshops-courses)
 
 <p align="left">
