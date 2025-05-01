@@ -205,7 +205,11 @@ WHERE {
 - *Achille Van Acker* ['acke001' in the DBNLa](http://data.bibliotheken.nl/doc/dbnla/acke001) and [in Wikidata](http://www.wikidata.org/entity/Q14997)
 - Get additional data about 'acke001' from Wikidata. We want to retrieve the following data from the Wikidata item:
     - Image ([P18](https://www.wikidata.org/wiki/Property:P18)) -- Educated at ([P69](https://www.wikidata.org/wiki/Property:P69)) -- Member of political party ([P102](https://www.wikidata.org/wiki/Property:P102))
+{% raw %}
 - We use this [SPARQL query](http://data.bibliotheken.nl/sparql?default-graph-uri=&qtxt=%23+Get+supplementary+data+about+DBNL+author+'acke001'+from+Wikidata%0D%0APREFIX+wdt%3A++<http%3A%2F%2Fwww.wikidata.org%2Fprop%2Fdirect%2F>%0D%0ASELECT+*+%0D%0AWHERE+{%0D%0A+%3Fdbnl+schema%3AmainEntityOfPage%2Fowl%3AsameAs++<http%3A%2F%2Fdata.bibliotheken.nl%2Fdoc%2Fdbnla%2Facke001>+.%0D%0A+%3Fdbnl+rdfs%3Alabel+%3FdbnlLabel.++%0D%0A+%3Fdbnl+owl%3AsameAs+%3Fnta+.%0D%0A+%3Fnta++schema%3AmainEntityOfPage%2Fschema%3AisPartOf+<http%3A%2F%2Fdata.bibliotheken.nl%2Fid%2Fdataset%2Fpersons>+.%0D%0A+%3Fnta+rdfs%3Alabel+%3FntaLabel.+++%0D%0A+%3Fnta+schema%3AsameAs+%3Fwikidata+.%0D%0A+FILTER(regex(%3Fwikidata%2C+'wikidata'%2C+'i'))%0D%0A%0D%0A+SERVICE+<https%3A%2F%2Fquery.wikidata.org%2Fsparql>+{%0D%0A+++%3Fwikidata+wdt%3AP18+%3FimageURL.+%23P18+%3D+image%0D%0A+++%3Fwikidata+wdt%3AP69+%3FedcucatedAt.+%23P69+%3D+educated++at%0D%0A+++%3Fwikidata+wdt%3AP102+%3FMemberOfPoliticalParty.+%23P102+%3D+member+of+political+party%0D%0A%0D%0A+}%0D%0A}+&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+)
+{% endraw %}
+
+{% raw %}
 ```sparql
 # Get supplementary data about DBNL author 'acke001' from Wikidata
 PREFIX wdt:  <http://www.wikidata.org/prop/direct/>
@@ -227,6 +231,7 @@ WHERE {
  }
 } 
 ```
+{% endraw %}
 Checks are OK:
 - P18 (image): [Achiel Van Acker1.jpg](http://commons.wikimedia.org/wiki/Special:FilePath/Achiel%20Van%20Acker1.jpg)
 - P69 (educated at): [Lille University of Science and Technology](http://www.wikidata.org/entity/Q500740)
@@ -237,6 +242,7 @@ Persons in Wikidata with an NTA id
 - [P1006](https://www.wikidata.org/wiki/Property:P1006) = Nationale Thesaurus voor Auteursnamen ID
 - Eg. *Harry Mulisch* : https://www.wikidata.org/wiki/Q927#P1006 --> [P1006](https://www.wikidata.org/wiki/Property:P1006) -- > https://data.bibliotheken.nl/doc/thes/p06854796X
 -  All persons via [this SPARQL query](https://w.wiki/85Cs)
+{% raw %}
 ```sparql
 SELECT ?item ?itemLabel ?NTAurl
 {
@@ -246,6 +252,7 @@ SELECT ?item ?itemLabel ?NTAurl
 }
 LIMIT 1000
 ```
+{% endraw %}
 #### Insights in the usage of P1006 
 https://www.wikidata.org/wiki/Property_talk:P1006
 - Wikidata contains 550K links to the NTA: see 'Current uses' at bottom of this page, or via [this SPARQL query](https://tinyurl.com/5bep7h8a)
@@ -296,6 +303,7 @@ Persons in Wikidata with an DBNLa id
 - [P723](https://www.wikidata.org/wiki/Property:P723) = Digitale Bibliotheek voor de Nederlandse Letteren author ID
 - Eg. *Harry Mulisch* : https://www.wikidata.org/wiki/Q927#P723 --> [P723](https://www.wikidata.org/wiki/Property:P723) -- > http://www.dbnl.org/auteurs/auteur.php?id=muli002
 -  All persons via [this SPARQL query](https://w.wiki/869Y)
+{% raw %}
 ```sparql
 SELECT ?item ?itemLabel ?DBNLaUrl
 {
@@ -305,6 +313,7 @@ SELECT ?item ?itemLabel ?DBNLaUrl
 }
 LIMIT 1000
 ```
+{% endraw %}
 #### Insights into the usage of P723
 https://www.wikidata.org/wiki/Property_talk:P723
 - Wikidata contains 31K links to the DBNLa: https://www.wikidata.org/wiki/Property_talk:P723 (bottom, 'Current uses')
