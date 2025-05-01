@@ -127,21 +127,21 @@ Effective result: advantages of scale and community & network effects
 
 ### Added value of Wikidata for KB
 What values does Wikidata add for the KB & its services?
-1) Increased visibility, findability and reusability of our collections
-    - Greater public reach of KB collections, worldwide
-    - KB data in cross-domain, global, multilingual context --> Increasing interoperability KB with the outside world
-    - Community: External expertise, skills, tools and enthusiasm to enrich & connect KB data
-2) New functionalities for our data (and images) --> See [block 4](#block-4---wikidata---kb-heritage-collections)
-    - Functionalities that we do not or cannot offer in our own KB services
-    - Regarding Search, Data enrichment, data quality control, data visualization and data formats, Image metadata, Machine interactions
-    - Both for our thesauri and heritage collections
-    - For people and machines
-    - 'KB collections as LEGO'
-3) Toolkit & platform to create and publish new KB LOD
-    - Internal KB LOD renewal process is not yet delivering public results   
-4) Developing and sharing knowledge & skills related to LOD
-    - Both internally and externally
-    - Strengthening our cooperation with KB network partners via Wikidata/media
+1. Increased visibility, findability and reusability of our collections
+   - Greater public reach of KB collections, worldwide
+   - KB data in cross-domain, global, multilingual context --> Increasing interoperability KB with the outside world
+   - Community: External expertise, skills, tools and enthusiasm to enrich & connect KB data
+2. New functionalities for our data (and images) --> See [block 4](#block-4---wikidata---kb-heritage-collections)
+   - Functionalities that we do not or cannot offer in our own KB services
+   - Regarding Search, Data enrichment, data quality control, data visualization and data formats, Image metadata, Machine interactions
+   - Both for our thesauri and heritage collections
+   - For people and machines
+   - 'KB collections as LEGO'
+3. Toolkit & platform to create and publish new KB LOD
+   - Internal KB LOD renewal process is not yet delivering public results   
+4. Developing and sharing knowledge & skills related to LOD
+   - Both internally and externally
+   - Strengthening our cooperation with KB network partners via Wikidata/media
 
 <hr/>
 <image src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Verdieping_Wikidata_en_de_KB_-_Koninklijke_Bibliotheek%2C_14_november_2023.pdf/page17-640px-Verdieping_Wikidata_en_de_KB_-_Koninklijke_Bibliotheek%2C_14_november_2023.pdf.jpg" width="200" align="right"/>
