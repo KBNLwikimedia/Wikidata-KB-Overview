@@ -169,7 +169,8 @@ Ergo: Focus on [NTA](http://data.bibliotheken.nl/id/dataset/persons) and [DBNL a
 
 Persons in the NTA with a Wikidata URI:
 - Eg. *Darlene Dixon* : http://data.bibliotheken.nl/doc/thes/p208140131 --> schema:sameAs --> http://www.wikidata.org/entity/Q88505402
-- All persons via [this SPARQL query](http://data.bibliotheken.nl/sparql?default-graph-uri=&qtxt=%23+Which+NTA+items+have+a+link+to+Wikidata%3F%0D%0A%0D%0ASELECT++*+WHERE+{%0D%0A+%3Fnta+schema%3AmainEntityOfPage%2Fschema%3AisPartOf+<http%3A%2F%2Fdata.bibliotheken.nl%2Fid%2Fdataset%2Fpersons>+.%0D%0A+%3Fnta+rdfs%3Alabel+%3FntaLabel.++%0D%0A+%3Fnta+schema%3AsameAs+%3Fwikidata+.%0D%0AFILTER(regex(%3Fwikidata%2C+'wikidata'%2C+'i'))%0D%0A}+LIMIT+1000&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+)
+- All persons via this SPARQL query in http://data.bibliotheken.nl:
+{% raw %}
 ```sparql
 # Which NTA items have a link to Wikidata?
 SELECT  * WHERE {
@@ -179,13 +180,15 @@ SELECT  * WHERE {
 FILTER(regex(?wikidata, 'wikidata', 'i'))
 } LIMIT 1000
 ```
+{% endraw %}
 - 499K of 2.75M NTA items have a Wikidata link ([source](https://nl.wikipedia.org/wiki/Wikipedia:GLAM/Koninklijke_Bibliotheek_en_Nationaal_Archief/Resultaten/KPIs/KPI10#Historische_ontwikkeling_van_KPI_10))
 
 ### b) From the DBNLa to Wikidata
   
 Persons in DBNLa with a Wikidata URI (via the NTA)
 - Eg. *Hans Aarsman (1951-)* : http://data.bibliotheken.nl/id/dbnla/aars001 --> owl:sameAs --> http://data.bibliotheken.nl/id/thes/p068680937 --> schema:sameAs --> http://www.wikidata.org/entity/Q325922
-- All persons via [this SPARQL query](http://data.bibliotheken.nl/sparql?default-graph-uri=&qtxt=%23+Welke+DBNLa-items+bevatten+een+link+naar+Wikidata%3F%0D%0ASELECT+*++%0D%0AWHERE+{%0D%0A+%3Fdbnl+schema%3AmainEntityOfPage%2Fschema%3AisPartOf+<http%3A%2F%2Fdata.bibliotheken.nl%2Fid%2Fdataset%2Fdbnla>+.%0D%0A+%3Fdbnl+rdfs%3Alabel++%3FdbnlLabel.++%0D%0A+%3Fdbnl+owl%3AsameAs+%3Fnta+.%0D%0A+%3Fnta+schema%3AmainEntityOfPage%2Fschema%3AisPartOf+<http%3A%2F%2Fdata.bibliotheken.nl%2Fid%2Fdataset%2Fpersons>+.%0D%0A+%3Fnta+rdfs%3Alabel+%3FntaLabel.+++%0D%0A+%3Fnta+schema%3AsameAs+%3Fwikidata+.%0D%0A+FILTER(regex(%3Fwikidata%2C+'wikidata'%2C+'i'))%0D%0A}+LIMIT+1000&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+)
+- All persons via this SPARQL query in http://data.bibliotheken.nl: 
+{% raw %}
 ```sparql
 # Which DBNLa authors have a link to Wikidata?
 SELECT *  
@@ -199,6 +202,7 @@ WHERE {
  FILTER(regex(?wikidata, 'wikidata', 'i'))
 } LIMIT 1000
 ```
+{% endraw %}
 - 14.5K of 109K DBNLa items have a Wikidata link ([source](https://nl.wikipedia.org/wiki/Wikipedia:GLAM/Koninklijke_Bibliotheek_en_Nationaal_Archief/Resultaten/KPIs/KPI10#Historische_ontwikkeling_van_KPI_10))
 
 #### Federated query to retrieve extra data from Wikidata
@@ -206,7 +210,7 @@ WHERE {
 - Get additional data about 'acke001' from Wikidata. We want to retrieve the following data from the Wikidata item:
     - Image ([P18](https://www.wikidata.org/wiki/Property:P18)) -- Educated at ([P69](https://www.wikidata.org/wiki/Property:P69)) -- Member of political party ([P102](https://www.wikidata.org/wiki/Property:P102))
 
-- We use this SPARQL query in https://data.bibliotheken.
+- We use this SPARQL query in https://data.bibliotheken.nl:
 
 {% raw %}
 ```sparql
