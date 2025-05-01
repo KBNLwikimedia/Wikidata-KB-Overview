@@ -206,9 +206,7 @@ WHERE {
 - Get additional data about 'acke001' from Wikidata. We want to retrieve the following data from the Wikidata item:
     - Image ([P18](https://www.wikidata.org/wiki/Property:P18)) -- Educated at ([P69](https://www.wikidata.org/wiki/Property:P69)) -- Member of political party ([P102](https://www.wikidata.org/wiki/Property:P102))
 
-{% raw %}
-- We use this [SPARQL query](http://data.bibliotheken.nl/sparql?default-graph-uri=&qtxt=%23+Get+supplementary+data+about+DBNL+author+'acke001'+from+Wikidata%0D%0APREFIX+wdt%3A++<http%3A%2F%2Fwww.wikidata.org%2Fprop%2Fdirect%2F>%0D%0ASELECT+*+%0D%0AWHERE+{%0D%0A+%3Fdbnl+schema%3AmainEntityOfPage%2Fowl%3AsameAs++<http%3A%2F%2Fdata.bibliotheken.nl%2Fdoc%2Fdbnla%2Facke001>+.%0D%0A+%3Fdbnl+rdfs%3Alabel+%3FdbnlLabel.++%0D%0A+%3Fdbnl+owl%3AsameAs+%3Fnta+.%0D%0A+%3Fnta++schema%3AmainEntityOfPage%2Fschema%3AisPartOf+<http%3A%2F%2Fdata.bibliotheken.nl%2Fid%2Fdataset%2Fpersons>+.%0D%0A+%3Fnta+rdfs%3Alabel+%3FntaLabel.+++%0D%0A+%3Fnta+schema%3AsameAs+%3Fwikidata+.%0D%0A+FILTER(regex(%3Fwikidata%2C+'wikidata'%2C+'i'))%0D%0A%0D%0A+SERVICE+<https%3A%2F%2Fquery.wikidata.org%2Fsparql>+{%0D%0A+++%3Fwikidata+wdt%3AP18+%3FimageURL.+%23P18+%3D+image%0D%0A+++%3Fwikidata+wdt%3AP69+%3FedcucatedAt.+%23P69+%3D+educated++at%0D%0A+++%3Fwikidata+wdt%3AP102+%3FMemberOfPoliticalParty.+%23P102+%3D+member+of+political+party%0D%0A%0D%0A+}%0D%0A}+&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+)
-{% endraw %}
+- We use this SPARQL query in https://data.bibliotheken.
 
 {% raw %}
 ```sparql
